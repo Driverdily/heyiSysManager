@@ -1,0 +1,163 @@
+{
+  "id": "2070403",
+  "name": "SmartAlarm",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3699031",
+      "name": "config",
+      "font_class": "config",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    },
+    {
+      "icon_id": "487888",
+      "name": "led",
+      "font_class": "led",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "4091776",
+      "name": "折线",
+      "font_class": "zhexian",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "15838426",
+      "name": "adjust",
+      "font_class": "adjust",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "6715848",
+      "name": "密码显示",
+      "font_class": "pwdshow",
+      "unicode": "e6dd",
+      "unicode_decimal": 59101
+    },
+    {
+      "icon_id": "13673058",
+      "name": "密码显示",
+      "font_class": "pwdhidden",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "169777",
+      "name": "恢复出厂",
+      "font_class": "huifuchuchang",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "566251",
+      "name": "升级",
+      "font_class": "shengji",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "5298940",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "5394864",
+      "name": "喇叭",
+      "font_class": "laba",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "11790852",
+      "name": "计划",
+      "font_class": "jihua",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "12475204",
+      "name": "RFID",
+      "font_class": "RFID",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "14331174",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "640076",
+      "name": "信息",
+      "font_class": "xinxi",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "8348589",
+      "name": "开门",
+      "font_class": "kaimen",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "9671260",
+      "name": "关门",
+      "font_class": "guanmen",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    },
+    {
+      "icon_id": "12181229",
+      "name": "维保",
+      "font_class": "weibao",
+      "unicode": "e6f2",
+      "unicode_decimal": 59122
+    },
+    {
+      "icon_id": "12261139",
+      "name": "报警",
+      "font_class": "baojing",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "12304915",
+      "name": "电 话",
+      "font_class": "dianhua",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "14123618",
+      "name": "操作日志",
+      "font_class": "rizhi",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "14306004",
+      "name": "其他设置",
+      "font_class": "qitashezhi",
+      "unicode": "e74b",
+      "unicode_decimal": 59211
+    },
+    {
+      "icon_id": "15475109",
+      "name": "推送",
+      "font_class": "tuisong",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}
