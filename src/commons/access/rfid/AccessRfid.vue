@@ -78,7 +78,7 @@
 					},
 					{
 						value: '5',
-						label: 'RFID 5',
+						label: 'RFID 5', 
 						Switch: false
 					}, {
 						value: '6',
