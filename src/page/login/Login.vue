@@ -28,6 +28,7 @@
 		<!-- 重置密码对话框 -->
 		<el-dialog :title="$t('login.reset_pwd')" :visible.sync="dialogResetPwdShow" width="500px" center append-to-body>
 			<br />
+			
 			<el-form :model="Resetform">
 				<el-form-item>
 					<el-input type="text" v-model="Resetform.username" prefix-icon="el-icon-user" autocomplete="off" :placeholder="$t('login.input_account')"></el-input>

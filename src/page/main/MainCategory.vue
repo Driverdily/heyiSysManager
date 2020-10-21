@@ -1,22 +1,25 @@
 <template>
-  <el-row class="main-container">
-    <el-col :span="24" class="one">
-      <top-nav></top-nav>
-    </el-col>
-    <el-col :span="24" class="two">
-      <MainMaps></MainMaps>
-    </el-col>
-  </el-row>
+  <div class="main-container">
+    <el-row>
+      <el-col :span="24" class="top">
+        <top-nav></top-nav>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="24" class="container">
+        <router-view> </router-view>
+      </el-col>
+    </el-row>
+  </div>
 </template>
 
 <script>
 import topNav from "../../commons/nav/topNav.vue";
-import MainMaps from "../../commons/maps/AllMaps.vue";
+
 
 export default {
   components: {
     topNav,
-    MainMaps,
   },
 };
 </script>
@@ -27,14 +30,8 @@ export default {
   display: block;
   height: 100%;
 }
-.main-container .one{
-	height: 75px;
+.main-container .container {
+  margin-top: 72px;
+  height: 500px;
 }
-
-.main-container .two{
-	height: 300px;
-}
-
-
-
 </style>

@@ -1,28 +1,29 @@
 <template>
+
 	<div class="header">
 		<div class="header-left-box">
 			<div class="header-logo">
 				<img src="../../assets/img/bg_logo_s.png" title="LightYear" alt="LightYear" class="img-logo" />
 			</div>
 			<el-menu class="header-nav" mode="horizontal" text-color="#fff" background-color="#3060ff"
-			 active-text-color="#fff">
-				<el-menu-item index="1">
+			 active-text-color="#fff" :default-active="this.$route.path" router>
+				<el-menu-item index="/mainmap">
 					<i class="el-icon-s-home"></i>
 					<span slot="title">工作台</span>
 				</el-menu-item>
-				<el-menu-item index="2">
+				<el-menu-item index="/mainmap">
 					<i class="el-icon-location"></i>
 					<span slot="title">控制台</span>
 				</el-menu-item>
-				<el-menu-item index="3">
+				<el-menu-item index="/devstatus">
 					<i class="el-icon-s-platform"></i>
 					<span slot="title">设备状态</span>
 				</el-menu-item>
-				<el-menu-item index="4">
+				<el-menu-item index="/mainmap">
 					<i class="el-icon-s-data"></i>
 					<span slot="title">记录列表</span>
 				</el-menu-item>
-				<el-menu-item index="5">
+				<el-menu-item index="/mainmap">
 					<i class="el-icon-d-caret"></i>
 					<span slot="title">待用列表</span>
 				</el-menu-item>
@@ -46,6 +47,7 @@
 		</div>
 		
 	</div>
+
 
 </template>
 
