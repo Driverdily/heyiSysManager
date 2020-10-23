@@ -6,7 +6,7 @@
 				<img src="../../../assets/img/seticon/alarm_delay_66_red.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="14">
-				<span>{{$t('devSet.alarm.sos_sms')}}</span>
+				<span>{{$t('sos_sms')}}</span>
 			</el-col>
 			<el-col :span="6">
 				<el-input size="mini"></el-input>
@@ -18,7 +18,7 @@
 		<!-- 推送设置 -->
 		<el-row class="dev-set-list-item  bg-gray">
 			<el-col :span="24">
-				<span class="fa-1x m-l-10 txt-bold ">{{$t('devSet.alarm.push_set')}}</span>
+				<span class="fa-1x m-l-10 txt-bold ">{{$t('push_set')}}</span>
 			</el-col>
 		</el-row>
 		<!-- 推送布撤防消息 -->
@@ -27,7 +27,7 @@
 				<img src="../../../assets/img/seticon/arm_66_red.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="19">
-				<span>{{$t('devSet.alarm.push_arm_disarm')}}</span>
+				<span>{{$t('push_arm_disarm')}}</span>
 			</el-col>
 			<el-col :span="3" class="align-right">
 				<!-- <el-radio v-model="radio" label="1">{{$t('commons.open')}}</el-radio>
@@ -41,7 +41,7 @@
 				<img src="../../../assets/img/seticon/system_66_gray.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="19">
-				<span>{{$t('devSet.alarm.push_system_message')}}</span>
+				<span>{{$t('push_system_message')}}</span>
 			</el-col>
 			<el-col :span="3" class="align-right">
 				<!-- <el-radio v-model="radio" label="1">{{$t('commons.open')}}</el-radio>
@@ -52,7 +52,7 @@
 		<!-- 延时设置 -->
 		<el-row class="dev-set-list-item  bg-gray">
 			<el-col :span="24">
-				<span class="fa-1x m-l-10 txt-bold ">{{$t('devSet.alarm.delay_set')}}</span>
+				<span class="fa-1x m-l-10 txt-bold ">{{$t('delay_set')}}</span>
 			</el-col>
 		</el-row>
 		<!-- 布防延时 -->
@@ -61,7 +61,7 @@
 				<img src="../../../assets/img/seticon/arm_clock_66_green.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="11">
-				<span>{{$t('devSet.alarm.arm_delay')}}</span>
+				<span>{{$t('arm_delay')}}</span>
 			</el-col>
 			<el-col :span="6">
 				<el-input size="mini"></el-input>
@@ -79,7 +79,7 @@
 				<img src="../../../assets/img/seticon/alarm_delay_66_red.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="11">
-				<span>{{$t('devSet.alarm.alarm_delay')}}</span>
+				<span>{{$t('alarm_delay')}}</span>
 			</el-col>
 			<el-col :span="6">
 				<el-input size="mini"></el-input>
@@ -95,7 +95,7 @@
 		<!-- 电话报警 -->
 		<el-row class="dev-set-list-item  bg-gray">
 			<el-col :span="24">
-				<span class="fa-1x m-l-10 txt-bold ">{{$t('devSet.alarm.phone_alarm')}}</span>
+				<span class="fa-1x m-l-10 txt-bold ">{{$t('phone_alarm')}}</span>
 			</el-col>
 		</el-row>
 		<!-- 拨号次数 -->
@@ -104,7 +104,7 @@
 				<img src="../../../assets/img/seticon/arm_clock_66_green.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="11">
-				<span>{{$t('devSet.alarm.call_times')}}</span>
+				<span>{{$t('call_times')}}</span>
 			</el-col>
 			<el-col :span="6">
 				<el-input size="mini"></el-input>
@@ -122,7 +122,7 @@
 				<img src="../../../assets/img/seticon/alarm_66_red.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="11">
-				<span>{{$t('devSet.alarm.sos_key')}}</span>
+				<span>{{$t('sos_key')}}</span>
 			</el-col>
 			<el-col :span="11" class="align-right">
 				<el-select v-model="sos_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;">
@@ -134,7 +134,7 @@
 		<!-- 接警号码 -->
 		<el-row class="dev-set-list-item  bg-gray">
 			<el-col :span="24">
-				<span class="fa-1x m-l-10 txt-bold ">{{$t('devSet.alarm.alarm_number')}}</span>
+				<span class="fa-1x m-l-10 txt-bold ">{{$t('alarm_number')}}</span>
 			</el-col>
 		</el-row>
 
@@ -143,7 +143,7 @@
 				<el-table ref="singleTable" :data="phoneDate" style="width: 100% ;" size="mini" highlight-current-row
 				 @current-change="handleCurrentChange" :cell-style="{padding: '0'}">
 					<el-table-column prop="serial" :label="$t('commons.serial_no')"></el-table-column>
-					<el-table-column prop="value" :label="$t('devSet.alarmphone.phone')"></el-table-column>
+					<el-table-column prop="value" :label="$t('alarmphone.phone')"></el-table-column>
 				</el-table>
 			</el-col>
 			<el-col :span="16" style="">
@@ -153,7 +153,7 @@
 						<img src="../../../assets/img/seticon/telphone_wire_66_oriange.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="11">
-						<span>{{$t('devSet.alarm.alarm_type')}}</span>
+						<span>{{$t('alarm_type')}}</span>
 					</el-col>
 					<el-col :span="11" class="align-right">
 						<el-select v-model="alarm_type_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;">
@@ -168,7 +168,7 @@
 						<img src="../../../assets/img/seticon/arm_66_red.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="18">
-						<span>{{$t('devSet.alarm.arm_disarm')}}</span>
+						<span>{{$t('arm_disarm')}}</span>
 					</el-col>
 					<el-col :span="3" class="align-right">
 						<!-- 	<el-radio v-model="radio" label="1">{{$t('commons.open')}}</el-radio>
@@ -182,7 +182,7 @@
 						<img src="../../../assets/img/seticon/guzhang.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="18">
-						<span>{{$t('devSet.alarm.sys_information')}}</span>
+						<span>{{$t('sys_information')}}</span>
 					</el-col>
 					<el-col :span="3" class="align-right">
 						<!-- 				<el-radio v-model="radio" label="1">{{$t('commons.open')}}</el-radio>
@@ -196,7 +196,7 @@
 						<img src="../../../assets/img/seticon/system_66_gray.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="18">
-						<span>{{$t('devSet.alarm.sys_alarm')}}</span>
+						<span>{{$t('sys_alarm')}}</span>
 					</el-col>
 					<el-col :span="3" class="align-right">
 						<!-- 			<el-radio v-model="radio" label="1">{{$t('commons.open')}}</el-radio>
@@ -212,7 +212,7 @@
 					<img src="../../../assets/img/seticon/telphone_66_green.png" class="dev-set-list-img">
 				</el-col>
 				<el-col :span="11">
-					<span>{{$t('devSet.alarmphone.phone_name')}}</span>
+					<span>{{$t('phone_name')}}</span>
 				</el-col>
 				<el-col :span="8">
 					<el-input size="mini"></el-input>
@@ -243,31 +243,31 @@
 				phone_alarm_switch: false, //系统报警
 				options: [{
 					value: 0,
-					label: this.$t('devSet.alarm.close_intercom')
+					label: this.$t('close_intercom')
 				}, {
 					value: 1,
-					label: this.$t('devSet.alarm.open_intercom_1')
+					label: this.$t('open_intercom_1')
 				}, {
 					value: 2,
-					label: this.$t('devSet.alarm.open_intercom_2')
+					label: this.$t('open_intercom_2')
 				}, {
 					value: 3,
-					label: this.$t('devSet.alarm.open_intercom_3')
+					label: this.$t('open_intercom_3')
 				}, {
 					value: 4,
-					label: this.$t('devSet.alarm.open_intercom_4')
+					label: this.$t('open_intercom_4')
 				}, {
 					value: 5,
-					label: this.$t('devSet.alarm.open_intercom_5')
+					label: this.$t('open_intercom_5')
 				}, {
 					value: 6,
-					label: this.$t('devSet.alarm.open_intercom_6')
+					label: this.$t('open_intercom_6')
 				}, {
 					value: 7,
-					label: this.$t('devSet.alarm.open_intercom_7')
+					label: this.$t('open_intercom_7')
 				}, {
 					value: 8,
-					label: this.$t('devSet.alarm.open_intercom_8')
+					label: this.$t('open_intercom_8')
 				}],
 				phoneDate: [{
 					serial: 'phone 1',
@@ -296,16 +296,16 @@
 				}],
 				phoneValues: [{
 					value: 0,
-					labels: this.$t('devSet.alarm.disable')
+					labels: this.$t('disable')
 				}, {
 					value: 1,
-					labels: this.$t('devSet.alarm.gsm_dial')
+					labels: this.$t('gsm_dial')
 				}, {
 					value: 2,
-					labels: this.$t('devSet.alarm.gsm_sms')
+					labels: this.$t('gsm_sms')
 				}, {
 					value: 3,
-					labels: this.$t('devSet.alarm.gsm_cid')
+					labels: this.$t('gsm_cid')
 				}],
 			}
 		}

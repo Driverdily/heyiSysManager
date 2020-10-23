@@ -5,11 +5,11 @@
 			<el-row style="height: 692px;border-top: 0.5px solid gray;">
 				<el-col :span="9" style="height: 100%;border-right: 1px solid gray;">
 					<div class="box-card">
-						<span class="box-title">{{$t('devSet.dev_information')}}</span>
+						<span class="box-title">{{$t('dev_information')}}</span>
 						<!-- 设备类型 -->
 						<el-row class="dev-set-list-item-no">
 							<el-col :span="14">
-								<span>{{$t('devSet.other.dev_type')}}</span>
+								<span>{{$t('dev_type')}}</span>
 							</el-col>
 							<el-col :span="10" class="align-right">
 								<span class="txt-blue">设备的类型</span>
@@ -17,7 +17,7 @@
 						</el-row>
 						<el-row class="dev-set-list-item-no">
 							<el-col :span="14">
-								<span>{{$t('devSet.information.dev_id')}}</span>
+								<span>{{$t('dev_id')}}</span>
 							</el-col>
 							<el-col :span="10" class="align-right">
 								<span class="txt-blue">设备的编号</span>
@@ -26,7 +26,7 @@
 						<!-- 设备编号 -->
 						<el-row class="dev-set-list-item-no">
 							<el-col :span="14">
-								<span>{{$t('devSet.other.dev_name')}}</span>
+								<span>{{$t('dev_name')}}</span>
 							</el-col>
 							<el-col :span="10">
 								<el-input size="mini"></el-input>
@@ -37,41 +37,41 @@
 					</div>
 
 					<div class="box-card" style="height: 100px;">
-						<span class="box-title">{{$t('devSet.information.other_param')}}</span>
+						<span class="box-title">{{$t('other_param')}}</span>
 					</div>
-					<!-- 联系人信息 -->
+					<!-- 联系人信息-- -->
 					<div class="box-card">
-						<span class="box-title">{{$t('devSet.information.contect_person_info')}}</span>
+						<span class="box-title">{{$t('contect_person_info')}}</span>
 
 						<!-- 联系人1 -->
 						<el-row class="dev-set-list-item-no">
 							<el-col :span="11">
-								<el-input size="mini" :placeholder="$t('devSet.information.contect_person')+1"></el-input>
+								<el-input size="mini" :placeholder="$t('contect_person')+1"></el-input>
 							</el-col>
 							<el-col :span="11" :offset="2">
-								<el-input size="mini" :placeholder="$t('devSet.information.contect_phone')+1"></el-input>
+								<el-input size="mini" :placeholder="$t('contect_phone')+1"></el-input>
 							</el-col>
 						</el-row>
 						<!-- 联系人2 -->
 						<el-row class="dev-set-list-item-no">
 							<el-col :span="11">
-								<el-input size="mini" :placeholder="$t('devSet.information.contect_person')+2"></el-input>
+								<el-input size="mini" :placeholder="$t('contect_person')+2"></el-input>
 							</el-col>
 							<el-col :span="11" :offset="2">
-								<el-input size="mini" :placeholder="$t('devSet.information.contect_phone')+2"></el-input>
+								<el-input size="mini" :placeholder="$t('contect_phone')+2"></el-input>
 							</el-col>
 						</el-row>
 						<!-- 地址 -->
 						<el-row class="dev-set-list-item-no">
 							<el-col :span="24">
-								<el-input type="textarea" autosize :placeholder="$t('devSet.information.contect_address')" v-model="textarea1">
+								<el-input type="textarea" autosize :placeholder="$t('contect_address')" v-model="textarea1">
 								</el-input>
 							</el-col>
 						</el-row>
 						<!-- 备注 -->
 						<el-row class="dev-set-list-item-no">
 							<el-col>
-								<el-input type="textarea" autosize :placeholder="$t('devSet.information.ps')" v-model="textarea1">
+								<el-input type="textarea" autosize :placeholder="$t('ps')" v-model="textarea1">
 								</el-input>
 							</el-col>
 						</el-row>
@@ -79,11 +79,11 @@
 					</div>
 					<!-- 定位信息 -->
 					<div class="box-card">
-						<span class="box-title">{{$t('devSet.information.install_information')}}</span>
+						<span class="box-title">{{$t('install_information')}}</span>
 						<!-- 经纬度 -->
 						<el-row class="dev-set-list-item-no">
 							<el-col :span="4">
-								<span>{{$t('devSet.information.lat_lon')}}</span>
+								<span>{{$t('lat_lon')}}</span>
 							</el-col>
 							<el-col :span="7">
 								<el-input size="mini"></el-input>
@@ -92,13 +92,13 @@
 								<el-input size="mini"></el-input>
 							</el-col>
 							<el-col :span="6" class="align-right">
-								<el-button type="infor" size="mini">{{$t('commons.locate')}}</el-button>
+								<el-button type="infor" size="mini">{{$t('locate')}}</el-button>
 							</el-col>
 						</el-row>
 						<!-- 安装情况 -->
 						<el-row class="dev-set-list-item-no">
 							<el-col :span="4">
-								<span>{{$t('devSet.information.install_time')}}</span>
+								<span>{{$t('install_time')}}</span>
 							</el-col>
 							<el-col :span="14">
 								<el-date-picker v-model="install_start" type="date" placeholder="选择日期" size="mini" style="width: 80%;">
@@ -107,25 +107,25 @@
 						</el-row>
 						<el-row class="dev-set-list-item-no">
 							<el-col :span="4">
-								<span>{{$t('devSet.information.expire_time')}}</span>
+								<span>{{$t('expire_time')}}</span>
 							</el-col>
 							<el-col :span="14">
 								<el-date-picker v-model="install_end" type="date" placeholder="选择日期" size="mini" style="width: 80%;">
 								</el-date-picker>
 							</el-col>
 							<el-col :span="6" class="align-right">
-								<el-checkbox v-model="checked">{{$t('devSet.information.expire_remind')}}</el-checkbox>
+								<el-checkbox v-model="checked">{{$t('expire_remind')}}</el-checkbox>
 							</el-col>
 						</el-row>
 					</div>
 					<div class="box-card">
-						<span class="box-title">{{$t('commons.operate')}}</span>
+						<span class="box-title">{{$t('operate')}}</span>
 						<el-row class="dev-set-list-item-no">
 							<el-col :span="12">
-								<el-button type="infor" style="padding: 10px 50px;" size="mini">{{$t('commons.save')}}</el-button>
+								<el-button type="infor" style="padding: 10px 50px;" size="mini">{{$t('save')}}</el-button>
 							</el-col>
 							<el-col :span="12">
-								<el-button type="infor" style="padding: 10px 50px;" size="mini">{{$t('commons.cancel')}}</el-button>
+								<el-button type="infor" style="padding: 10px 50px;" size="mini">{{$t('cancel')}}</el-button>
 							</el-col>
 						</el-row>
 					</div>

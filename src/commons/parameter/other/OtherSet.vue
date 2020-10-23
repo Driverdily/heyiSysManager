@@ -10,7 +10,7 @@
 
 			<el-col :span="14">
 
-				<span>{{$t('devSet.other.dev_type')}}</span>
+				<span>{{$t('dev_type')}}</span>
 			</el-col>
 			<el-col :span="8">
 				<span class="txt-blue">设备的类型</span>
@@ -25,7 +25,7 @@
 
 			<el-col :span="14">
 
-				<span>{{$t('devSet.other.dev_id')}}</span>
+				<span>{{$t('dev_id')}}</span>
 			</el-col>
 			<el-col :span="8">
 				<span class="txt-blue">设备的ID</span>
@@ -40,7 +40,7 @@
 
 			<el-col :span="14">
 
-				<span>{{$t('devSet.other.dev_name')}}</span>
+				<span>{{$t('dev_name')}}</span>
 			</el-col>
 			<el-col :span="6">
 				<el-input size="mini"></el-input>
@@ -60,7 +60,7 @@
 
 			<el-col :span="14">
 
-				<span>{{$t('devSet.other.dev_imei')}}</span>
+				<span>{{$t('dev_imei')}}</span>
 			</el-col>
 			<el-col :span="8">
 				<span class="txt-blue">设备的IMEI号</span>
@@ -69,7 +69,7 @@
 		<!-- 用户信息 -->
 		<el-row class="dev-set-list-item bg-gray">
 			<el-col :span="24" class=" ">
-				<span class="fa-1x m-l-10 txt-bold ">{{$t('devSet.other.user_information')}}</span>
+				<span class="fa-1x m-l-10 txt-bold ">{{$t('user_information')}}</span>
 			</el-col>
 		</el-row>
 		<el-row class="dev-set-list-item">
@@ -81,7 +81,7 @@
 
 			<el-col :span="14">
 
-				<span>{{$t('devSet.other.user_name')}}</span>
+				<span>{{$t('user_name')}}</span>
 			</el-col>
 			<el-col :span="8">
 				<el-input size="mini" style="width: 90%;"></el-input>
@@ -98,7 +98,7 @@
 
 			<el-col :span="14">
 
-				<span>{{$t('devSet.alarmphone.phone')}}</span>
+				<span>{{$t('phone')}}</span>
 			</el-col>
 			<el-col :span="8">
 				<el-input size="mini" style="width: 90%;"></el-input>
@@ -110,7 +110,7 @@
 		<!-- 负责人 -->
 		<el-row class="dev-set-list-item  bg-gray">
 			<el-col :span="24">
-				<span class="fa-1x m-l-10 txt-bold ">{{$t('devSet.other.principal')}}</span>
+				<span class="fa-1x m-l-10 txt-bold ">{{$t('principal')}}</span>
 			</el-col>
 		</el-row>
 		<el-row class="dev-set-list-item">
@@ -122,7 +122,7 @@
 
 			<el-col :span="14">
 
-				<span>{{$t('devSet.other.user_name')}}</span>
+				<span>{{$t('user_name')}}</span>
 			</el-col>
 			<el-col :span="8">
 				<el-input size="mini" style="width: 90%;"></el-input>
@@ -139,7 +139,7 @@
 
 			<el-col :span="14">
 
-				<span>{{$t('devSet.alarmphone.phone')}}</span>
+				<span>{{$t('alarmphone.phone')}}</span>
 			</el-col>
 			<el-col :span="8">
 				<el-input size="mini" style="width: 90%;"></el-input>
@@ -150,7 +150,7 @@
 		<!-- 维保人 -->
 		<el-row class="dev-set-list-item  bg-gray">
 			<el-col :span="24">
-				<span class="fa-1x m-l-10 txt-bold ">{{$t('devSet.other.maintainer')}}</span>
+				<span class="fa-1x m-l-10 txt-bold ">{{$t('maintainer')}}</span>
 			</el-col>
 		</el-row>
 		<el-row class="dev-set-list-item">
@@ -162,7 +162,7 @@
 
 			<el-col :span="14">
 
-				<span>{{$t('devSet.other.user_name')}}</span>
+				<span>{{$t('user_name')}}</span>
 			</el-col>
 			<el-col :span="8">
 				<el-input size="mini" style="width: 90%;"></el-input>
@@ -179,7 +179,7 @@
 
 			<el-col :span="14">
 
-				<span>{{$t('devSet.alarmphone.phone')}}</span>
+				<span>{{$t('alarmphone.phone')}}</span>
 			</el-col>
 			<el-col :span="8">
 				<el-input size="mini" style="width: 90%;"></el-input>

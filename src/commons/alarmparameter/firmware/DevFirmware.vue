@@ -10,7 +10,7 @@
 
 			<el-col :span="14">
 
-				<span>{{$t('devSet.firmware.this_version')}}</span>
+				<span>{{$t('this_version')}}</span>
 			</el-col>
 			<el-col :span="8" class=" align-right">
 				<span class="txt-blue">设备当前固件版本</span>
@@ -26,7 +26,7 @@
 
 			<el-col :span="14">
 
-				<span>{{$t('devSet.firmware.new_version')}}</span>
+				<span>{{$t('new_version')}}</span>
 			</el-col>
 			<el-col :span="8" class="align-right">
 				<span class="txt-blue">设备可升级固件版本</span>
@@ -38,7 +38,7 @@
 			</el-col>
 			<el-col :span="6">
 
-				<span>{{$t('devSet.firmware_update')}}</span>
+				<span>{{$t('firmware_update')}}</span>
 			</el-col>
 			<el-col :span="12" class="align-left" v-show="isUpdate">
 				<el-progress  :text-inside="true" :stroke-width="15" :percentage="99" >
@@ -47,7 +47,7 @@
 
 			</el-col>
 			<el-col :span="4" class="align-right">
-				<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('devSet.firmware.run_update')}}</el-button>
+				<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('run_update')}}</el-button>
 			</el-col>
 		</el-row>
 

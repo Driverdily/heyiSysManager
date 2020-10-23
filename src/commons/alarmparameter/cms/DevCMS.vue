@@ -6,7 +6,7 @@
 				<img src="../../../assets/img/seticon/switch_66_gray.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="19" >
-				<span>{{$t('devSet.cms.switch')}}</span>
+				<span>{{$t('switch')}}</span>
 			</el-col>
 			<el-col :span="3" class="align-right">
 				<el-switch v-model="cms_switch" active-color="#13ce66"></el-switch>
@@ -18,7 +18,7 @@
 				<img src="../../../assets/img/seticon/accesspoint_66.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="15" >
-				<span>{{$t('devSet.cms.net_aisle')}}</span>
+				<span>{{$t('net_aisle')}}</span>
 			</el-col>
 			<el-col :span="7" class="align-right">
 				<el-select v-model="net_aisle_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;">
@@ -33,7 +33,7 @@
 				<img src="../../../assets/img/seticon/user_66_gray.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="11" >
-				<span>{{$t('devSet.cms.account')}}</span>
+				<span>{{$t('account')}}</span>
 			</el-col>
 			<el-col :span="8" >
 				<el-input size="mini"></el-input>
@@ -49,13 +49,13 @@
 				<img src="../../../assets/img/seticon/ip_66_gray.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="11" >
-				<span>{{$t('devSet.cms.ip_address')}}</span>
+				<span>{{$t('ip_address')}}</span>
 			</el-col>
 			<el-col :span="8" >
 				<el-input size="mini"></el-input>
 			</el-col>
 			<el-col :span="3" class="align-right">
-				<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('commons.change')}}</el-button>
+				<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('change')}}</el-button>
 			</el-col>
 		
 		</el-row>
@@ -65,13 +65,13 @@
 				<img src="../../../assets/img/seticon/port_66.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="11" >
-				<span>{{$t('devSet.cms.port')}}</span>
+				<span>{{$t('port')}}</span>
 			</el-col>
 			<el-col :span="8" >
 				<el-input size="mini"></el-input>
 			</el-col>
 			<el-col :span="3" class="align-right">
-				<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('commons.change')}}</el-button>
+				<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('change')}}</el-button>
 			</el-col>
 		
 		</el-row>

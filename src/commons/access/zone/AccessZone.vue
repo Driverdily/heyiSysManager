@@ -9,8 +9,8 @@
 							<img src="../../../assets/img/access/accessories_png_door_sensor2.png" alt="" class="table-img" />
 						</template>
 					</el-table-column>
-					<el-table-column prop="value" :label="$t('commons.serial_no')"></el-table-column>
-					<el-table-column prop="label" :label="$t('access.zones')"></el-table-column>
+					<el-table-column prop="value" :label="$t('serial_no')"></el-table-column>
+					<el-table-column prop="label" :label="$t('zones')"></el-table-column>
 				</el-table>
 
 			</el-col>
@@ -21,7 +21,7 @@
 						<img src="../../../assets/img/access/pluse_66_red.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="14">
-						<span>{{$t('access.zone.enrolling_state')}}</span>
+						<span>{{$t('enrolling_state')}}</span>
 					</el-col>
 					<el-col :span="8" class="align-right">
 						<span class="txt-blue">对码状态</span>
@@ -33,13 +33,13 @@
 						<img src="../../../assets/img/access/shield_66_red.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="11">
-						<span>{{$t('access.zone.zone_name')}}</span>
+						<span>{{$t('zone_name')}}</span>
 					</el-col>
 					<el-col :span="8">
 						<el-input size="mini"></el-input>
 					</el-col>
 					<el-col :span="3" class="align-right">
-						<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('commons.change')}}</el-button>
+						<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('change')}}</el-button>
 					</el-col>
 				</el-row>
 				<!-- 防区类型 -->
@@ -48,10 +48,10 @@
 						<img src="../../../assets/img/access/category_66_gray.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="11">
-						<span>{{$t('access.zone.zone_type')}}</span>
+						<span>{{$t('zone_type')}}</span>
 					</el-col>
 					<el-col :span="11" class="align-right">
-						<el-select v-model="zone_key_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;">
+						<el-select v-model="zone_key_value" keep-alive size="mini" :placeholder="$t('select')" style="width: 90%;">
 							<el-option v-for="item in ZoneTypeList" :key="item.value" :label="item.label" :value="item.value">
 							</el-option>
 						</el-select>
@@ -63,7 +63,7 @@
 						<img src="../../../assets/img/access/home_arm_66_blue.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="18">
-						<span>{{$t('access.zone.allow_home_arm')}}</span>
+						<span>{{$t('allow_home_arm')}}</span>
 					</el-col>
 					<el-col :span="4" class="align-right">
 						<el-switch v-model="allow_arm_switch" active-color="#13ce66"></el-switch>
@@ -75,7 +75,7 @@
 						<img src="../../../assets/img/access/warning.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="18">
-						<span>{{$t('access.zone.zone_fwb')}}</span>
+						<span>{{$t('zone_fwb')}}</span>
 					</el-col>
 					<el-col :span="4" class="align-right">
 						<el-switch v-model="allow_arm_switch" active-color="#13ce66"></el-switch>
@@ -87,10 +87,10 @@
 						<img src="../../../assets/img/access/lock_point.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="11">
-						<span>{{$t('access.zone.zone_locking')}}</span>
+						<span>{{$t('zone_locking')}}</span>
 					</el-col>
 					<el-col :span="11" class="align-right">
-						<el-select v-model="zone_lock_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 50%;">
+						<el-select v-model="zone_lock_value" keep-alive size="mini" :placeholder="$t('select')" style="width: 50%;">
 							<el-option v-for="i in 10" :key="i" :label="i+次" :value="i">
 							</el-option>
 						</el-select>
@@ -102,10 +102,10 @@
 						<img src="../../../assets/img/access/shield_66_red.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="11">
-						<span>{{$t('access.zone.zone_trigger_type')}}</span>
+						<span>{{$t('zone_trigger_type')}}</span>
 					</el-col>
 					<el-col :span="11" class="align-right">
-						<el-select v-model="zone_trigger_type_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;">
+						<el-select v-model="zone_trigger_type_value" keep-alive size="mini" :placeholder="$t('select')" style="width: 90%;">
 							<el-option v-for="item in ZoneTriggerTypeList" :key="item.value" :label="item.label" :value="item.value">
 							</el-option>
 						</el-select>
@@ -117,13 +117,13 @@
 						<img src="../../../assets/img/access/led.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="11">
-						<span>{{$t('access.zone.led_AD_Screen')}}</span>
+						<span>{{$t('led_AD_Screen')}}</span>
 					</el-col>
 					<el-col :span="8">
 						<el-input size="mini"></el-input>
 					</el-col>
 					<el-col :span="3" class="align-right">
-						<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('commons.change')}}</el-button>
+						<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('change')}}</el-button>
 					</el-col>
 				</el-row>
 				<!-- 语音内容 -->
@@ -132,19 +132,19 @@
 						<img src="../../../assets/img/access/sms_66_blue.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="11">
-						<span>{{$t('access.zone.voice_content')}}</span>
+						<span>{{$t('voice_content')}}</span>
 					</el-col>
 					<el-col :span="8">
 						<el-input size="mini"></el-input>
 					</el-col>
 					<el-col :span="3" class="align-right">
-						<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('commons.change')}}</el-button>
+						<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('change')}}</el-button>
 					</el-col>
 				</el-row>
 				<!-- 对码 -->
 				<el-row class="dev-set-list-item">
 					<el-col :span="24" class="align-center">
-						<el-button type="infor" style="padding: 10px 50px;" size="mini">{{$t('access.zone.enrolling')}}</el-button>
+						<el-button type="infor" style="padding: 10px 50px;" size="mini">{{$t('enrolling')}}</el-button>
 					</el-col>
 				</el-row>
 
@@ -211,68 +211,68 @@
 				}, ],
 				ZoneTypeList: [{
 					value: '0',
-					label: this.$t('access.zone.zone_disable')
+					label: this.$t('zone_disable')
 				}, {
 					value: '1',
-					label: this.$t('access.zone.zone_delay')
+					label: this.$t('zone_delay')
 				}, {
 					value: '2',
-					label: this.$t('access.zone.zone_burglar')
+					label: this.$t('zone_burglar')
 				}, {
 					value: '3',
-					label: this.$t('access.zone.zone_Perimeter')
+					label: this.$t('zone_Perimeter')
 				}, {
 					value: '4',
-					label: this.$t('access.zone.zone_day_night')
+					label: this.$t('zone_day_night')
 				}, {
 					value: '5',
-					label: this.$t('access.zone.zone_nor_silent')
+					label: this.$t('zone_nor_silent')
 				}, {
 					value: '6',
-					label: this.$t('access.zone.zone_audible')
+					label: this.$t('zone_audible')
 				}, {
 					value: '7',
-					label: this.$t('access.zone.zone_fire')
+					label: this.$t('zone_fire')
 				}, {
 					value: '8',
-					label: this.$t('access.zone.zone_gas')
+					label: this.$t('zone_gas')
 				}, {
 					value: '9',
-					label: this.$t('access.zone.zone_medical')
+					label: this.$t('zone_medical')
 				}, {
 					value: '10',
-					label: this.$t('access.zone.zone_doorbe')
+					label: this.$t('zone_doorbe')
 				}, {
 					value: '11',
-					label: this.$t('access.zone.zone_key_switch')
+					label: this.$t('zone_key_switch')
 				}, {
 					value: '13',
-					label: this.$t('access.zone.zone_key_fire')
+					label: this.$t('zone_key_fire')
 				}, {
 					value: '14',
-					label: this.$t('access.zone.zone_key_violence')
+					label: this.$t('zone_key_violence')
 				}, {
 					value: '15',
-					label: this.$t('access.zone.zone_key_quake')
+					label: this.$t('zone_key_quake')
 				}, {
 					value: '16',
-					label: this.$t('access.zone.zone_key_air_raid')
+					label: this.$t('zone_key_air_raid')
 				}, {
 					value: '17',
-					label: this.$t('access.zone.zone_key_medical')
+					label: this.$t('zone_key_medical')
 				}, {
 					value: '18',
-					label: this.$t('access.zone.zone_voice_prompt')
+					label: this.$t('zone_voice_prompt')
 				}],
 				ZoneTriggerTypeList: [{
 					value: '0',
-					label: this.$t('access.zone.zone_trigger_breake')
+					label: this.$t('zone_trigger_breake')
 				}, {
 					value: '1',
-					label: this.$t('access.zone.zone_trigger_close')
+					label: this.$t('zone_trigger_close')
 				}, {
 					value: '2',
-					label: this.$t('access.zone.zone_trigger_line')
+					label: this.$t('zone_trigger_line')
 				}],
 
 			}

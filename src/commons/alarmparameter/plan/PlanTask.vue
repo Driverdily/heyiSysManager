@@ -10,7 +10,7 @@
 							<img src="../../../assets/img/seticon/repeat_66_blue.png" class="dev-set-list-img">
 						</el-col>
 						<el-col :span="6">
-							<span>{{$t('commons.week')}}</span>
+							<span>{{$t('week')}}</span>
 						</el-col>
 						<el-col :span="15" style="text-align: right;">
 							<el-checkbox-group v-model="checkboxGroup1" size="mini">
@@ -24,7 +24,7 @@
 							<img src="../../../assets/img/seticon/arm_66_red.png" class="dev-set-list-img">
 						</el-col>
 						<el-col :span="12">
-							<span>{{$t('devSet.plan.arm_time')}}</span>
+							<span>{{$t('arm_time')}}</span>
 						</el-col>
 						<el-col :span="10">
 							<el-time-picker :v-model="item.startTime" :picker-options="{selectableRange:'00:00:00 - 23:59:59'}" size="mini" style="width: 95%;">
@@ -36,7 +36,7 @@
 							<img src="../../../assets/img/seticon/disarm_66_red.png" class="dev-set-list-img">
 						</el-col>
 						<el-col :span="12">
-							<span>{{$t('devSet.plan.disarm_time')}}</span>
+							<span>{{$t('disarm_time')}}</span>
 						</el-col>
 						<el-col :span="10">
 							<el-time-picker :v-model="item.endTime" :picker-options="{selectableRange:'00:00:00 - 23:59:59'}" size="mini" style="width: 95%;">

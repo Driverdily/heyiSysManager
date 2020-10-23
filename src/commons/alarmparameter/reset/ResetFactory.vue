@@ -3,7 +3,7 @@
 	<!-- 提示 -->
 	<el-row class="dev-set-list-item  bg-gray">
 		<el-col :span="24" >
-			<span class="fa-1x m-l-10 txt-bold ">{{$t('devSet.reset.tips')}}</span>
+			<span class="fa-1x m-l-10 txt-bold ">{{$t('tips')}}</span>
 		</el-col>
 	</el-row>
 	<!-- 温度 -->
@@ -12,10 +12,10 @@
 			<img src="../../../assets/img/seticon/reset_66_red.png" class="dev-set-list-img">
 		</el-col>
 		<el-col :span="14" >
-			<span>{{$t('devSet.reset.reset')}}</span>
+			<span>{{$t('reset')}}</span>
 		</el-col>
 		<el-col :span="8" class="align-right" >
-			<el-button type="infor" size="mini">{{$t('devSet.reset.reset')}}</el-button>
+			<el-button type="infor" size="mini">{{$t('reset')}}</el-button>
 		</el-col>
 	</el-row>
 	

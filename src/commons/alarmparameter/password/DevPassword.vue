@@ -6,13 +6,13 @@
 				<img src="../../../assets/img/seticon/lock_66_yellow.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="11" >
-				<span>{{$t('devSet.password.program_pwd')}}</span>
+				<span>{{$t('program_pwd')}}</span>
 			</el-col>
 			<el-col :span="8" >
 				<el-input size="mini"></el-input>
 			</el-col>
 			<el-col :span="3" class="align-right">
-				<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('commons.change')}}</el-button>
+				<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('change')}}</el-button>
 			</el-col>
 		
 		</el-row>
@@ -22,13 +22,13 @@
 				<img src="../../../assets/img/seticon/lock_66_yellow.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="11" >
-				<span>{{$t('devSet.password.user_pwd')}}</span>
+				<span>{{$t('user_pwd')}}</span>
 			</el-col>
 			<el-col :span="8" >
 				<el-input size="mini"></el-input>
 			</el-col>
 			<el-col :span="3" class="align-right">
-				<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('commons.change')}}</el-button>
+				<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('change')}}</el-button>
 			</el-col>
 		
 		</el-row>
@@ -38,13 +38,13 @@
 				<img src="../../../assets/img/seticon/lock_66_yellow.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="11" >
-				<span>{{$t('devSet.password.duress_pwd')}}</span>
+				<span>{{$t('duress_pwd')}}</span>
 			</el-col>
 			<el-col :span="8" >
 				<el-input size="mini"></el-input>
 			</el-col>
 			<el-col :span="3" class="align-right">
-				<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('commons.change')}}</el-button>
+				<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('change')}}</el-button>
 			</el-col>
 		
 		</el-row>

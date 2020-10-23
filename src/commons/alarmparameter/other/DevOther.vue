@@ -6,7 +6,7 @@
 				<img src="../../../assets/img/seticon/alarm_pictrue1.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="19">
-				<span>{{$t('devSet.other.one_key_alarm')}}</span>
+				<span>{{$t('one_key_alarm')}}</span>
 			</el-col>
 			<el-col :span="3" class="align-right">
 				<el-switch v-model="arm_voice_switch" active-color="#13ce66"></el-switch>
@@ -15,7 +15,7 @@
 		<!-- 可编程继电器输出 -->
 		<el-row class="dev-set-list-item  bg-gray">
 			<el-col :span="24">
-				<span class="fa-1x m-l-10 txt-bold ">{{$t('devSet.other.can_pro_relay_output')}}</span>
+				<span class="fa-1x m-l-10 txt-bold ">{{$t('can_pro_relay_output')}}</span>
 			</el-col>
 		</el-row>
 		<!-- 输出类型 -->
@@ -24,10 +24,10 @@
 				<img src="../../../assets/img/seticon/smart_link_66_yellow.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="11">
-				<span>{{$t('devSet.other.output_type')}}</span>
+				<span>{{$t('output_type')}}</span>
 			</el-col>
 			<el-col :span="11" class="align-right">
-				<el-select v-model="relay_output_type_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;">
+				<el-select v-model="relay_output_type_value" keep-alive size="mini" :placeholder="$t('select')" style="width: 90%;">
 					<el-option v-for="item in RelayOutputtypes" :key="item.value" :label="item.label" :value="item.value">
 					</el-option>
 				</el-select>
@@ -39,10 +39,10 @@
 				<img src="../../../assets/img/seticon/heartbeat.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="11">
-				<span>{{$t('devSet.other.output_mode')}}</span>
+				<span>{{$t('output_mode')}}</span>
 			</el-col>
 			<el-col :span="11" class="align-right">
-				<el-select v-model="relay_output_mode_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;">
+				<el-select v-model="relay_output_mode_value" keep-alive size="mini" :placeholder="$t('select')" style="width: 90%;">
 					<el-option v-for="item in RelayOutputmode" :key="item.value" :label="item.label" :value="item.value">
 					</el-option>
 				</el-select>
@@ -54,10 +54,10 @@
 				<img src="../../../assets/img/seticon/clock_02_66_orange.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="11">
-				<span>{{$t('devSet.other.output_time')}}</span>
+				<span>{{$t('output_time')}}</span>
 			</el-col>
 			<el-col :span="11" class="align-right">
-				<el-select v-model="relay_output_time_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;">
+				<el-select v-model="relay_output_time_value" keep-alive size="mini" :placeholder="$t('select')" style="width: 90%;">
 					<el-option v-for="i in 99" :key="i" :label="i" :value="i">
 					</el-option>
 				</el-select>
@@ -66,7 +66,7 @@
 		<!-- 可编程输出 -->
 		<el-row class="dev-set-list-item  bg-gray">
 			<el-col :span="24">
-				<span class="fa-1x m-l-10 txt-bold ">{{$t('devSet.other.can_pro_output')}}</span>
+				<span class="fa-1x m-l-10 txt-bold ">{{$t('can_pro_output')}}</span>
 			</el-col>
 		</el-row>
 		<!-- 输出类型 -->
@@ -75,7 +75,7 @@
 				<img src="../../../assets/img/seticon/smart_link_66_yellow.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="11">
-				<span>{{$t('devSet.other.output_type')}}</span>
+				<span>{{$t('output_type')}}</span>
 			</el-col>
 			<el-col :span="11" class="align-right">
 				<el-select v-model="output_type_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;">
@@ -90,10 +90,10 @@
 				<img src="../../../assets/img/seticon/heartbeat.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="11">
-				<span>{{$t('devSet.other.output_mode')}}</span>
+				<span>{{$t('output_mode')}}</span>
 			</el-col>
 			<el-col :span="11" class="align-right">
-				<el-select v-model="output_mode_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;">
+				<el-select v-model="output_mode_value" keep-alive size="mini" :placeholder="$t('select')" style="width: 90%;">
 					<el-option v-for="item in RelayOutputmode" :key="item.value" :label="item.label" :value="item.value">
 					</el-option>
 				</el-select>
@@ -105,7 +105,7 @@
 				<img src="../../../assets/img/seticon/clock_02_66_orange.png" class="dev-set-list-img">
 			</el-col>
 			<el-col :span="11">
-				<span>{{$t('devSet.other.output_time')}}</span>
+				<span>{{$t('output_time')}}</span>
 			</el-col>
 			<el-col :span="11" class="align-right">
 				<el-select v-model="output_time_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;">
@@ -131,38 +131,38 @@
 
 				RelayOutputtypes: [{
 					value: '0',
-					label: this.$t('devSet.other.relay_output_type_none')
+					label: this.$t('relay_output_type_none')
 				}, {
 					value: '1',
-					label: this.$t('devSet.other.relay_output_type_system')
+					label: this.$t('relay_output_type_system')
 				}, {
 					value: '2',
-					label: this.$t('devSet.other.relay_output_type_host')
+					label: this.$t('relay_output_type_host')
 				}, {
 					value: '3',
-					label: this.$t('devSet.other.relay_output_type_ac')
+					label: this.$t('relay_output_type_ac')
 				}, {
 					value: '4',
-					label: this.$t('devSet.other.relay_output_type_lowpower')
+					label: this.$t('relay_output_type_lowpower')
 				}, {
 					value: '5',
-					label: this.$t('devSet.other.relay_output_type_telephone')
+					label: this.$t('relay_output_type_telephone')
 				}, {
 					value: '6',
-					label: this.$t('devSet.other.relay_output_type_gsm')
+					label: this.$t('relay_output_type_gsm')
 				}, {
 					value: '7',
-					label: this.$t('devSet.other.relay_output_type_link')
+					label: this.$t('relay_output_type_link')
 				}, {
 					value: '8',
-					label: this.$t('devSet.other.relay_output_type_control')
+					label: this.$t('relay_output_type_control')
 				}, ],
 				RelayOutputmode: [{
 					value: '0',
-					label: this.$t('devSet.other.mode_Impuls')
+					label: this.$t('mode_Impuls')
 				}, {
 					value: '1',
-					label: this.$t('devSet.other.mode_Fortsetzung')
+					label: this.$t('mode_Fortsetzung')
 				}],
 
 			}

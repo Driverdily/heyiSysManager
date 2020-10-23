@@ -9,7 +9,7 @@
 
 			<el-col :span="15" >
 
-				<span>{{$t('devSet.push.weixin_message')}}</span>
+				<span>{{$t('weixin_message')}}</span>
 			</el-col>
 			<el-col :span="6" >
 				<el-radio v-model="radio" label="1">开</el-radio>
@@ -26,7 +26,7 @@
 
 			<el-col :span="15" >
 
-				<span>{{$t('devSet.push.open_door_sms_notice')}}</span>
+				<span>{{$t('open_door_sms_notice')}}</span>
 			</el-col>
 			<el-col :span="6" >
 				<el-radio v-model="radio" label="1">开</el-radio>
@@ -43,7 +43,7 @@
 
 			<el-col :span="15" >
 
-				<span>{{$t('devSet.push.open_door_sms_notice')}}</span>
+				<span>{{$t('open_door_sms_notice')}}</span>
 			</el-col>
 			<el-col :span="6" >
 				<el-radio v-model="radio" label="1">开</el-radio>

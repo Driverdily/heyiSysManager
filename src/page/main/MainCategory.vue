@@ -1,37 +1,47 @@
 <template>
   <div class="main-container">
-    <el-row>
-      <el-col :span="24" class="top">
-        <top-nav></top-nav>
-      </el-col>
-    </el-row>
-    <el-row>
-      <el-col :span="24" class="container">
-        <router-view> </router-view>
-      </el-col>
-    </el-row>
+    <top-nav class="top"></top-nav>
+    <router-view class="container"> </router-view>
+    <bottom-nav class="bottom"></bottom-nav>
+
+    <!-- <el-container>
+  <el-header> <top-nav></top-nav> </el-header>
+ <el-main> <router-view></router-view> </el-main>
+ <el-footer> <bottom-nav></bottom-nav> </el-footer>
+
+</el-container> -->
   </div>
 </template>
 
 <script>
 import topNav from "../../commons/nav/topNav.vue";
-
+import bottomNav from "../../commons/nav/bottomNav.vue";
 
 export default {
   components: {
     topNav,
+    bottomNav,
   },
 };
 </script>
 
-<style>
+<style >
 .main-container {
-  width: 100%;
-  display: block;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
+.main-container .top {
+  height: 80px;
+  flex: 0 0 auto;
+}
+.main-container .bottom {
+  border-top: 3px double gray;
+  height: 240px;
+  flex: 0 0 auto;
+}
+
 .main-container .container {
-  margin-top: 72px;
-  height: 500px;
+  flex: 1 1 auto;
 }
 </style>

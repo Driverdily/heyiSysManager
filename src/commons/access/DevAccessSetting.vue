@@ -6,36 +6,36 @@
 				<!-- 配件 -->
 				<el-tab-pane>
 					<span slot="label">
-						{{$t('access.accesses')}}</span>
+						{{$t('accesses')}}</span>
 					<access-zone></access-zone>
 				</el-tab-pane>
 				<!-- 智能插座 -->
 				<el-tab-pane>
 					<span slot="label">
-						{{$t('access.socketes')}}</span>
+						{{$t('socketes')}}</span>
 						<access-socket></access-socket>
 				</el-tab-pane>
 				<!-- 智能遥控器 -->
 				<el-tab-pane>
 					<span slot="label">
-						{{$t('access.controles')}}</span>
+						{{$t('controles')}}</span>
 						<access-control></access-control>
 				</el-tab-pane>
 				<!-- 智能户外声光警号 -->
 				<el-tab-pane>
 					<span slot="label">
-						{{$t('access.out_sirenes')}}</span>
+						{{$t('out_sirenes')}}</span>
 						<access-out-siren></access-out-siren>
 				</el-tab-pane>
 				<!-- 继电器 -->
 				<el-tab-pane>
 					<span slot="label">
-						{{$t('access.relayes')}}</span>
+						{{$t('relayes')}}</span>
 						<access-relay></access-relay>
 				</el-tab-pane>
 				<el-tab-pane>
 					<span slot="label">
-						{{$t('access.rfides')}}</span>
+						{{$t('rfides')}}</span>
 						<access-rfid></access-rfid>
 				</el-tab-pane>
 				

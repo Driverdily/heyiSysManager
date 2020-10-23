@@ -5,7 +5,10 @@ import VueRouter from 'vue-router'
 import Login from '../page/login/Login.vue';
 import MainPager from '../page/main/MainCategory.vue';
 import mainMaps from '../commons/fragment/AllMaps.vue';
-import devStatus from '../commons/devastates/DevStatus.vue';
+import devStatus from '../commons/fragment/DevStatus.vue';
+import alarmRecord from '../commons/fragment/AlarmRecord.vue';
+import operateRecord from '../commons/fragment/OperateRecord.vue';
+import policeOrder from '../commons/fragment/PoliceOrder.vue';
 
 Vue.use(VueRouter)
 
@@ -28,6 +31,9 @@ let routes = [{
 			{path:'',component:mainMaps},
 			{path:'/mainmap',component:mainMaps},
 			{path:'/devstatus',component:devStatus},
+			{path:'/alarmrecord',component:alarmRecord},
+			{path:'/operaterecord',component:operateRecord},
+			{path:'/policeorder',component:policeOrder},
 		]
 	}, 
 

@@ -1,35 +1,20 @@
 <template>
   <el-container class="map-all">
-    <!-- <div class="left-nav">
-      <el-input placeholder="输入关键字" v-model="filterText"> </el-input>
-      <el-tree
-        class="filter-tree"
-        :data="data"
-        :props="defaultProps"
-        :filter-node-method="filterNode"
-        ref="tree"
-        
-      >
-      </el-tree>
-    </div>
-  
-    <div class="content">
-      <main-map style="height:100%;"></main-map>
-    </div> -->
-    <el-row style="height:100%">
-      <el-col :span="6">
+
+    <el-row style="height: 100%; width: 100%">
+      <el-col :span="3" class="left-nav">
         <el-input placeholder="输入关键字" v-model="filterText"> </el-input>
 
-        <!-- <el-tree
+        <el-tree
           class="filter-tree"
           :data="data"
           :props="defaultProps"
           ref="tree"
         >
-        </el-tree> -->
+        </el-tree>
       </el-col>
-      <el-col :span="18">
-        <main-map style="height: 100%"></main-map>
+      <el-col :span="21" class="right-main">
+        <main-map style="height:99.8%;"></main-map>
       </el-col>
     </el-row>
   </el-container>
@@ -129,34 +114,25 @@ export default {
 </script>
 
 <style scoped>
-/* .map-all {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-}
-
-.map-all .left-nav {
-  display: inline;
-}
-
-.map-all .left-nav el-input {
-  display: block;
-}
-
-.map-all .content {
-  display: inline;
-  margin-left: 10px;
-  height: 100%;
-  width: 100%;
-}
-
-.map {
-  height: 100%;
-  width: 100%;
-} */
 
 .map-all {
   width: 100%;
-  height: 700px;
+  height: 100%;
 }
+.map-all .left-nav {
+  padding: 10px;
+  height: 100%;
+  border-right: 1px solid gray;
+}
+.map-all .left-nav .filter-tree {
+  height: 100%;
+  border: 1px solid gray;
+  margin-bottom: 3px;
+  margin-top: 10px;
+}
+ .right-main{
+  height: 100%;
+  width: 87.5%;
+}
+
 </style>

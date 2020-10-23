@@ -9,8 +9,8 @@
 							<img src="../../../assets/img/access/relay.png" alt="" class="table-img" />
 						</template>
 					</el-table-column>
-					<el-table-column prop="value" :label="$t('commons.serial_no')" width="60px"></el-table-column>
-					<el-table-column prop="label" :label="$t('access.zones')"></el-table-column>
+					<el-table-column prop="value" :label="$t('serial_no')" width="60px"></el-table-column>
+					<el-table-column prop="label" :label="$t('zones')"></el-table-column>
 
 				</el-table>
 			</el-col>
@@ -21,7 +21,7 @@
 						<img src="../../../assets/img/seticon/system_66_gray.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="11">
-						<span>{{$t('access.relay.telecontrol_relay_type')}}</span>
+						<span>{{$t('telecontrol_relay_type')}}</span>
 					</el-col>
 					<el-col :span="11" class="align-right">
 						<el-select v-model="relay_type_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;">
@@ -36,10 +36,10 @@
 						<img src="../../../assets/img/seticon/alarm_66_red.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="11">
-						<span>{{$t('access.relay.telecontrol_relay_mode_output')}}</span>
+						<span>{{$t('telecontrol_relay_mode_output')}}</span>
 					</el-col>
 					<el-col :span="11" class="align-right">
-						<el-select v-model="output_mode_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;"
+						<el-select v-model="output_mode_value" keep-alive size="mini" :placeholder="$t('select')" style="width: 90%;"
 						  :disabled="this.relay_type_value==1">
 							<el-option v-for="item in RelayOutputmodeList" :key="item.value" :label="item.label" :value="item.value">
 							</el-option>
@@ -52,7 +52,7 @@
 						<img src="../../../assets/img/access/category_66_gray.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="11">
-						<span>{{$t('access.relay.telecontrol_relay_output_type')}}</span>
+						<span>{{$t('telecontrol_relay_output_type')}}</span>
 					</el-col>
 					<el-col :span="11" class="align-right">
 						<el-select v-model="output_type_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;"
@@ -68,7 +68,7 @@
 						<img src="../../../assets/img/seticon/clock1_66_gray.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="11">
-						<span>{{$t('devSet.other.output_time')}}</span>
+						<span>{{$t('output_time')}}</span>
 					</el-col>
 					<el-col :span="11" class="align-right">
 						<el-select v-model="output_time_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;">
@@ -83,7 +83,7 @@
 						<img src="../../../assets/img/seticon/arm_66_red.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="11">
-						<span>{{$t('access.relay.telecontrol_relay_mode_zone')}}</span>
+						<span>{{$t('telecontrol_relay_mode_zone')}}</span>
 					</el-col>
 					<el-col :span="11" class="align-right">
 						<el-select v-model="zone_mode_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;"
@@ -99,7 +99,7 @@
 						<img src="../../../assets/img/access/shield_66_red.png" class="dev-set-list-img">
 					</el-col>
 					<el-col :span="11">
-						<span>{{$t('access.relay.telecontrol_relay_zone_num')}}</span>
+						<span>{{$t('telecontrol_relay_zone_num')}}</span>
 					</el-col>
 					<el-col :span="11" class="align-right">
 						<el-select v-model="zone_number_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;"
@@ -173,59 +173,59 @@
 				}, ],
 				RelayTypeList: [{
 					value: '1',
-					label: this.$t('access.relay.telecontrol_relay_event')
+					label: this.$t('telecontrol_relay_event')
 				}, {
 					value: '2',
-					label: this.$t('access.relay.telecontrol_relay_zone')
+					label: this.$t('telecontrol_relay_zone')
 				}],
 				
 				RelayOutputmodeList: [{
 					value: '0',
-					label: this.$t('devSet.other.mode_Impuls')
+					label: this.$t('mode_Impuls')
 				}, {
 					value: '1',
-					label: this.$t('devSet.other.mode_Fortsetzung')
+					label: this.$t('mode_Fortsetzung')
 				}],
 				RelayOutputTypeList: [{
 					value: '0',
-					label: this.$t('access.relay.telecontrol_relay_output_type_0')
+					label: this.$t('telecontrol_relay_output_type_0')
 				}, {
 					value: '1',
-					label: this.$t('access.relay.telecontrol_relay_output_type_1')
+					label: this.$t('telecontrol_relay_output_type_1')
 				}, {
 					value: '2',
-					label: this.$t('access.relay.telecontrol_relay_output_type_2')
+					label: this.$t('telecontrol_relay_output_type_2')
 				}, {
 					value: '3',
-					label: this.$t('access.relay.telecontrol_relay_output_type_3')
+					label: this.$t('telecontrol_relay_output_type_3')
 				}, {
 					value: '4',
-					label: this.$t('access.relay.telecontrol_relay_output_type_4')
+					label: this.$t('telecontrol_relay_output_type_4')
 				}, {
 					value: '5',
-					label: this.$t('access.relay.telecontrol_relay_output_type_5')
+					label: this.$t('telecontrol_relay_output_type_5')
 				}, {
 					value: '6',
-					label: this.$t('access.relay.telecontrol_relay_output_type_6')
+					label: this.$t('telecontrol_relay_output_type_6')
 				}, {
 					value: '7',
-					label: this.$t('access.relay.telecontrol_relay_output_type_7')
+					label: this.$t('telecontrol_relay_output_type_7')
 				}, {
 					value: '8',
-					label: this.$t('access.relay.telecontrol_relay_output_type_8')
+					label: this.$t('telecontrol_relay_output_type_8')
 				}],
 				ZoneModeList: [{
 					value: '0',
-					label: this.$t('access.relay.telecontrol_relay_mode_zone_0')
+					label: this.$t('telecontrol_relay_mode_zone_0')
 				}, {
 					value: '1',
-					label: this.$t('access.relay.telecontrol_relay_mode_zone_1')
+					label: this.$t('telecontrol_relay_mode_zone_1')
 				}, {
 					value: '2',
-					label: this.$t('access.relay.telecontrol_relay_mode_zone_2')
+					label: this.$t('telecontrol_relay_mode_zone_2')
 				}, {
 					value: '3',
-					label: this.$t('access.relay.telecontrol_relay_mode_zone_3')
+					label: this.$t('telecontrol_relay_mode_zone_3')
 				}, ],
 
 
