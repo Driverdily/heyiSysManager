@@ -1,4 +1,5 @@
 module.exports = {
+
 	// 通用
 	'date': '日期',
 	'alarm': '警情',
@@ -21,20 +22,19 @@ module.exports = {
 	'locate': '定位',
 	'operate': '操作',
 	'cancel': '取消',
-
+	'input_content':'请输入内容',
 	// 登录页面
-	'username': 'UserName',
-	'password': 'PassWord',
-	'login': 'Login',
-	'remember_pwd': 'Save Pwd',
-	'forget_pwd': 'Forgot password',
-	'register': 'Register an account',
-	'input_pwd': 'Please enter password',
-	'input_account': 'Please enteraccount',
-	'reset_pwd': 'Reset Password',
-	'input_email': 'Please enter secret security mailbox',
-	'enter': 'Ok',
-	'save': '保存',
+	'username': '用户名',
+	'password': '密码',
+	'login': '登录',
+	'remember_pwd': '记住密码',
+	'forget_pwd': '忘记密码',
+	'register': '注册账号',
+	'input_account': '请输入账号',
+	'input_pwd': '请输入密码',
+	'reset_pwd': '重置密码',
+	'input_email': '请输入密保邮箱',
+	'enter': '确定',
 
 	// 主页面
 	'report_time': '上报时间',
@@ -56,18 +56,34 @@ module.exports = {
 	'update_time': '更新时间',
 	'arm_status': '布撤防状态',
 	'net_type': '网络类型',
-	'alarm_record':'警情记录',
-	'operate_record':'操作记录',
-	'police_order':'处警单',
+	'alarm_record': '警情记录',
+	'operate_record': '操作记录',
+	'police_order': '处警单',
+
+	//设备状态
+	'online': '在线',
+	'all': '所有',
+	'offline': '离线',
+
+	//添加设备
+	'Device_data_verification': '设备数据校验',
+	'longitude': '经度',
+	'latitude': '纬度',
+	'location_name': '位置名称',
+	'detail_address': '详细地址',
+
+	//分组相关
+	'center_name':'中心名称',
+	'center_code':'中心编码',
 
 	//接警记录
 	'deal_alarm_time': '处警时间',
 	'alarm_analysis': '警情分析',
 	'deal_type': '处理方式',
-	'deal_time':'处理时间',
-	'deal_ps':'处理备注',
+	'deal_time': '处理时间',
+	'deal_ps': '处理备注',
+	'deal_status': '处理状态',
 	'alarm_dev': '报警设备',
-	'deal_status':'处理状态',
 	'duty_officer': '值班人员',
 	'alarm_person': '处警人员',
 	'alarm_person_number': '出警人数',
@@ -77,6 +93,8 @@ module.exports = {
 	'deal_result': '处理结果',
 	'alarm_account': '处警账号',
 
+
+
 	//操作记录
 	'serial_number': '编号',
 	'operate_time': '操作时间',
@@ -85,6 +103,18 @@ module.exports = {
 	'old_content': '原先内容',
 	'operate_person': '操作人',
 	'client_type': '客户端类型',
+	'police_type': '出警方式',
+	'weather_reason': '天气原因',
+	'Inspection_alarm': '巡检报警',
+	'Test_alarm': '测试报警',
+	'Real_alarm': '真实报警',
+	'Equipment_failure': '设备故障',
+	'False_positive': '误报',
+	'Security_team': '保安队',
+	'Police_team': '处警队',
+	'Police_station': '派出所',
+	'Joint_police': '联合处警',
+
 
 	// 设备设置页面
 	'alarmRecord_history': '警情历史',
@@ -384,6 +414,7 @@ module.exports = {
 
 	//RFID刷卡内容
 	'push_content': '刷卡通知内容',
+
 
 
 }

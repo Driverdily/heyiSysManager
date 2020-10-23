@@ -1,38 +1,79 @@
 <template>
   <div class="main_fragment_policeorder">
     <el-row style="height: 100%; width: 100%">
-      <el-col :span="4" class="left-nav p-10">
-        <span>值班人员</span> <br /><br />
-        <el-input size="mini"></el-input> <br /><br />
-        <span>处警人员</span> <br /><br />
-        <el-input size="mini"></el-input> <br /><br />
-        <span>警情分类</span> <br /><br />
-        <el-input size="mini"></el-input> <br /><br />
-        <span>出警方式</span> <br /><br />
-        <el-input size="mini"></el-input> <br /><br />
+      <el-col :span="3" class="left-nav p-20">
+        <div class="m-t-10">{{ $t("duty_officer") }}</div>
+        <el-input class="m-t-5 w-90" size="mini"></el-input>
+        <div class="m-t-10">{{ $t("alarm_person") }}</div>
+        <el-input class="m-t-5 w-90" size="mini"></el-input>
+        <div class="m-t-10">{{ $t("alarm_sort") }}</div>
+
+        <el-select
+          v-model="alarm_type_value"
+          keep-alive
+          size="mini"
+          :placeholder="$t('select')"
+          style="width: 90%"
+          class="m-t-5"
+        >
+          <el-option
+            v-for="item in alarmTypeList"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value"
+          >
+          </el-option>
+        </el-select>
+
+        <div class="m-t-10">{{ $t("police_type") }}</div>
+
+        <el-select
+          v-model="police_type_value"
+          keep-alive
+          size="mini"
+          :placeholder="$t('select')"
+          style="width: 90%"
+          class="m-t-5"
+        >
+          <el-option
+            v-for="item in policeTypeList"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value"
+          >
+          </el-option>
+        </el-select>
+
         <el-date-picker
           v-model="startTime"
           type="datetime"
-          placeholder="选择日期时间"
+          :placeholder="$t('select_time')"
           default-time="12:00:00"
+          class="m-t-20 w-90"
+          size="mini"
         >
         </el-date-picker>
 
         <el-date-picker
           v-model="endTime"
           type="datetime"
-          placeholder="选择日期时间"
+          :placeholder="$t('select_time')"
           default-time="12:00:00"
+          class="m-t-5 w-90"
+          size="mini"
         >
         </el-date-picker>
 
         <br /><br />
-        <el-button type="infor" style="padding: 7px 25px" size="mini"
-          >撤防</el-button
-        >
+        <el-button
+          type="infor"
+          style="padding: 7px 25px; width: 90%"
+          size="mini"
+          icon="el-icon-check"
+        ></el-button>
       </el-col>
 
-      <el-col :span="20">
+      <el-col :span="21">
         <el-table
           :data="alarmRecordData"
           stripe
@@ -109,6 +150,52 @@ export default {
     return {
       startTime: "",
       endTime: "",
+      alarm_type_value: "",
+      police_type_value: "",
+      alarmTypeList: [
+        {
+          value: 0,
+          label: this.$t("weather_reason"),
+        },
+        {
+          value: 1,
+          label: this.$t("Inspection_alarm"),
+        },
+        {
+          value: 2,
+          label: this.$t("Test_alarm"),
+        },
+        {
+          value: 3,
+          label: this.$t("Real_alarm"),
+        },
+        {
+          value: 4,
+          label: this.$t("Equipment_failure"),
+        },
+        {
+          value: 5,
+          label: this.$t("False_positive"),
+        },
+      ],
+      policeTypeList: [
+        {
+          value: 0,
+          label: this.$t("Security_team"),
+        },
+        {
+          value: 1,
+          label: this.$t("Police_team"),
+        },
+        {
+          value: 2,
+          label: this.$t("Test_alarm"),
+        },
+        {
+          value: 3,
+          label: this.$t("Police_station"),
+        },
+      ],
     };
   },
 };
@@ -118,5 +205,6 @@ export default {
 .main_fragment_policeorder .left-nav {
   border-right: 1px solid gray;
   height: 99%;
+  text-align: left;
 }
 </style>

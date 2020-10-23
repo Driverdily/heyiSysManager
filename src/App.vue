@@ -165,6 +165,9 @@ body {
 .m-t-10 {
   margin-top: 10px !important;
 }
+.m-t-20{
+  margin-top: 20px !important;
+}
 
 .m-r-10 {
   margin-right: 10px !important;
@@ -180,6 +183,22 @@ body {
 .p-10 {
   padding: 10px !important;
 }
+.p-15{
+  padding: 15px !important;
+}
+.p-20{
+  padding: 20px !important;
+}
+.w-80{
+  width: 80% !important; 
+}
+.w-90{
+  width: 90% !important;
+}
+.w-70{
+  width: 70% !important;
+}
+
 
 .bg-gray {
   background-color: #cccccc !important;

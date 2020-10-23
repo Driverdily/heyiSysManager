@@ -1,34 +1,41 @@
 <template>
   <div class="main_fragment_operaterecord">
     <el-row style="height: 100%; width: 100%">
-      <el-col :span="4" class="left-nav p-10">
-        <span>{{ $t("account") }}</span> <br /><br />
-        <el-input size="mini"></el-input> <br /><br />
+      <el-col :span="3" class="left-nav p-20">
+        <span class="m-t-10">{{ $t("account") }}</span>
+        <el-input class="m-t-5 w-90" size="mini"></el-input> <br /><br />
 
         <el-date-picker
           v-model="startTime"
           type="datetime"
-          placeholder="选择日期时间"
+          :placeholder="$t('select_time')"
           default-time="12:00:00"
+          size="mini"
+          class="m-t-10 w-90"
         >
         </el-date-picker>
-        <br/>
+        <br />
 
         <el-date-picker
           v-model="endTime"
           type="datetime"
-          placeholder="选择日期时间"
+          :placeholder="$t('select_time')"
           default-time="12:00:00"
+          size="mini"
+          class="m-t-5 w-90"
         >
         </el-date-picker>
 
         <br /><br />
-        <el-button type="infor" style="padding: 7px 25px" size="mini"
-          >撤防</el-button
-        >
+        <el-button
+          type="infor"
+          style="padding: 7px 25px; width: 90%"
+          size="mini"
+          icon="el-icon-check"
+        ></el-button>
       </el-col>
 
-      <el-col :span="20">
+      <el-col :span="21">
         <el-table
           :data="operateRecordData"
           stripe
@@ -95,5 +102,6 @@
 .main_fragment_operaterecord .left-nav {
   border-right: 1px solid gray;
   height: 99%;
+  text-align: left;
 }
 </style>

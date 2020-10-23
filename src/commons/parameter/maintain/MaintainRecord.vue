@@ -13,13 +13,9 @@
 		<!-- 时间 -->
 		<el-row class="dev-set-list-item">
 			<el-col :span="3" style="align-items: center;">
-
 				<img src="../../../assets/img/clock1_66_gray.png" class="dev-set-list-img">
-
 			</el-col>
-
 			<el-col :span="10" >
-
 				<span>{{$t('declare_time')}}</span>
 			</el-col>
 			<el-col :span="11" >
@@ -31,21 +27,15 @@
 		<!-- 故障描述 -->
 		<el-row class="dev-set-list-item">
 			<el-col :span="3" style="align-items: center;">
-
 				<img src="../../../assets/img/seticon/guzhang.png" class="dev-set-list-img">
-
 			</el-col>
-
 			<el-col :span="10" >
-
 				<span>{{$t('fault_description')}}</span>
 			</el-col>
 			<el-col :span="11" >
-				<el-input style="width: 90%;" type="textarea" :rows="2" placeholder="请输入内容" v-model="textarea">
+				<el-input style="width: 90%;" type="textarea" :rows="2" :placeholder="$t('input_content')" v-model="textarea">
 				</el-input>
-
 			</el-col>
-
 		</el-row>
 		<!-- 提交 -->
 		<el-row class="dev-set-list-item">
@@ -53,10 +43,6 @@
 				<el-button type="infor" style="float: right;margin-right: 1.25rem;padding: 7px 25px;" size="mini">提交</el-button>
 			</el-col>
 		</el-row>
-
-
-
-
 	</div>
 </template>
 
@@ -81,12 +67,8 @@
 						content: '描述问题的所在',
 						result: '描述结果的啥问题的'
 					},
-
-
 				],
 				form: {
-
-
 				}
 			}
 		},

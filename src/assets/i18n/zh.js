@@ -22,6 +22,7 @@ module.exports = {
 	'locate': '定位',
 	'operate': '操作',
 	'cancel': '取消',
+	'input_content':'请输入内容',
 
 	// 登录页面
 	'username': '用户名',
@@ -56,9 +57,25 @@ module.exports = {
 	'update_time': '更新时间',
 	'arm_status': '布撤防状态',
 	'net_type': '网络类型',
-	'alarm_record':'警情记录',
-	'operate_record':'操作记录',
-	'police_order':'处警单',
+	'alarm_record': '警情记录',
+	'operate_record': '操作记录',
+	'police_order': '处警单',
+
+	//设备状态
+	'online': '在线',
+	'all': '所有',
+	'offline':'离线',
+
+	//添加设备
+	'Device_data_verification':'设备数据校验',
+	'longitude':'经度',
+	'latitude':'纬度',
+	'location_name':'位置名称',
+	'detail_address':'详细地址',
+
+	//分组相关
+	'center_name':'中心名称',
+	'center_code':'中心编码',
 
 
 
@@ -66,9 +83,9 @@ module.exports = {
 	'deal_alarm_time': '处警时间',
 	'alarm_analysis': '警情分析',
 	'deal_type': '处理方式',
-	'deal_time':'处理时间',
-	'deal_ps':'处理备注',
-	'deal_status':'处理状态',
+	'deal_time': '处理时间',
+	'deal_ps': '处理备注',
+	'deal_status': '处理状态',
 	'alarm_dev': '报警设备',
 	'duty_officer': '值班人员',
 	'alarm_person': '处警人员',
@@ -78,6 +95,71 @@ module.exports = {
 	'live_situation': '现场情况',
 	'deal_result': '处理结果',
 	'alarm_account': '处警账号',
+	'alarm_content_0':'LORA模块恢复',
+	'alarm_content_1':'远程撤防',
+	'alarm_content_2':'开',
+	'alarm_content_3':'个人救护恢复',
+	'alarm_content_4':'报道失败',
+	'alarm_content_5':'报道失败恢复',
+	'alarm_content_6':'紧急按键报警',
+	'alarm_content_7':'紧急按键报警恢复',
+	'alarm_content_8':'求救按钮报警',
+	'alarm_content_9':'求救按钮报警恢复',
+	'alarm_content_10':'明火燃烧报警',
+	'alarm_content_11':'明火燃烧报警恢复',
+	'alarm_content_12':'消防水流报警',
+	'alarm_content_13':'消防水流报警恢复',
+	'alarm_content_14':'热感探头报警',
+	'alarm_content_15':'热感探头报警恢复',
+	'alarm_content_16':'火警手动报警',
+	'alarm_content_17':'火警手动报警恢复',
+	'alarm_content_18':'煤气泄漏',
+	'alarm_content_19':'煤气泄漏恢复',
+	'alarm_content_20':'火焰探头报警',
+	'alarm_content_21':'火焰探头报警恢复',
+	'alarm_content_22':'接近报警',
+	'alarm_content_23':'接近报警恢复',
+	'alarm_content_24':'无线烟感报警',
+	'alarm_content_25':'无线烟感报警恢复',
+	'alarm_content_26':'无线气感报警',
+	'alarm_content_27':'无线气感报警恢复',
+	'alarm_content_28':'进入允许挟持报警',
+	'alarm_content_29':'外出允许挟持报警',
+	'alarm_content_30':'室外报警',
+	'alarm_content_31':'室外报警恢复',
+	'alarm_content_32':'接近报警',
+	'alarm_content_33':'接近报警恢复',
+	'alarm_content_34':'入侵核实报警',
+	'alarm_content_35':'入侵核实报警恢复',
+	'alarm_content_36':'防移动报警',
+	'alarm_content_37':'防移动报警恢复',
+	'alarm_content_38':'振动报警',
+	'alarm_content_39':'振动报警恢复',
+	'alarm_content_40':'密码防猜报警',
+	'alarm_content_41':'密码防猜报警恢复',
+	'alarm_content_42':'关机报警',
+	'alarm_content_43':'开机报警',
+	'alarm_content_44':'开门',
+	'alarm_content_45':'关门',
+	'alarm_content_46':'玻璃破碎报警',
+	'alarm_content_47':'玻璃破碎报警恢复',
+	'alarm_content_48':'一般报警',
+	'alarm_content_49':'一般报警恢复',
+	'alarm_content_50':'总线开路报警',
+	'alarm_content_51':'总线开路报警恢复',
+	'police_type':'出警方式',
+	'weather_reason':'天气原因',
+	'Inspection_alarm':'巡检报警',
+	'Test_alarm':'测试报警',
+	'Real_alarm':'真实报警',
+	'Equipment_failure':'设备故障',
+	'False_positive':'误报',
+	'Security_team':'保安队',
+	'Police_team':'处警队',
+	'Police_station':'派出所',
+	'Joint_police':'联合处警',
+
+
 
 	//操作记录
 	'serial_number': '编号',
@@ -85,10 +167,10 @@ module.exports = {
 	'operate_type': '操作类型',
 	'operate_content': '操作内容',
 	'old_content': '原先内容',
-	'operate_person':'操作人',
-	'client_type':'客户端类型',
-	
-	
+	'operate_person': '操作人',
+	'client_type': '客户端类型',
+     
+
 
 
 	// 设备设置页面

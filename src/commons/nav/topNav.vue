@@ -31,7 +31,7 @@
           <span slot="title">设备状态</span>
         </el-menu-item>
 
-        <el-submenu>
+        <el-submenu index="4">
           <template slot="title">
             <i class="el-icon-s-data"></i>
             <span slot="title">记录列表</span>

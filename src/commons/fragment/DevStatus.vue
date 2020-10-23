@@ -1,44 +1,39 @@
 <template>
   <div class="main_fragment_devstatus">
     <el-row style="height: 100%; width: 100%">
-      <el-col :span="4" class="left-nav">
-        <span>设备编号</span> <br /><br />
-        <el-input size="mini"></el-input> <br /><br />
-        <span> 设备名称</span> <br /><br />
-        <el-input size="mini"></el-input> <br /><br />
+      <el-col :span="3" class="left-nav p-20">
+        <div class="m-t-10">{{$t('dev_number')}}</div> 
+        <el-input class="m-t-5" size="mini"></el-input> 
+        <div class="m-t-10"> {{$t('dev_name')}}</div> 
+        <el-input class="m-t-5" size="mini"></el-input> 
 
         <el-button
           type="infor"
           size="mini"
           icon="el-icon-check"
+          style="width: 100%"
+          class="m-t-20"
         ></el-button>
 
         <br /><br />
 
-	<el-button type="infor" style="padding: 7px 25px;" >所有</el-button>
-		
-<br /><br />
-<el-button type="infor" style="padding: 7px 25px;" size="mini">在线</el-button>
-	
-<br /><br />
-<el-button type="infor" style="padding: 7px 25px;" size="mini">离线</el-button>
-	
-<br /><br />
-<el-button type="infor" style="padding: 7px 25px;" size="mini">布防</el-button>
-	
-<br /><br />
-<el-button type="infor" style="padding: 7px 25px;" size="mini">撤防</el-button>
-	
+        <el-button type="infor" class="status">{{$t('all')}}</el-button>
+
+        <br />
+        <el-button type="infor" class="status" size="mini">{{$t('online')}}</el-button>
+
+        <br />
+        <el-button type="infor" class="status" size="mini">{{$t('offline')}}</el-button>
+
+        <br />
+        <el-button type="infor" class="status" size="mini">{{$t('arm')}}</el-button>
+
+        <br />
+        <el-button type="infor" class="status" size="mini">{{$t('disarm')}}</el-button>
       </el-col>
 
-      <el-col :span="20">
-        <el-table
-          :data="statusData"
-          stripe
-          style="width: 100%; overflow: scroll; height: 90%"
-          size="mini"
-          border
-        >
+      <el-col :span="21">
+        <el-table :data="statusData" stripe size="mini" border>
           <el-table-column
             prop="group_name"
             :label="$t('group_name')"
@@ -110,10 +105,7 @@
             :label="$t('expire_time')"
           ></el-table-column>
 
-          <el-table-column
-            prop="ps"
-            :label="$t('ps')"
-          ></el-table-column>
+          <el-table-column prop="ps" :label="$t('ps')"></el-table-column>
         </el-table>
       </el-col>
     </el-row>
@@ -139,5 +131,11 @@ export default {
   padding: 15px;
   height: 100%;
   border-right: 1px solid gray;
+  text-align: left;
+}
+.main_fragment_devstatus .left-nav .status {
+  padding: 7px 25px;
+  width: 100%;
+  margin-top: 5px;
 }
 </style>
