@@ -22,7 +22,7 @@ module.exports = {
 	'locate': '定位',
 	'operate': '操作',
 	'cancel': '取消',
-	'input_content':'请输入内容',
+	'input_content': '请输入内容',
 	// 登录页面
 	'username': '用户名',
 	'password': '密码',
@@ -71,10 +71,10 @@ module.exports = {
 	'latitude': '纬度',
 	'location_name': '位置名称',
 	'detail_address': '详细地址',
-
+	'alarm_dev': '报警主机',
 	//分组相关
-	'center_name':'中心名称',
-	'center_code':'中心编码',
+	'center_name': '中心名称',
+	'center_code': '中心编码',
 
 	//接警记录
 	'deal_alarm_time': '处警时间',

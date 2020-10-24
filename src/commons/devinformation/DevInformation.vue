@@ -169,7 +169,7 @@
 	}
 </script>
 
-<style>
+<style >
 	.h-800px {
 		height: 750px;
 		width: 1100px;

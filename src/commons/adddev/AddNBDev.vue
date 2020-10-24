@@ -58,13 +58,13 @@
             <!-- 位置名称 -->
             <el-row class="dev-set-list-item-no">
               <el-col :span="6">
-                <span>{{ $t("location_name") }}</span>
+                <span>{{ $t("location_name") }}</span> 
               </el-col>
               <el-col :span="18">
                 <el-input class="w-90" size="mini"></el-input>
               </el-col>
             </el-row>
-            <!-- 详细地址 -->
+            <!-- --详细地址-- -->
             <el-row class="dev-set-list-item-no">
               <el-col :span="6">
                 <span>{{ $t("detail_address") }}</span>
@@ -77,10 +77,10 @@
             <el-row class="dev-set-list-item-no">
               <el-col :span="24">
                 <el-button
-                  class="w-90"
-                  style="float: right;"
+                  style="float: right; margin-right: 25px; width: 30%"
                   size="mini"
-                >{{$t('locate')}}</el-button>
+                  >{{ $t("locate") + ">>" }}</el-button
+                >
               </el-col>
             </el-row>
           </div>
@@ -201,5 +201,49 @@ export default {
 </script>
 
 
-<style scoped>
+<style >
+.h-800px {
+  height: 750px;
+  width: 1100px;
+  margin-top: 90px !important;
+}
+
+.el-dialog__body {
+  padding: 1px 0px !important;
+}
+
+.el-tabs--left .el-tabs__header.is-left {
+  margin-right: 1px !important;
+}
+
+.table-img {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  font-size: 32px;
+}
+
+.box-card {
+  margin: 20px 10px 20px;
+  border: 0.5px solid lightgray;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+  padding: 5px;
+  background: #f0eff5;
+}
+
+.box-card .box-title {
+  position: relative;
+  width: auto;
+  top: -19px;
+  margin-left: 40px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0.5px solid lightgray;
+}
 </style>

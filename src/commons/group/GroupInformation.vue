@@ -13,17 +13,14 @@
         <el-col :span="9" style="height: 100%; border-right: 1px solid gray">
           <div>{{ $t("group_name") }}</div>
           <el-input class="w-90" size="mini"></el-input>
-
           <el-row class="dev-set-list-item-no">
             <el-col :span="18">
               <span>{{ $t("center_name") }}</span>
             </el-col>
-
             <el-col :span="6">
               <span>{{ $t("center_code") }}</span>
             </el-col>
           </el-row>
-
           <el-row class="dev-set-list-item-no">
             <el-col :span="18">
               <el-input class="w-90" size="mini"></el-input>
@@ -36,12 +33,10 @@
             <el-col :span="18">
               <span>{{ $t("contect_person") }}</span>
             </el-col>
-
             <el-col :span="6">
               <span>{{ $t("contect_phone") }}</span>
             </el-col>
           </el-row>
-
           <el-row class="dev-set-list-item-no">
             <el-col :span="18">
               <el-input class="w-90" size="mini"></el-input>
@@ -82,7 +77,6 @@
               >
             </el-col>
           </el-row>
-
           <el-row class="dev-set-list-item-no">
             <el-col :span="12">
               <el-button style="width: 50%" size="mini" type="info"
@@ -96,7 +90,6 @@
             </el-col>
           </el-row>
         </el-col>
-
         <el-col :span="15" style="height: 100%">
           <common-map></common-map>
         </el-col>

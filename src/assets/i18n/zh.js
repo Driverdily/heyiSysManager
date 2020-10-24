@@ -72,6 +72,8 @@ module.exports = {
 	'latitude':'纬度',
 	'location_name':'位置名称',
 	'detail_address':'详细地址',
+    'alarm_dev':'报警主机',
+
 
 	//分组相关
 	'center_name':'中心名称',

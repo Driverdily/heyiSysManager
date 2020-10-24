@@ -1,54 +1,53 @@
 <template>
- <div>
- 
-  <baidu-map
-    class="main-map-view"
-    :center="map.center"
-    :zoom="map.zoom"
-    @ready="handler"
-    :scroll-wheel-zoom="true"
-  >
-    <!--缩放-->
-    <bm-navigation anchor="BMAP_ANCHOR_TOP_LEFT"></bm-navigation>
-    <!--定位-->
-    <bm-geolocation
-      anchor="BMAP_ANCHOR_BOTTOM_RIGHT"
-      :showAddressBar="true"
-      :autoLocation="true"
-    ></bm-geolocation>
-    <!--点-->
-    <bm-marker
-      :position="map.center"
-      :dragging="map.dragging"
-      animation="BMAP_ANIMATION_DROP"
+  <div>
+    <baidu-map
+      class="main-map-view"
+      :center="map.center"
+      :zoom="map.zoom"
+      @ready="handler"
+      :scroll-wheel-zoom="true"
     >
-      <!--提示信息-->
-      <bm-info-window :show="map.show" style="padding: 8px">
-        <span style="font-weight: bold">518C-0355</span><br />
-        <hr />
-        <span>设备编号:<span style="color: green">00080355</span> </span> <br />
-        <span>在线状态:<span style="color: red">离线</span></span>
-        <table style="text-align: center; width: auto; height: auto">
-          <tr>
-            <td @click="showAlarmSetDialog">离家布防</td>
-            <td>在家布防</td>
-            <td>远程撤防</td>
-          </tr>
-          <tr>
-            <td @click="showSetDialog">参数设置</td>
-            <td @click="showAccessDialog">配件管理</td>
-            <td>查看警情</td>
-          </tr>
-          <tr>
-            <td @click="showInformationDialog">设备信息</td>
-            <td>视频监控</td>
-            <td>防区信息</td>
-          </tr>
-        </table>
-      </bm-info-window>
-    </bm-marker>
-  </baidu-map>
- 
+      <!--缩放-->
+      <bm-navigation anchor="BMAP_ANCHOR_TOP_LEFT"></bm-navigation>
+      <!--定位-->
+      <bm-geolocation
+        anchor="BMAP_ANCHOR_BOTTOM_RIGHT"
+        :showAddressBar="true"
+        :autoLocation="true"
+      ></bm-geolocation>
+      <!--点-->
+      <bm-marker
+        :position="map.center"
+        :dragging="map.dragging"
+        animation="BMAP_ANIMATION_DROP"
+      >
+        <!--提示信息-->
+        <bm-info-window :show="map.show" style="padding: 8px">
+          <span style="font-weight: bold">518C-0355</span><br />
+          <hr />
+          <span>设备编号:<span style="color: green">00080355</span> </span>
+          <br />
+          <span>在线状态:<span style="color: red">离线</span></span>
+          <table style="text-align: center; width: auto; height: auto">
+            <tr>
+              <td @click="showAlarmSetDialog">离家布防</td>
+              <td @click="showAddAlarmDevDialog">在家布防</td>
+              <td @click="showAddNbDialog">远程撤防</td>
+            </tr>
+            <tr>
+              <td @click="showSetDialog">参数设置</td>
+              <td @click="showAccessDialog">配件管理</td>
+              <td>查看警情</td>
+            </tr>
+            <tr>
+              <td @click="showInformationDialog">设备信息</td>
+              <td>视频监控</td>
+              <td>防区信息</td>
+            </tr>
+          </table>
+        </bm-info-window>
+      </bm-marker>
+    </baidu-map>
 
     <dev-setting
       ref="setMission"
@@ -71,7 +70,17 @@
       :visible.sync="setAccessVisible"
     ></dev-access>
 
-</div>
+    <add-alarm
+      ref="addalarmMission"
+      v-if="setAddAlarmVisible"
+      :visible.sync="setAddAlarmVisible"
+    ></add-alarm>
+    <add-nb-dev
+      ref="addNbMission"
+      v-if="setAddNbVisible"
+      :visible.sync="setAddNbVisible"
+    ></add-nb-dev>
+  </div>
 </template>
 
 
@@ -80,6 +89,8 @@ import DevSetting from "../parameter/DevSetting.vue";
 import DevInformation from "../devinformation/DevInformation.vue";
 import AlarmSet from "../alarmparameter/DevSetting.vue";
 import DevAccess from "../access/DevAccessSetting.vue";
+import AddAlarm from "../adddev/AddAlarmDev.vue";
+import AddNbDev from "../adddev/AddNBDev.vue";
 
 export default {
   components: {
@@ -87,6 +98,8 @@ export default {
     DevInformation,
     AlarmSet,
     DevAccess,
+    AddAlarm,
+    AddNbDev,
   },
 
   data() {
@@ -95,6 +108,8 @@ export default {
       informationVisible: false,
       setAlarmVisible: false,
       setAccessVisible: false,
+      setAddAlarmVisible: false,
+      setAddNbVisible: false,
       map: {
         center: {
           lng: 121.447254,
@@ -217,11 +232,19 @@ export default {
     },
     showAlarmSetDialog() {
       this.setAlarmVisible = true;
-      console.log("点击撤防", this.setAlarmVisible);
+      console.log("点击离家布防", this.setAlarmVisible);
     },
     showAccessDialog() {
       this.setAccessVisible = true;
       console.log("点击配件", this.setAlarmVisible);
+    },
+    showAddAlarmDevDialog() {
+      this.setAddAlarmVisible = true;
+      console.log("点击在家布防", this.setAddAlarmVisible);
+    },
+    showAddNbDialog() {
+      this.setAddNbVisible = true;
+      console.log("点击撤防", this.setAddNbVisible);
     },
   },
   watch: {

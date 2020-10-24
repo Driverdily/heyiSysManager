@@ -2,7 +2,7 @@
   <el-dialog
     :visible.sync="visible"
     customClass="h-800px"
-    title="配件管理"
+    :title="$t('alarm_dev')"
     :close-on-press-escape="false"
     :close-on-click-modal="false"
     append-to-body
@@ -11,6 +11,8 @@
     <div>
       <el-row style="height: 692px; border-top: 0.5px solid gray">
         <el-col :span="9" style="height: 100%; border-right: 1px solid gray">
+      
+      <!-- 设备信息 -->
           <div class="box-card">
             <!-- 设备信息 -->
             <span class="box-title">{{ $t("dev_information") }}</span>
@@ -76,6 +78,7 @@
                 }}</el-button>
               </el-col>
             </el-row>
+
           </div>
 
           <!-- 联系人信息-- -->
@@ -194,6 +197,7 @@
               </el-col>
             </el-row>
           </div>
+        <!-- 保存信息 -->
           <div class="box-card">
             <span class="box-title">{{ $t("operate") }}</span>
             <el-row class="dev-set-list-item-no">
@@ -302,4 +306,49 @@ export default {
 
 
 <style scoped>
+.h-800px {
+		height: 750px;
+		width: 1100px;
+		margin-top: 90px !important;
+	}
+
+	.el-dialog__body {
+		padding: 1px 0px !important;
+	}
+
+	.el-tabs--left .el-tabs__header.is-left {
+		margin-right: 1px !important;
+
+	}
+
+	.table-img {
+		min-width: 24px;
+		width: 24px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 12px;
+		font-size: 32px;
+	}
+
+	.box-card {
+		margin: 20px 10px 20px;
+		border: 0.5px solid lightgray;
+		border-radius: 5px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+		padding: 5px;
+		background: #f0eff5;
+	}
+
+	.box-card .box-title {
+		position: relative;
+		width: auto;
+		top: -19px;
+		margin-left: 40px;
+		background-color: white;
+		padding: 5px;
+		border-radius: 5px;
+		border: 0.5px solid lightgray;
+	}
 </style>
