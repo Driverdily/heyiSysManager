@@ -58,7 +58,7 @@
             <!-- 位置名称 -->
             <el-row class="dev-set-list-item-no">
               <el-col :span="6">
-                <span>{{ $t("location_name") }}</span> 
+                <span>{{ $t("location_name") }}</span>
               </el-col>
               <el-col :span="18">
                 <el-input class="w-90" size="mini"></el-input>
@@ -79,8 +79,8 @@
                 <el-button
                   style="float: right; margin-right: 25px; width: 30%"
                   size="mini"
-                  >{{ $t("locate") + ">>" }}</el-button
-                >
+                  >{{ $t("locate") + ">>" }}
+                </el-button>
               </el-col>
             </el-row>
           </div>
@@ -117,7 +117,7 @@
                 ></el-input>
               </el-col>
             </el-row>
-            <!-- 地址 -->
+            <!-- 地址-- -->
             <el-row class="dev-set-list-item-no">
               <el-col :span="24">
                 <el-input
