@@ -21,7 +21,7 @@
 				<span>{{$t('net_aisle')}}</span>
 			</el-col>
 			<el-col :span="7" class="align-right">
-				<el-select v-model="net_aisle_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;">
+				<el-select v-model="net_aisle_value" keep-alive size="mini" :placeholder="$t('select')" style="width: 90%;">
 					<el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
 					</el-option>
 				</el-select>
@@ -39,7 +39,7 @@
 				<el-input size="mini"></el-input>
 			</el-col>
 			<el-col :span="3" class="align-right">
-				<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('commons.change')}}</el-button>
+				<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('change')}}</el-button>
 			</el-col>
 
 		</el-row>

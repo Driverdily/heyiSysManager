@@ -1,81 +1,83 @@
 <template>
-  <div class="header">
-    <div class="header-left-box">
-      <div class="header-logo">
-        <img
-          src="../../assets/img/bg_logo_s.png"
-          title="LightYear"
-          alt="LightYear"
-          class="img-logo"
-        />
+  <div>
+    <div class="header">
+      <div class="header-left-box">
+        <div class="header-logo">
+          <img
+            src="../../assets/img/bg_logo_s.png"
+            title="LightYear"
+            alt="LightYear"
+            class="img-logo"
+          />
+        </div>
+        <el-menu
+          class="header-nav"
+          mode="horizontal"
+          text-color="#fff"
+          background-color="#3060ff"
+          active-text-color="#fff"
+          :default-active="this.$route.path"
+          router
+        >
+          <el-menu-item index="/bigscreen">
+            <i class="el-icon-s-home"></i>
+            <span slot="title">工作台</span>
+          </el-menu-item>
+          <el-menu-item index="/mainmap">
+            <i class="el-icon-location"></i>
+            <span slot="title">控制台</span>
+          </el-menu-item>
+          <el-menu-item index="/devstatus">
+            <i class="el-icon-s-platform"></i>
+            <span slot="title">设备状态</span>
+          </el-menu-item>
+
+          <el-submenu index="4">
+            <template slot="title">
+              <i class="el-icon-s-data"></i>
+              <span slot="title">记录列表</span>
+            </template>
+
+            <el-menu-item index="/alarmrecord">
+              {{ $t("alarm_record") }}
+            </el-menu-item>
+            <el-menu-item index="/operaterecord">
+              {{ $t("operate_record") }}
+            </el-menu-item>
+            <el-menu-item index="/policeorder">
+              {{ $t("police_order") }}
+            </el-menu-item>
+          </el-submenu>
+
+          <el-menu-item index="/mainmap">
+            <i class="el-icon-d-caret"></i>
+            <span slot="title">待用列表</span>
+          </el-menu-item>
+        </el-menu>
       </div>
-      <el-menu
-        class="header-nav"
-        mode="horizontal"
-        text-color="#fff"
-        background-color="#3060ff"
-        active-text-color="#fff"
-        :default-active="this.$route.path"
-        router
-      >
-        <el-menu-item index="/mainmap">
-          <i class="el-icon-s-home"></i>
-          <span slot="title">工作台</span>
-        </el-menu-item>
-        <el-menu-item index="/mainmap">
-          <i class="el-icon-location"></i>
-          <span slot="title">控制台</span>
-        </el-menu-item>
-        <el-menu-item index="/devstatus">
-          <i class="el-icon-s-platform"></i>
-          <span slot="title">设备状态</span>
-        </el-menu-item>
 
-        <el-submenu index="4">
-          <template slot="title">
-            <i class="el-icon-s-data"></i>
-            <span slot="title">记录列表</span>
-          </template>
-
-          <el-menu-item index="/alarmrecord">
-            {{ $t("alarm_record") }}
-          </el-menu-item>
-          <el-menu-item index="/operaterecord">
-            {{ $t("operate_record") }}
-          </el-menu-item>
-          <el-menu-item index="/policeorder">
-            {{ $t("police_order") }}
-          </el-menu-item>
-        </el-submenu>
-
-        <el-menu-item index="/mainmap">
-          <i class="el-icon-d-caret"></i>
-          <span slot="title">待用列表</span>
-        </el-menu-item>
-      </el-menu>
-    </div>
-
-    <div class="header-right-box">
-      <el-dropdown trigger="hover" @command="handleCommand">
-        <span class="el-dropdown-link">
-          <img src="../../assets/img/login_title.png" />
-          <i class="el-icon-arrow-down el-icon--right"></i>
-        </span>
-        <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item icon="el-icon-user" command="/allmap"
-            >个人信息</el-dropdown-item
-          >
-          <el-dropdown-item icon="el-icon-circle-plus"
-            >我的设置</el-dropdown-item
-          >
-          <el-dropdown-item icon="el-icon-circle-plus-outline"
-            >修改密码</el-dropdown-item
-          >
-          <el-dropdown-item icon="el-icon-circle-check" divided
-            >退出登录</el-dropdown-item
-          >
-        </el-dropdown-menu>
-      </el-dropdown>
+      <div class="header-right-box">
+        <el-dropdown trigger="hover" @command="handleCommand">
+          <span class="el-dropdown-link">
+            <img src="../../assets/img/login_title.png" />
+            <i class="el-icon-arrow-down el-icon--right"></i>
+          </span>
+          <el-dropdown-menu slot="dropdown">
+            <el-dropdown-item icon="el-icon-user" command="/allmap"
+              >个人信息</el-dropdown-item
+            >
+            <el-dropdown-item icon="el-icon-circle-plus"
+              >我的设置</el-dropdown-item
+            >
+            <el-dropdown-item icon="el-icon-circle-plus-outline"
+              >修改密码</el-dropdown-item
+            >
+            <el-dropdown-item icon="el-icon-circle-check" divided
+              >退出登录</el-dropdown-item
+            >
+          </el-dropdown-menu>
+        </el-dropdown>
+      </div>
     </div>
   </div>
 </template>

@@ -22,7 +22,7 @@ export default {
 
 <style>
 #app {
-  font-family: Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif, "Helvetica Neue", Arial;
   text-align: center;
   height: 100%;
 }
@@ -79,7 +79,14 @@ body {
 .align-center {
   text-align: center;
 }
-
+.clearfix ::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
 .h-80 {
   height: 80%;
 }
@@ -91,6 +98,12 @@ body {
 /* 字体大小 */
 .fa-1x {
   font-size: 1em;
+}
+.fa-0-75x {
+  font-size: 12px;
+}
+.fa-0-87x {
+  font-size: 14px;
 }
 
 .fa-1-2x {
@@ -165,7 +178,7 @@ body {
 .m-t-10 {
   margin-top: 10px !important;
 }
-.m-t-20{
+.m-t-20 {
   margin-top: 20px !important;
 }
 
@@ -183,22 +196,25 @@ body {
 .p-10 {
   padding: 10px !important;
 }
-.p-15{
-  padding: 15px !important;
-}
-.p-20{
-  padding: 20px !important;
-}
-.w-80{
-  width: 80% !important; 
-}
-.w-90{
-  width: 90% !important;
-}
-.w-70{
-  width: 70% !important;
+.p-5 {
+  padding: 5px !important;
 }
 
+.p-15 {
+  padding: 15px !important;
+}
+.p-20 {
+  padding: 20px !important;
+}
+.w-80 {
+  width: 80% !important;
+}
+.w-90 {
+  width: 90% !important;
+}
+.w-70 {
+  width: 70% !important;
+}
 
 .bg-gray {
   background-color: #cccccc !important;
@@ -206,5 +222,11 @@ body {
 
 .txt-bold {
   font-weight: 500;
+}
+.border-right {
+  border-right: 1px solid #ccc;
+}
+.border-left {
+  border-left: 1px solid #ccc;
 }
 </style>

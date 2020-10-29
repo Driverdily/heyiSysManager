@@ -37,12 +37,12 @@
             <tr>
               <td @click="showSetDialog">参数设置</td>
               <td @click="showAccessDialog">配件管理</td>
-              <td>查看警情</td>
+              <td><router-link :to="'/alarmrecord'">查看警情</router-link></td>
             </tr>
             <tr>
               <td @click="showInformationDialog">设备信息</td>
-              <td>视频监控</td>
-              <td>防区信息</td>
+              <td>暂无</td>
+              <td>暂无</td>
             </tr>
           </table>
         </bm-info-window>

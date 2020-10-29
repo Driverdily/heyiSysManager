@@ -3,13 +3,6 @@
     <top-nav class="top"></top-nav>
     <router-view class="container"> </router-view>
     <bottom-nav class="bottom"></bottom-nav>
-
-    <!-- <el-container>
-  <el-header> <top-nav></top-nav> </el-header>
- <el-main> <router-view></router-view> </el-main>
- <el-footer> <bottom-nav></bottom-nav> </el-footer>
-
-</el-container> -->
   </div>
 </template>
 
@@ -28,20 +21,27 @@ export default {
 <style >
 .main-container {
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  display: block;
+  overflow: hidden;
 }
 .main-container .top {
-  height: 80px;
-  flex: 0 0 auto;
-}
-.main-container .bottom {
-  border-top: 3px double gray;
-  height: 240px;
-  flex: 0 0 auto;
+  height: 72px;
+  display: block;
+  width: 100%;
 }
 
+.main-container .bottom {
+  position: absolute;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  z-index: 100;
+}
 .main-container .container {
-  flex: 1 1 auto;
+  display: block;
+  margin: 2px 0px 200px 0px;
+  width: 100%;
+  height: calc(100% - 272px);
+  overflow: hidden;
 }
 </style>

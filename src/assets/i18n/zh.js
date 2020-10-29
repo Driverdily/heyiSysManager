@@ -11,7 +11,7 @@ module.exports = {
 	'select': '请选择',
 	'change': '修改',
 	'delete': '删除',
-	'enter': '确定',
+	'enter': '确 定',
 	'open': '开',
 	'close': '关',
 	'week': '星期',
@@ -21,8 +21,9 @@ module.exports = {
 	'open_close': '开/关',
 	'locate': '定位',
 	'operate': '操作',
-	'cancel': '取消',
+	'cancel': '取 消',
 	'input_content':'请输入内容',
+	'transfer_dev':'转让设备',
 
 	// 登录页面
 	'username': '用户名',

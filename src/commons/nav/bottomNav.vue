@@ -3,7 +3,7 @@
     <el-table
       :data="pushData"
       stripe
-      style="width: 100%; overflow: scroll; height: 90%"
+      style="width: 100%; overflow: scroll; height: 100%"
       size="mini"
       :cell-style="{ padding: '0' }"
       border

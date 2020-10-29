@@ -110,7 +110,7 @@
 					</el-col>
 				</el-row>
 				<el-row style="margin-top: 120px;text-align: center;">
-					<el-button type="infor" style="padding: 10px 95px;" size="mini">{{$t('commons.save')}}</el-button>
+					<el-button type="infor" style="padding: 10px 95px;" size="mini">{{$t('save')}}</el-button>
 				</el-row>
 
 			</el-col>

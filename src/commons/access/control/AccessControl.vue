@@ -25,11 +25,11 @@
 			<el-col :span="16">
 				<div style="height: 100%;text-align: center;margin-top: 300px;">
 
-					<el-button type="infor" style="padding: 10px 95px;" size="mini">{{$t('access.zone.enrolling')}}</el-button>
+					<el-button type="infor" style="padding: 10px 95px;" size="mini">{{$t('enrolling')}}</el-button>
 					<br />
-					<el-button type="infor" style="padding: 10px 80px;" size="mini">{{$t('access.zone.re_code')}}</el-button>
+					<el-button type="infor" style="padding: 10px 80px;" size="mini">{{$t('re_code')}}</el-button>
 					<br />
-					<el-button type="infor" style="padding: 10px 80px;" size="mini">{{$t('access.zone.delete_code')}}</el-button>
+					<el-button type="infor" style="padding: 10px 80px;" size="mini">{{$t('delete_code')}}</el-button>
 				</div>
 			</el-col>
 		</el-row>

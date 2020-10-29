@@ -23,6 +23,7 @@ module.exports = {
 	'operate': '操作',
 	'cancel': '取消',
 	'input_content': '请输入内容',
+	'transfer_dev':'转让设备',
 	// 登录页面
 	'username': '用户名',
 	'password': '密码',

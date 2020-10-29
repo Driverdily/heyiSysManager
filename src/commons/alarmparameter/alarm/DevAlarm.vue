@@ -67,7 +67,7 @@
 				<el-input size="mini"></el-input>
 			</el-col>
 			<el-col :span="3">
-				<el-button type="infor" size="mini" style="margin-left: 5px;">{{$t('commons.change')}}</el-button>
+				<el-button type="infor" size="mini" style="margin-left: 5px;">{{$t('change')}}</el-button>
 			</el-col>
 			<el-col :span="2" class="align-right">
 				<span>0-255</span>
@@ -85,7 +85,7 @@
 				<el-input size="mini"></el-input>
 			</el-col>
 			<el-col :span="3">
-				<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('commons.change')}}</el-button>
+				<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('change')}}</el-button>
 			</el-col>
 			<el-col :span="2" class="align-right">
 				<span>0-255</span>
@@ -110,7 +110,7 @@
 				<el-input size="mini"></el-input>
 			</el-col>
 			<el-col :span="3">
-				<el-button type="infor" size="mini" style="margin-left: 5px;">{{$t('commons.change')}}</el-button>
+				<el-button type="infor" size="mini" style="margin-left: 5px;">{{$t('change')}}</el-button>
 			</el-col>
 			<el-col :span="2" class="align-right">
 				<span>0-15</span>
@@ -125,7 +125,7 @@
 				<span>{{$t('sos_key')}}</span>
 			</el-col>
 			<el-col :span="11" class="align-right">
-				<el-select v-model="sos_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;">
+				<el-select v-model="sos_value" keep-alive size="mini" :placeholder="$t('select')" style="width: 90%;">
 					<el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
 					</el-option>
 				</el-select>
@@ -142,8 +142,8 @@
 			<el-col :span="8" style=" border: 1px solid #C0C4CC;height: 100%;">
 				<el-table ref="singleTable" :data="phoneDate" style="width: 100% ;" size="mini" highlight-current-row
 				 @current-change="handleCurrentChange" :cell-style="{padding: '0'}">
-					<el-table-column prop="serial" :label="$t('commons.serial_no')"></el-table-column>
-					<el-table-column prop="value" :label="$t('alarmphone.phone')"></el-table-column>
+					<el-table-column prop="serial" :label="$t('serial_no')"></el-table-column>
+					<el-table-column prop="value" :label="$t('phone')"></el-table-column>
 				</el-table>
 			</el-col>
 			<el-col :span="16" style="">
@@ -156,7 +156,7 @@
 						<span>{{$t('alarm_type')}}</span>
 					</el-col>
 					<el-col :span="11" class="align-right">
-						<el-select v-model="alarm_type_value" keep-alive size="mini" :placeholder="$t('commons.select')" style="width: 90%;">
+						<el-select v-model="alarm_type_value" keep-alive size="mini" :placeholder="$t('select')" style="width: 90%;">
 							<el-option v-for="item in phoneValues" :key="item.value" :label="item.labels" :value="item.value">
 							</el-option>
 						</el-select>
@@ -218,7 +218,7 @@
 					<el-input size="mini"></el-input>
 				</el-col>
 				<el-col :span="3" class="align-right">
-					<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('commons.change')}}</el-button>
+					<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('change')}}</el-button>
 				</el-col>
 			</el-row>
 

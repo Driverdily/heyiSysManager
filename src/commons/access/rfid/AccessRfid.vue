@@ -35,16 +35,16 @@
 						<el-input size="mini"></el-input>
 					</el-col>
 					<el-col :span="3" class="align-right">
-						<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('commons.change')}}</el-button>
+						<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('change')}}</el-button>
 					</el-col>
 				</el-row>
 
 				<div style="margin-top: 100px;text-align: center;">
-					<el-button type="infor" style="padding: 10px 95px;" size="mini">{{$t('access.zone.enrolling')}}</el-button>
+					<el-button type="infor" style="padding: 10px 95px;" size="mini">{{$t('enrolling')}}</el-button>
 					<br />
-					<el-button type="infor" style="padding: 10px 80px;" size="mini">{{$t('access.zone.re_code')}}</el-button>
+					<el-button type="infor" style="padding: 10px 80px;" size="mini">{{$t('re_code')}}</el-button>
 					<br />
-					<el-button type="infor" style="padding: 10px 80px;" size="mini">{{$t('access.zone.delete_code')}}</el-button>
+					<el-button type="infor" style="padding: 10px 80px;" size="mini">{{$t('delete_code')}}</el-button>
 				</div>
 			</el-col>
 		</el-row>
