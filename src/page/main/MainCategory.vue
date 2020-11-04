@@ -2,7 +2,9 @@
   <div class="main-container">
     <top-nav class="top"></top-nav>
     <router-view class="container"> </router-view>
+    
     <bottom-nav class="bottom"></bottom-nav>
+   
   </div>
 </template>
 
@@ -44,4 +46,6 @@ export default {
   height: calc(100% - 272px);
   overflow: hidden;
 }
+
+
 </style>

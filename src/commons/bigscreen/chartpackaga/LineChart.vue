@@ -102,8 +102,9 @@ export default {
 </script>
 <style scoped>
 #lineChart {
-  width: 100%;
+  width: 95%;
   height: 200px;
   padding: 0 20px;
 }
+
 </style>

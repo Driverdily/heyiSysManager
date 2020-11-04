@@ -12,14 +12,16 @@ import 'element-ui/lib/theme-chalk/index.css';
 import BaiduMap from 'vue-baidu-map';
 import './assets/icon/iconfont.css';
 import echarts from 'echarts';
-
+import echartsgl from 'echarts-gl';
 
 
 
 Vue.use(ElementUI)
 Vue.use(VueAxios, axios)
 
-Vue.prototype.$echarts=echarts
+Vue.prototype.$echarts = echarts
+
+
 
 Vue.config.productionTip = false
 axios.defaults.baseURL = "/api"

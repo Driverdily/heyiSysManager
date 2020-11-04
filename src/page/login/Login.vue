@@ -3,7 +3,7 @@
 		<div class="login-page-container">
 			<!-- 登录表单 -->
 			<el-form class="demo-ruleForm login-container" label-position="left">
-				<img src="../../assets/img/login_title.png" style="width: 300px; height: 100px" :fit="fit"></img>
+				<img src="../../assets/img/bg_logo_s.png" style="width: 300px; height: 100px" :fit="fit"/>
 				<el-form-item>
 					<el-input prefix-icon="el-icon-user" type="text" :placeholder="$t('input_account')" v-model="ruleForm.username"></el-input>
 				</el-form-item>

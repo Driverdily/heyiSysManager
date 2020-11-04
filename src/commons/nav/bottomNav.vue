@@ -1,5 +1,25 @@
 <template>
   <div>
+    <!-- <div class="bottom-menu clearfix">
+      <b>设备报警推送消息</b>
+      <el-button
+        plain
+        size="mini"
+        class="bottom-button clearfix"
+        icon="el-icon-caret-bottom"
+        v-if="ischangeFolder"
+        @click="showchangeFolder"
+      ></el-button>
+      <el-button
+        plain
+        size="mini"
+        class="bottom-button clearfix"
+        icon="el-icon-caret-top"
+        v-if="!ischangeFolder"
+        @click="showchangeFolder"
+      ></el-button>
+    </div> -->
+
     <el-table
       :data="pushData"
       stripe
@@ -7,6 +27,7 @@
       size="mini"
       :cell-style="{ padding: '0' }"
       border
+      v-show="ischangeFolder"
     >
       <el-table-column
         prop="report_time"
@@ -78,6 +99,7 @@
 export default {
   data() {
     return {
+      ischangeFolder: true,
       pushData: [
         {
           report_time: "2020-10-10",
@@ -93,13 +115,32 @@ export default {
           alarm_sort: "主机",
           link_person: "张三",
           link_phone: "12312312312",
-          link_address: "地球",
+          link_address: "地球1",
         },
       ],
     };
   },
+
+  methods: {
+    showchangeFolder() {
+      this.ischangeFolder = !this.ischangeFolder;
+      console.log("点击事件", this.ischangeFolder);
+    },
+  },
 };
 </script>
 
-<style>
+<style scoped>
+.bottom-menu {
+  background: #f0f8ff;
+  text-align: left;
+  padding: 5px 5px;
+  font-size: 15px;
+  border-top: 1px solid gray;
+}
+.bottom-menu .bottom-button {
+  float: right;
+  padding: 4px 18px;
+  top: 5px;
+}
 </style>

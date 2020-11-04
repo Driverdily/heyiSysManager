@@ -87,6 +87,12 @@ body {
   clear: both;
   height: 0;
 }
+.el-header{
+  line-height: 60px;
+  text-align: left;
+  padding: 0 20px;
+}
+
 .h-80 {
   height: 80%;
 }
