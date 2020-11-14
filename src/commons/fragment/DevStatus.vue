@@ -32,8 +32,8 @@
         <el-button type="infor" class="status" size="mini">{{$t('disarm')}}</el-button>
       </el-col>
 
-      <el-col :span="21">
-        <el-table :data="statusData" stripe size="mini" border>
+      <el-col :span="21" class="right-nav">
+        <el-table :data="statusData" stripe size="mini" >
           <el-table-column
             prop="group_name"
             :label="$t('group_name')"
@@ -130,9 +130,16 @@ export default {
 .main_fragment_devstatus .left-nav {
   padding: 15px;
   height: 100%;
-  border-right: 1px solid gray;
+ 
+  border-right: 1px solid #ccc;
   text-align: left;
+  
 }
+
+.main_fragment_devstatus .right-nav{
+  margin-top: 3px;
+}
+
 .main_fragment_devstatus .left-nav .status {
   padding: 7px 25px;
   width: 100%;

@@ -1,16 +1,16 @@
 <template>
   <el-dialog
     :visible.sync="visible"
-    customClass="h-800px"
-    title="配件管理"
+    customClass="dialog-add-NB-menu"
+    title="添加NB设备"
     :close-on-press-escape="false"
     :close-on-click-modal="false"
     append-to-body
     :before-close="handleClose"
   >
     <div>
-      <el-row style="height: 692px; border-top: 0.5px solid gray">
-        <el-col :span="9" style="height: 100%; border-right: 1px solid gray">
+      <el-row style="height: 692px; border-top: 0.5px solid #ccc">
+        <el-col :span="9" style="height: 100%; border-right: 1px solid #ccc">
           <!-- 设备信息 -->
           <div class="box-card">
             <!-- 设备信息 -->
@@ -202,13 +202,13 @@ export default {
 
 
 <style >
-.h-800px {
+.dialog-add-NB-menu {
   height: 750px;
   width: 1100px;
   margin-top: 90px !important;
 }
 
-.el-dialog__body {
+.dialog-add-NB-menu .el-dialog__body {
   padding: 1px 0px !important;
 }
 
@@ -228,7 +228,7 @@ export default {
 }
 
 .box-card {
-  margin: 20px 10px 20px;
+  margin: 25px 10px 20px;
   border: 0.5px solid lightgray;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);

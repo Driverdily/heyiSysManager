@@ -24,6 +24,7 @@ module.exports = {
 	'cancel': '取 消',
 	'input_content':'请输入内容',
 	'transfer_dev':'转让设备',
+	'second':'秒',
 
 	// 登录页面
 	'username': '用户名',
@@ -350,9 +351,11 @@ module.exports = {
 	'aes_128key': 'AES 128位加密',
 	'time_monitor': '定时监测',
 	'monitor_interval': '监测间隔',
+	'monitor_report':'监测报告定时测试',
 	'retransmission': '重传',
 	'retransmission_times': '重传次数',
 	'retransmission_interval': '重传间隔',
+	'crc16_switch':'CRC16开关',
 
 	//恢复出厂
 	'tips': '恢复出厂设备将清除所有配件并将重置所有设置项',

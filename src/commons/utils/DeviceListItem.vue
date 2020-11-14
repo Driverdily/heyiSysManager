@@ -8,7 +8,7 @@
       </el-col>
       <el-col :span="14" class="dev-status">
         <div class="dev-name">
-          <span class="fa-0-87x">设备名称</span>
+          <span class="fa-0-87x">{{$t('dev_name')}}</span>
         </div>
         <div class="dev-icon">
           <i class="el-icon-sort" style="color: #00a7e8"></i>
@@ -35,7 +35,7 @@
         <div>撤防</div>
       </el-col>
       <el-col :span="6" class="p-5 align-center">
-        <el-dropdown trigger="click" @command="handleCommand">
+        <el-dropdown trigger="click" @command="handleCommand" placement="right-start">
           <span class="el-dropdown-link">
             更多<i class="el-icon-arrow-down"></i>
           </span>
@@ -137,7 +137,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style  scoped>
 .deviceListItem {
   border: 1px solid #fff;
   background-color: #fff;
@@ -154,7 +154,10 @@ export default {
   border-top: 1px solid #ccc;
   text-align: center;
 }
-
+.deviceListItem .dev-list-bottom a {
+  text-decoration: none;
+  color: #000;
+}
 .deviceListItem .dev-logo-bg {
   border-radius: 50%;
   background-color: rgb(148, 153, 149);
@@ -187,9 +190,8 @@ export default {
 a {
   text-decoration: none;
 }
-.router-link-active{
+.router-link-active {
   text-decoration: none;
   color: #000;
 }
-
 </style>

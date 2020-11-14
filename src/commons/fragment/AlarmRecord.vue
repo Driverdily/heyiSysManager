@@ -57,7 +57,7 @@
         ></el-button>
       </el-col>
 
-      <el-col :span="21">
+      <el-col :span="21" class="right-nav">
         <el-table
           :data="alarmRecordData"
           stripe
@@ -180,8 +180,12 @@ export default {
 
 <style scoped>
 .main_fragment_alarmrecord .left-nav {
-  border-right: 1px solid gray;
+  border-right: 1px solid #ccc;
   height: 99%;
   text-align: left;
 }
+.main_fragment_alarmrecord .right-nav{
+  margin-top: 3px;
+}
+
 </style>

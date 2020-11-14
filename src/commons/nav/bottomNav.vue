@@ -1,25 +1,5 @@
 <template>
-  <div>
-    <!-- <div class="bottom-menu clearfix">
-      <b>设备报警推送消息</b>
-      <el-button
-        plain
-        size="mini"
-        class="bottom-button clearfix"
-        icon="el-icon-caret-bottom"
-        v-if="ischangeFolder"
-        @click="showchangeFolder"
-      ></el-button>
-      <el-button
-        plain
-        size="mini"
-        class="bottom-button clearfix"
-        icon="el-icon-caret-top"
-        v-if="!ischangeFolder"
-        @click="showchangeFolder"
-      ></el-button>
-    </div> -->
-
+  <div class="main_bottom_record">
     <el-table
       :data="pushData"
       stripe
@@ -131,12 +111,15 @@ export default {
 </script>
 
 <style scoped>
+.main_bottom_record{
+border-top: 1px solid #ccc;
+}
+
 .bottom-menu {
   background: #f0f8ff;
   text-align: left;
   padding: 5px 5px;
   font-size: 15px;
-  border-top: 1px solid gray;
 }
 .bottom-menu .bottom-button {
   float: right;

@@ -53,19 +53,22 @@ export default {
   methods: {
     //设置表格行的样式
     tableRowStyle({ row, rowIndex }) {
-      return "background-color:#1D344D;font-size:12px";
+      return "background-color:transparent;font-size:12px;color:#ffffff";
     },
     //设置表头行的样式
     tableHeaderColor({ row, column, rowIndex, columnIndex }) {
-      return "background-color:#1D344D;font-wight:500;font-size:15px";
+
+      return "background-color:#4f1d344d;font-wight:500;font-size:15px;";
+    
     },
   },
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 #tablechart {
   width: 100%;
   background: transparent;
+
 }
 </style>

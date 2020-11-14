@@ -35,7 +35,7 @@
         ></el-button>
       </el-col>
 
-      <el-col :span="21">
+      <el-col :span="21" class="right-nav">
         <el-table
           :data="operateRecordData"
           stripe
@@ -100,8 +100,11 @@
 
 <style scoped>
 .main_fragment_operaterecord .left-nav {
-  border-right: 1px solid gray;
-  height: 99%;
+  border-right: 1px solid #ccc;
+  height: 100%;
   text-align: left;
+}
+.main_fragment_operaterecord .right-nav{
+  margin-top: 3px;
 }
 </style>

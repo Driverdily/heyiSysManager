@@ -1,9 +1,7 @@
 <template>
-  <div class="app-wrapper">
-    <div class="big-main-container">
-      <nav-bar></nav-bar>
-      <big-main></big-main>
-    </div>
+  <div class="big-main-container">
+    <nav-bar></nav-bar>
+    <big-main></big-main>
   </div>
 </template>
 
@@ -19,13 +17,26 @@ export default {
   data() {
     return {};
   },
+  methods: {},
+  mounted: {},
 };
 </script>
 
 
 <style scoped>
 .big-main-container {
-  background: #192b41;
-  min-height: 100vh;
+  background-image: url(../../assets/img/bg_sky.jpg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
 }
+
+
 </style>

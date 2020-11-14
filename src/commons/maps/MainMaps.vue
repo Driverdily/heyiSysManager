@@ -269,14 +269,22 @@ td {
   border: 3px solid white;
   background-color: sandybrown;
   padding: 3px 1rem;
-  color: darkcyan;
+  color: white;
 }
 
 td:hover {
   color: #000088;
+  cursor: pointer;
 }
 
 td:active {
   color: darkred;
+}
+td a {
+  color: white;
+  text-decoration: none;
+}
+td a:hover {
+  color: #000088;
 }
 </style>

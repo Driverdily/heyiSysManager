@@ -2,6 +2,7 @@
   <div>
     <el-header>{{ title }}</el-header>
     <div id="lineChart"></div>
+
   </div>
 </template>
 <script>
@@ -100,11 +101,11 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style  lang="scss"  scoped>
 #lineChart {
   width: 95%;
   height: 200px;
   padding: 0 20px;
+  
 }
-
 </style>

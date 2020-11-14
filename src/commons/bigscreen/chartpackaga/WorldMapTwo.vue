@@ -48,7 +48,7 @@ export default {
           map: "world",
           shading: "realistic",
           silent: true,
-          environment: "#333",
+          // environment: "#ffffffff",
           realisticMaterial: {
             roughness: 0.8,
             metalness: 0,

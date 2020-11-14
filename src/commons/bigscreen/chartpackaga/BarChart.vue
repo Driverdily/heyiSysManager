@@ -9,7 +9,7 @@ export default {
   name: 'barChart',
   data() {
     return {
-      title: '各地区年份销售额'
+      title: '各地区设备增加数量'
     }
   },
   mounted() {
@@ -30,11 +30,12 @@ export default {
         tooltip: {},
         dataset: {
           source: [
-            ['product', '2015', '2016', '2017','2018','2019'],
-            ['德国', 43.3, 85.8, 93.7,80.0,50.2],
-            ['意大利', 83.1, 73.4, 55.1,120.0,70.0],
-            ['土耳其', 86.4, 65.2, 82.5,79.0,80.0],
-            ['西班牙', 72.4, 53.9, 39.1,50.0,66.0]
+            ['product',  '2016', '2017','2018','2019'],
+            ['德国', 43.3, 85.8, 93.7,80.0],
+            ['意大利', 83.1, 73.4, 55.1,120.0],
+            ['土耳其', 86.4, 65.2, 82.5,79.0],
+            ['西班牙', 72.4, 53.9, 39.1,50.0],
+            ['墨西哥',120,77,72.0,80.2],
           ]
         },
         xAxis: {
@@ -62,7 +63,7 @@ export default {
         series: [
           {
             type: 'bar',
-            barWidth: 18,
+            // barWidth: 18,
             itemStyle:{
               normal:{
                 color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
@@ -77,7 +78,7 @@ export default {
           },
           {
             type: 'bar',
-            barWidth: 18,
+            // barWidth: 18,
             itemStyle:{
               normal:{
                 color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
@@ -92,7 +93,7 @@ export default {
           },
           {
             type: 'bar',
-            barWidth: 18,
+            // barWidth: 18,
             itemStyle:{
               normal:{
                 color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
@@ -104,7 +105,12 @@ export default {
                 }], false)
               }
             },
+          },
+          {
+            type:'bar',
           }
+
+
         ]
       })
     }

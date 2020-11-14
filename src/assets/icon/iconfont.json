@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "5327117",
+      "name": "地球",
+      "font_class": "diqiu",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "14143309",
+      "name": "信号",
+      "font_class": "38",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
       "icon_id": "15369",
       "name": "右三角形",
       "font_class": "unfold",

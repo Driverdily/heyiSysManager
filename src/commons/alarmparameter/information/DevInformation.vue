@@ -3,9 +3,7 @@
     <!-- 设备属性 -->
     <el-row class="dev-set-list-item bg-gray">
       <el-col :span="24">
-        <span class="fa-1x m-l-10 txt-bold">{{
-          $t("dev_property")
-        }}</span>
+        <span class="fa-1x m-l-10 txt-bold">{{ $t("dev_property") }}</span>
       </el-col>
     </el-row>
 
@@ -24,7 +22,7 @@
       <el-col :span="6">
         <el-input size="mini"></el-input>
       </el-col>
-      <el-col :span="2">
+      <el-col :span="2" class="align-right">
         <el-button
           type="infor"
           style="margin-left: 5px"
@@ -33,6 +31,7 @@
         ></el-button>
       </el-col>
     </el-row>
+
     <!-- 序列号 -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -100,9 +99,7 @@
     <!-- 状态信息 -->
     <el-row class="dev-set-list-item bg-gray">
       <el-col :span="24">
-        <span class="fa-1x m-l-10 txt-bold">{{
-          $t("dev_status")
-        }}</span>
+        <span class="fa-1x m-l-10 txt-bold">{{ $t("dev_status") }}</span>
       </el-col>
     </el-row>
     <!-- 交流电 -->
@@ -189,6 +186,9 @@
 </template>
 
 <script>
+export default {
+  components: {},
+};
 </script>
 
 <style>

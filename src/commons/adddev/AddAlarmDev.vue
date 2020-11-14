@@ -1,7 +1,7 @@
 <template>
   <el-dialog
     :visible.sync="visible"
-    customClass="h-800px"
+    customClass="dialog-addAlarm-menu"
     :title="$t('alarm_dev')"
     :close-on-press-escape="false"
     :close-on-click-modal="false"
@@ -9,8 +9,8 @@
     :before-close="handleClose"
   >
     <div>
-      <el-row style="height: 692px; border-top: 0.5px solid gray">
-        <el-col :span="9" style="height: 100%; border-right: 1px solid gray">
+      <el-row style="height: 692px; border-top: 0.5px solid #ccc">
+        <el-col :span="9" style="height: 100%; border-right: 1px solid #ccc">
           <!-- 设备信息 -->
           <div class="box-card">
             <!-- 设备信息 -->
@@ -290,14 +290,14 @@ export default {
 </script>
 
 
-<style scoped>
-.h-800px {
+<style >
+.dialog-addAlarm-menu {
   height: 750px;
   width: 1100px;
   margin-top: 90px !important;
 }
 
-.el-dialog__body {
+.dialog-addAlarm-menu .el-dialog__body {
   padding: 1px 0px !important;
 }
 

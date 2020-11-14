@@ -16,45 +16,30 @@ export default {
       responseData: {
         code: 0,
         data: {
-          title: '增加趋势图',
+          title: '趋势图',
           x: ['5.13','5.14','5.15','5.16','5.17'],
           list: [
             {
               name: '用户',
-              data: [100,200,300,400,'-'],
+              data: [100,200,300,400,600,800],
               smooth: false,
               lintType: 'solid'
             },
-            {
-              name: '用户',
-              data: ['-','-','-',400,500],
-              smooth: false,
-              lintType: 'dotted'
-            },
+         
             {
               name: '设备',
-              data: [1800,550,740,350,'-'],
+              data: [1800,550,740,350,350,550],
               smooth: false,
               lintType: 'solid'
             },
-            {
-              name: '设备',
-              data: ['-','-','-',350,600],
-              smooth: false,
-              lintType: 'dotted'
-            },
+     
             {
               name: '日活',
-              data: [180,550,310,60,'-'],
+              data: [180,550,310,60,120,320],
               smooth: false,
               lintType: 'solid'
             },
-            {
-              name: '日活',
-              data: ['-','-','-',60,530],
-              smooth: false,
-              lintType: 'dotted'
-            }
+       
           ]
         }
       }
@@ -98,8 +83,11 @@ export default {
         title: {
           text: this.title,
           textStyle: {
-            color: '#00ce7d'
+            color: '#fff',
+            fontSize:16,
+            fontWeight:500,
           },
+          
           top: 20
         },
         // 鼠标划上提示工具

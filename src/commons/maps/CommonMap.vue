@@ -60,7 +60,7 @@
 
 <style>
 	.bm-view {
-		height: 99%;
-		width: 99%;
+		height: 100%;
+		width: 100%;
 	}
 </style>

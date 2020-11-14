@@ -11,25 +11,15 @@
           size="mini"
           highlight-current-row
           @current-change="handleCurrentChange"
-          border
           :cell-style="{ padding: '0' }"
         >
           <el-table-column
             prop="serial"
             :label="$t('serial_no')"
           ></el-table-column>
-          <el-table-column
-            prop="name"
-            :label="$t('name')"
-          ></el-table-column>
-          <el-table-column
-            prop="phone"
-            :label="$t('phone')"
-          ></el-table-column>
-          <el-table-column
-            prop="sms"
-            :label="$t('send_sms')"
-          ></el-table-column>
+          <el-table-column prop="name" :label="$t('name')"></el-table-column>
+          <el-table-column prop="phone" :label="$t('phone')"></el-table-column>
+          <el-table-column prop="sms" :label="$t('send_sms')"></el-table-column>
           <el-table-column
             prop="callphone"
             :label="$t('call_phone')"
@@ -74,12 +64,8 @@
       "
     >
       <el-col :offset="7" :span="10">
-        <el-checkbox v-model="checked1">{{
-          $t("call_phone")
-        }}</el-checkbox>
-        <el-checkbox v-model="checked2">{{
-          $t("send_sms")
-        }}</el-checkbox>
+        <el-checkbox v-model="checked1">{{ $t("call_phone") }}</el-checkbox>
+        <el-checkbox v-model="checked2">{{ $t("send_sms") }}</el-checkbox>
       </el-col>
     </el-row>
 

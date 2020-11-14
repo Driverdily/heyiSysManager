@@ -1,7 +1,7 @@
 <template>
 	<div style="background-color: white;">
 		<div class="box-card" v-for="item in options" :key='item.stateID'>
-			<span class="box-title">计划任务 1</span>
+			<span class="box-title">计划任务 +{{item.stateID}}</span>
 			<el-row>
 				<el-col :span="20">
 					<!-- 星期 -->

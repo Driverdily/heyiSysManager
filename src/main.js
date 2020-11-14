@@ -15,9 +15,9 @@ import echarts from 'echarts';
 import echartsgl from 'echarts-gl';
 
 
-
 Vue.use(ElementUI)
 Vue.use(VueAxios, axios)
+
 
 Vue.prototype.$echarts = echarts
 

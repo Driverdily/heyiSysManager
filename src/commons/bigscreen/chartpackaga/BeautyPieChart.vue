@@ -9,7 +9,7 @@ export default {
   name: "beautyPieChart",
   data() {
     return {
-        title:'设备分布图'
+        title:'设备类型比例图'
     };
   },
   mounted() {
@@ -19,27 +19,27 @@ export default {
     getData() {
       var scaleData = [
         {
-          name: "德国",
+          name: "SGW01",
           value: 20,
         },
         {
-          name: "土耳其",
+          name: "W7",
           value: 15,
         },
         {
-          name: "西班牙",
+          name: "518D",
           value: 8,
         },
         {
-          name: "意大利",
+          name: "W20",
           value: 12,
         },
         {
-          name: "瑞典",
+          name: "AC01",
           value: 15,
         },
         {
-          name: "其他地区",
+          name: "其他设备",
           value: 10,
         },
       ];
@@ -80,8 +80,8 @@ export default {
             name: scaleData[i].name,
             itemStyle: {
               normal: {
-                borderWidth: 4,
-                shadowBlur: 200,
+                borderWidth: 2,
+                shadowBlur: 150,
                 borderColor: color[i],
                 shadowColor: color[i],
               },
@@ -123,8 +123,8 @@ export default {
                 rich: rich,
               },
               labelLine: {
-                length: 30,
-                length2: 50,
+                length: 20,
+                length2: 35,
                 show: true,
                 color: "#00ffff",
               },
@@ -137,10 +137,10 @@ export default {
     },
     chartInit() {
       let myChart = this.$echarts.init(
-        document.getElementById("beautyPieChart")
+        document.getElementById("beautyPieChart"),'light'
       );
       let options = {
-        backgroundColor: "#04243E",
+        // backgroundColor: "#04243E",
         tooltip: {
           show: false,
         },
@@ -160,7 +160,7 @@ export default {
 <style lang="scss" scoped>
 #beautyPieChart {
   width: 100%;
-  height: 300px;
+  height: 240px;
 
 }
 </style>

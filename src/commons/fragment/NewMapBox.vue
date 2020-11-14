@@ -1,11 +1,12 @@
 <template>
   <div>
     <div class="map-box">
-      <div class="map-left fl pr clearfix">
-        <div class="user-container clearfix" :style="{ width: scrollerWidth }">
+      <div class="map-left fl pr">
+        <div class="user-container" :style="{ width: scrollerWidth }">
           <!-- 顶部标题 -->
-          <div v-show="isleftFolder" class="side-subtitle clearfix">
+          <div v-show="isleftFolder" class="side-subtitle">
             <b id="account" title="">泉州分公司</b>
+            <div class="clearfix"></div>
           </div>
           <!-- 顶部伸缩按钮 -->
           <span class="toggle-tree-btn">
@@ -37,24 +38,66 @@
               placeholder="请输入客户名称"
               v-model="filterText"
               size="mini"
+              prefix-icon="el-icon-search"
             >
             </el-input>
-            <el-tree
+            <!-- <el-tree
               class="filter-tree"
               :data="data"
               :props="defaultProps"
               ref="tree"
+              :default-checked-keys="selectFunction"
+              default-expand-all="true"
+              :filter-node-method="filterNode"
+              node-key="id"
             >
+            </el-tree> -->
+            <el-tree
+              :data="data"
+              node-key="id"
+              default-expand-all
+              :filter-node-method="filterNode"
+              :expand-on-click-node="false"
+              ref="tree"
+            >
+              <span class="custom-tree-node" slot-scope="{ node }">
+                <!-- <i class="{data.icon}"></i> -->
+                <span>{{ node.label }}</span>
+                <span style="padding: 5px">
+                  <el-dropdown
+                    trigger="click"
+                    @command="handleCommand"
+                    placement="right-start"
+                  >
+                    <span class="el-dropdown-link">
+                      <i class="el-icon-arrow-right" style="color: gray"></i>
+                    </span>
+                    <el-dropdown-menu slot="dropdown">
+                      <el-dropdown-item command="0"
+                        >添加报警设备</el-dropdown-item
+                      >
+                      <el-dropdown-item command="1"
+                        >添加NB设备</el-dropdown-item
+                      >
+                      <el-dropdown-item command="2">添加分组</el-dropdown-item>
+                      <el-dropdown-item command="3">删除分组</el-dropdown-item>
+                      <el-dropdown-item command="4">转让分组</el-dropdown-item>
+                      <el-dropdown-item command="5">参数设置</el-dropdown-item>
+                    </el-dropdown-menu>
+                  </el-dropdown>
+                </span>
+              </span>
             </el-tree>
           </div>
         </div>
         <!-- 设备菜单栏 -->
         <div
-          class="device-container b1-ccc clearfix"
+          class="device-container b1-ccc"
           :style="{ width: scrollerRightWidth }"
         >
-          <div v-show="isRightFolder" class="tab-navbar clearfix">
+          <div v-show="isRightFolder" class="tab-navbar">
             <b id="account" title="">第3个分组</b>
+            <div class="clearfix"></div>
           </div>
           <span class="pack-up-btn">
             <el-button
@@ -81,113 +124,122 @@
               class="device-search"
               size="mini"
               placeholder="请输入设备名称"
+              prefix-icon="el-icon-search"
             ></el-input>
-            <div class="device-list">
-              <div v-for="device in deviceList" :key="device.id">
+
+            <!-- <div>
+              <div  class="device-list" v-for="device in deviceList" :key="device.id">
                 <device-list-item :item="device"></device-list-item>
               </div>
-            </div>
-            
+            </div> -->
+
+            <ul class="device-list">
+              <li v-for="device in deviceList" :key="device.id">
+                <device-list-item :item="device"></device-list-item>
+              </li>
+            </ul>
           </div>
         </div>
+
+        <div class="clearfix"></div>
       </div>
 
       <!-- 地图 -->
       <div class="map-content">
         <main-map style="height: 99.8%"></main-map>
       </div>
+      <div class="clearfix"></div>
     </div>
+    <add-alarm
+      ref="addalarmMission"
+      v-if="setAddAlarmVisible"
+      :visible.sync="setAddAlarmVisible"
+    ></add-alarm>
+    <add-nb-dev
+      ref="addNbMission"
+      v-if="setAddNbVisible"
+      :visible.sync="setAddNbVisible"
+    ></add-nb-dev>
   </div>
 </template>
 
 <script>
 import MainMap from "../maps/MainMaps";
 import DeviceListItem from "../utils/DeviceListItem.vue";
+import AddAlarm from "../adddev/AddAlarmDev.vue";
+import AddNbDev from "../adddev/AddNBDev.vue";
+
+let id = 1000;
+
 export default {
   components: {
     MainMap,
     DeviceListItem,
+    AddAlarm,
+    AddNbDev,
   },
 
   data() {
+    const data = [
+      {
+        id: 1,
+        label: "一级 一",
+        icon: "el-icon-school",
+        children: [
+          {
+            id: 4,
+            label: "二级 1-1",
+            children: [
+              {
+                id: 9,
+                label: "三级 1-1-1",
+              },
+              {
+                id: 10,
+                label: "三级 1-1-2",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 2,
+        label: "一级 二",
+        children: [
+          {
+            id: 5,
+            label: "二级 2-1",
+          },
+          {
+            id: 6,
+            label: "二级 2-2",
+          },
+        ],
+      },
+      {
+        id: 3,
+        label: "一级 三",
+        children: [
+          {
+            id: 7,
+            label: "二级 3-1",
+          },
+          {
+            id: 8,
+            label: "二级 3-2",
+          },
+        ],
+      },
+    ];
     return {
       filterText: "",
       isleftFolder: true,
       isRightFolder: true,
-      data: [
-        {
-          id: 1,
-          label: "一级1",
-          children: [
-            {
-              id: 4,
-              label: "二级 1-1",
-              children: [
-                {
-                  id: 9,
-                  label: "三级1-1-1",
-                },
-                {
-                  id: 10,
-                  label: "三级 1-1-2",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          id: 2,
-          label: "一级 2",
-          children: [
-            {
-              id: 5,
-              label: "二级 2-1",
-            },
-            {
-              id: 6,
-              label: "三级 2-2",
-            },
-          ],
-        },
-        {
-          id: 3,
-          label: "一级 3",
-          children: [
-            {
-              id: 7,
-              label: "二级 2-1",
-            },
-            {
-              id: 8,
-              label: "二级 2-2",
-            },
-          ],
-        },
-        {
-          id: 9,
-          label: "一级 4",
-        },
-        {
-          id: 11,
-          label: "一级 5",
-          children: [
-            {
-              id: 12,
-              label: "二级 5-1",
-              children: [
-                {
-                  id: 13,
-                  label: "三级 5-1-1",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          id: 14,
-          label: "一级 6",
-        },
-      ],
+      setAddAlarmVisible: false,
+      setAddNbVisible: false,
+
+      data: JSON.parse(JSON.stringify(data)),
+      data: JSON.parse(JSON.stringify(data)),
 
       deviceList: [
         {
@@ -195,43 +247,19 @@ export default {
           label: "ceshi",
         },
         {
-          id: 0,
+          id: 1,
           label: "ceshi",
         },
         {
-          id: 0,
+          id: 2,
           label: "ceshi",
         },
         {
-          id: 0,
+          id: 3,
           label: "ceshi",
         },
         {
-          id: 0,
-          label: "ceshi",
-        },
-        {
-          id: 0,
-          label: "ceshi",
-        },
-        {
-          id: 0,
-          label: "ceshi",
-        },
-        {
-          id: 0,
-          label: "ceshi",
-        },
-        {
-          id: 0,
-          label: "ceshi",
-        },
-        {
-          id: 0,
-          label: "ceshi",
-        },
-        {
-          id: 0,
+          id: 4,
           label: "ceshi",
         },
       ],
@@ -259,10 +287,46 @@ export default {
     changeShowRightFolder() {
       this.isRightFolder = !this.isRightFolder;
     },
+    append(data) {
+      const newChild = { id: id++, label: "testtest", children: [] };
+      if (!data.children) {
+        this.$set(data, "children", []);
+      }
+      data.children.push(newChild);
+    },
+
+    remove(node, data) {
+      const parent = node.parent;
+      const children = parent.data.children || parent.data;
+      const index = children.findIndex((d) => d.id === data.id);
+      children.splice(index, 1);
+    },
+    handleCommand(command) {
+      switch (command) {
+        case "0":
+         this.setAddAlarmVisible = true;
+          console.log("添加报警主机", this.informationVisible);
+
+          break;
+        case "1":
+         this.setAddNbVisible = true;
+          console.log("添加NB设备", this.devDeleteVisible);
+          break;
+        case "2":
+          console.log("点击转让", this.devTransferVisible);
+          break;
+        case "3":
+          console.log("点击配件", this.setAccessVisible);
+          break;
+        case "4":
+          console.log("点击参数", this.setAlarmVisible);
+          break;
+      }
+    },
   },
   computed: {
     scrollerWidth: function () {
-      return this.isleftFolder ? 299 + "px" : 40 + "px";
+      return this.isleftFolder ? 240 + "px" : 40 + "px";
     },
     scrollerRightWidth: function () {
       return this.isRightFolder ? 299 + "px" : 40 + "px";
@@ -271,7 +335,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style  scoped>
 .map-box {
   display: block;
   height: 100%;
@@ -279,7 +343,7 @@ export default {
 }
 .map-left {
   background: white;
-  transition: all 0.3s;
+  transition: all 0.7s;
   height: 100%;
   overflow: hidden;
 }
@@ -306,8 +370,6 @@ export default {
 .user-container {
   overflow: hidden;
 }
-
-
 
 .user-container,
 .device-container {
@@ -355,7 +417,7 @@ export default {
 .tab-navbar b {
   float: left;
   max-width: 200px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
@@ -393,13 +455,18 @@ b {
 }
 .device-list {
   background-color: #d5dced;
-  padding-top: 5px;
+  padding: 5px 2px;
   margin-top: 10px;
   border-radius: 5px;
-  overflow:  scroll;;
   display: block;
-
+  max-height: 575px;
 }
-
-
+.custom-tree-node {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  padding-right: 8px;
+}
 </style>

@@ -20,7 +20,7 @@ export default {
       this.chartInit();
     },
     chartInit() {
-      let myChart = this.$echarts.init(document.getElementById("pieChart"));
+      let myChart = this.$echarts.init(document.getElementById("pieChart"),'light');
       let options = {
         title: {
           //   text: '饼图程序调用高亮示例',
@@ -48,12 +48,22 @@ export default {
             color: "#ffffff",
           },
         },
+        label: {
+          normal: {
+            show: true,
+            formatter: "{b} \n{d}%",
+          },
+        },
+        calculable : true,
         series: [
           {
             name: "访问来源",
             type: "pie",
-            radius: ["35%", "70%"],
-            center: ["50%", "60%"],
+            radius: ["25%", 100],
+            center: ["65%", "40%"],
+            roseType: "radius",
+      
+
             label: {
               normal: {
                 show: false,
@@ -61,25 +71,25 @@ export default {
               },
               formatter: "{c|{c}} {b|万条} \n {a|累计接入数}",
               emphasis: {
-                show: true,
+                show: false,
                 textStyle: {
-                  fontSize: "18",
-                  fontWeight: "bold",
+                  fontSize: "13",
+                  fontWeight: "normal",
                 },
               },
             },
             data: [
-              { value: 335, name: "防拆报警" },
+              { value: 135, name: "防拆报警" },
               { value: 310, name: "开关门" },
-              { value: 234, name: "劫持报警" },
-              { value: 435, name: "紧急报警" },
-              { value: 548, name: "防区报警" },
-              { value: 330, name: "其他" },
+              { value: 134, name: "劫持报警" },
+              { value: 335, name: "紧急报警" },
+              { value: 148, name: "防区报警" },
+              { value: 230, name: "其他" },
             ],
             itemStyle: {
               emphasis: {
-                shadowBlur: 10,
-                shadowOffsetX: 0,
+                shadowBlur: 6,
+                shadowOffsetX: 1,
                 shadowColor: "rgba(0, 0, 0, 0.5)",
               },
             },
@@ -136,7 +146,7 @@ export default {
 <style lang="scss" scoped>
 #pieChart {
   width: 100%;
-  height: 360px;
+  height: 235px;
 }
 </style>
 

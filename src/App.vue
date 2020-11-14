@@ -23,7 +23,7 @@ export default {
 <style>
 #app {
   font-family: Helvetica, sans-serif, "Helvetica Neue", Arial;
-  text-align: center;
+  /* text-align: center; */
   height: 100%;
 }
 
@@ -39,16 +39,17 @@ body {
 }
 
 .dev-set-list-item {
-  background: #f0eff5;
-  border-bottom: 0.5px solid grey;
+  /* background: #f0eff5; */
+  /* background: aliceblue; */
+  border-bottom: 0.5px solid #ccc;
   display: flex;
   align-items: center;
   padding: 5px 10px;
 }
 
 .dev-set-list-item-mini {
-  background: #f0eff5;
-  border-bottom: 0.5px solid grey;
+  /* background: aliceblue; */
+  border-bottom: 0.5px solid rgb(145, 144, 144);
   display: flex;
   align-items: center;
   padding: 2px 10px;
@@ -87,10 +88,26 @@ body {
   clear: both;
   height: 0;
 }
-.el-header{
+.el-header {
   line-height: 60px;
   text-align: left;
   padding: 0 20px;
+}
+
+.el-dialog__title {
+  font-size: 14px;
+}
+.el-dialog__header {
+  background: #f8f8f8;
+  padding: 10px;
+}
+.el-dialog__headerbtn {
+  top: 12px;
+  right: 12px;
+  font-size: 20px;
+}
+.el-dialog__headerbtn .el-dialog__close {
+  color: black;
 }
 
 .h-80 {
