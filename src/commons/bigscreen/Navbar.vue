@@ -68,7 +68,6 @@ export default {
   margin-top: 10px;
   font-weight: 700;
   font-size: 34px;
-
   .weather {
     position: fixed;
     font-size: 20px;

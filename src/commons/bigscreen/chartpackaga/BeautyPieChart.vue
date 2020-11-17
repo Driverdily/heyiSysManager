@@ -9,7 +9,7 @@ export default {
   name: "beautyPieChart",
   data() {
     return {
-        title:'设备类型比例图'
+      title: "设备类型比例图",
     };
   },
   mounted() {
@@ -81,9 +81,9 @@ export default {
             itemStyle: {
               normal: {
                 borderWidth: 2,
-                shadowBlur: 150,
+                // shadowBlur: 150,
                 borderColor: color[i],
-                shadowColor: color[i],
+                // shadowColor: color[i],
               },
             },
           },
@@ -99,14 +99,15 @@ export default {
           name: "",
           type: "pie",
           clockWise: false,
-          radius: [70, 90],
+          radius: [60, 80],
+          center: ["50%", "45%"],
           hoverAnimation: false,
           itemStyle: {
             normal: {
               label: {
                 show: true,
                 position: "outside",
-                color: "#ddd",
+                color: "#fff",
                 formatter: function (params) {
                   var percent = 0;
                   var total = 0;
@@ -137,7 +138,8 @@ export default {
     },
     chartInit() {
       let myChart = this.$echarts.init(
-        document.getElementById("beautyPieChart"),'light'
+        document.getElementById("beautyPieChart"),
+        "light"
       );
       let options = {
         // backgroundColor: "#04243E",
@@ -161,6 +163,5 @@ export default {
 #beautyPieChart {
   width: 100%;
   height: 240px;
-
 }
 </style>

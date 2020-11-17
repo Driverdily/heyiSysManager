@@ -32,7 +32,7 @@ let routes = [{
 	{
 		path: '/main',
 		component: MainPager,
-		name: 'home',
+		name: 'main',
 		children: [{
 				path: '',
 				component: newMapBox

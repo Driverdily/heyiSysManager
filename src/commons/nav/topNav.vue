@@ -4,7 +4,7 @@
       <div class="header-left-box">
         <div class="header-logo">
           <img
-            src="../../assets/img/bg_logo_s.png"
+            src="../../assets/heyi_logo_white.png"
             title="LightYear"
             alt="LightYear"
             class="img-logo"
@@ -14,7 +14,7 @@
           class="header-nav"
           mode="horizontal"
           text-color="#fff"
-          background-color="#000"
+          background-color="#282A36"
           active-text-color="#fff"
           :default-active="this.$route.path"
           router
@@ -31,6 +31,7 @@
             <i class="el-icon-s-platform"></i>
             <span slot="title">设备状态</span>
           </el-menu-item>
+
 
           <el-submenu index="4">
             <template slot="title">
@@ -57,29 +58,46 @@
       </div>
 
       <div class="header-right-box">
+        <span class="notice">
+          <i
+            class="iconfont icon-notificationbellring"
+            style="color: #ffffff; font-size: 20px"
+          ></i>
+        </span>
+
+        <span style="margin-right: 20px; margin-top: 1px">
+          <i
+            @click="showAboutVersion"
+            class="iconfont icon-about"
+            style="color: #ffffff; font-size: 20px"
+          ></i>
+        </span>
+
         <el-dropdown
           trigger="hover"
-          style="margin-right: 25px"
+          style="margin-right: 20px"
           placement="bottom"
           @command="handleCommand"
         >
           <span>
-            <i class="iconfont icon-diqiu" style="color: #ffffff"></i>
+            <i
+              class="iconfont icon-yuyan"
+              style="color: #ffffff; font-size: 20px"
+            ></i>
           </span>
           <el-dropdown-menu slot="dropdown">
-            <el-dropdown-item icon="el-icon-user" command="en"
+            <el-dropdown-item icon="iconfont icon-yingyu" command="en"
               >English</el-dropdown-item
             >
-            <el-dropdown-item icon="el-icon-circle-plus" command="zh"
+            <el-dropdown-item icon="iconfont icon-zhongwen" command="zh"
               >中文</el-dropdown-item
             >
-
             <el-dropdown-item icon="el-icon-circle-plus-outline"
-              >修改密码</el-dropdown-item
+              >其他待续</el-dropdown-item
             >
+            
           </el-dropdown-menu>
         </el-dropdown>
-
         <el-dropdown trigger="hover" @command="handleCommand">
           <span class="el-dropdown-link">
             <img src="../../assets/img/login_title.png" />
@@ -92,11 +110,9 @@
             <el-dropdown-item icon="el-icon-circle-plus"
               >我的设置</el-dropdown-item
             >
-
             <el-dropdown-item icon="el-icon-circle-plus-outline"
               >修改密码</el-dropdown-item
             >
-
             <el-dropdown-item icon="el-icon-circle-check" divided
               >退出登录</el-dropdown-item
             >
@@ -104,14 +120,25 @@
         </el-dropdown>
       </div>
     </div>
+
+    <about-dialog
+      ref="isAboutDialogMession"
+      v-if="isAboutDialogShow"
+      :visible.sync="isAboutDialogShow"
+    ></about-dialog>
   </div>
 </template>
 
 <script>
+import AboutDialog from "../utils/AboutVersionDialog";
 export default {
+  components: {
+    AboutDialog,
+  },
   data() {
     return {
       activeIndex: "2",
+      isAboutDialogShow: false,
     };
   },
   methods: {
@@ -132,6 +159,9 @@ export default {
         localStorage.setItem("locale", "en");
       }
     },
+    showAboutVersion() {
+      this.isAboutDialogShow = true;
+    },
   },
 };
 </script>
@@ -141,14 +171,13 @@ export default {
   top: 0;
   right: 0;
   left: 0;
-  /* box-sizing: border-box; */
   display: flex;
   justify-content: space-between;
-  min-width: 1240;
-  /* height: 72px; */
+  min-width: 1240px;
+  height: 72px;
   padding: 0 15px;
   /* background-color: #3060ff; */
-  background: black;
+  background: #282A36;
 }
 
 .header .header-left-box {
@@ -159,6 +188,11 @@ export default {
 .header .header-logo {
   position: relative;
 }
+.header .header-logo .img-logo {
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
 
 .header .header-nav {
   display: flex;
@@ -168,7 +202,7 @@ export default {
   font-size: 14px;
   background-color: transparent;
   /* border-bottom: solid 1px #3060ff; */
-  border-bottom: solid 1px  black;;
+  border-bottom: solid 1px #282A36;
 }
 
 .header .header-nav .el-menu-item,
@@ -183,21 +217,21 @@ export default {
 
 .header .header-nav .el-menu-item.is-active {
   /* color: #3060ff !important; */
-  color: black !important;
+  color: #282A36 !important;
   background-color: #fff !important;
 }
 
 .header .header-nav .el-submenu.is-active .el-submenu__title {
   /* color: #3060ff !important; */
-  color: black !important;
-  background-color: #fff !important;
+  color: #282A36 !important;
+  background-color: #fff !important; 
 }
 .header .header-nav .el-submenu .el-submenu__title i {
   color: #fff;
 }
 .header .header-nav .el-submenu.is-active .el-submenu__title i {
   /* color: #3060ff !important; */
-  color: black !important;
+  color: #282A36 !important;
   background-color: #fff !important;
 }
 
@@ -206,7 +240,7 @@ export default {
   height: 33px;
   line-height: 33px;
   width: auto;
-  color: black;
+  color: #282A36;
 }
 
 .el-menu-item i {
@@ -219,6 +253,10 @@ export default {
   align-items: center;
   margin-right: 0;
 }
+.header .header-right-box .notice {
+  margin-right: 20px;
+  margin-top: 1px;
+}
 
 .el-dropdown .el-dropdown-link {
   display: flex;
@@ -228,8 +266,8 @@ export default {
 
 .el-dropdown .el-dropdown-link img {
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 31px;
+  height: 31px;
   margin: 6px;
 }
 
@@ -238,13 +276,4 @@ export default {
   color: white;
   font-size: 18px !important;
 }
-.el-dropdown-link-submenu {
-  margin-left: 20px;
-}
-.el-dropdown-link-submenu:hover {
-  margin-left: 20px;
-  background: #ecf5ff;
-  color: #7ccaff;
-}
-/* .header-right-box {} */
 </style>

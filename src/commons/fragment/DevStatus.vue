@@ -2,10 +2,10 @@
   <div class="main_fragment_devstatus">
     <el-row style="height: 100%; width: 100%">
       <el-col :span="3" class="left-nav p-20">
-        <div class="m-t-10">{{$t('dev_number')}}</div> 
-        <el-input class="m-t-5" size="mini"></el-input> 
-        <div class="m-t-10"> {{$t('dev_name')}}</div> 
-        <el-input class="m-t-5" size="mini"></el-input> 
+        <div class="m-t-10">{{ $t("dev_number") }}</div>
+        <el-input class="m-t-5" size="mini"></el-input>
+        <div class="m-t-10">{{ $t("dev_name") }}</div>
+        <el-input class="m-t-5" size="mini"></el-input>
 
         <el-button
           type="infor"
@@ -17,23 +17,31 @@
 
         <br /><br />
 
-        <el-button type="infor" class="status">{{$t('all')}}</el-button>
+        <el-button type="infor" class="status">{{ $t("all") }}</el-button>
 
         <br />
-        <el-button type="infor" class="status" size="mini">{{$t('online')}}</el-button>
+        <el-button type="infor" class="status" size="mini">{{
+          $t("online")
+        }}</el-button>
 
         <br />
-        <el-button type="infor" class="status" size="mini">{{$t('offline')}}</el-button>
+        <el-button type="infor" class="status" size="mini">{{
+          $t("offline")
+        }}</el-button>
 
         <br />
-        <el-button type="infor" class="status" size="mini">{{$t('arm')}}</el-button>
+        <el-button type="infor" class="status" size="mini">{{
+          $t("arm")
+        }}</el-button>
 
         <br />
-        <el-button type="infor" class="status" size="mini">{{$t('disarm')}}</el-button>
+        <el-button type="infor" class="status" size="mini">{{
+          $t("disarm")
+        }}</el-button>
       </el-col>
 
       <el-col :span="21" class="right-nav">
-        <el-table :data="statusData" stripe size="mini" >
+        <el-table :data="statusData" stripe border size="mini">
           <el-table-column
             prop="group_name"
             :label="$t('group_name')"
@@ -117,7 +125,8 @@
 export default {
   data() {
     return {
-      statusData: [],
+      statusData: [
+      ],
     };
   },
 };
@@ -130,14 +139,13 @@ export default {
 .main_fragment_devstatus .left-nav {
   padding: 15px;
   height: 100%;
- 
+  font-size: 14px;
   border-right: 1px solid #ccc;
   text-align: left;
-  
 }
 
-.main_fragment_devstatus .right-nav{
-  margin-top: 3px;
+.main_fragment_devstatus .right-nav {
+  /* margin-top: 3px; */
 }
 
 .main_fragment_devstatus .left-nav .status {

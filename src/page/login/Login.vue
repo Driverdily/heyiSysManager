@@ -3,16 +3,7 @@
     <div class="login-page-container">
       <!-- 登录表单 -->
       <el-form class="demo-ruleForm login-container" label-position="left">
-        <img
-          src="../../assets/img/bg_logo_s.png"
-          style="
-            width: 300px;
-            height: 100px;
-            border-radius: 10px;
-            margin-left: 25px;
-            margin-bottom: 10px;
-          "
-        />
+        <img src="../../assets/heyi_logo.png" class="login_logo" />
         <el-form-item>
           <el-input
             prefix-icon="el-icon-user"
@@ -240,9 +231,7 @@ export default {
       }, 2000);
     },
   },
-  created: {
-   
-  },
+  created: {},
 };
 </script>
 
@@ -253,9 +242,14 @@ export default {
   position: fixed;
   left: 0;
   top: 0;
-  background-image: url(../../assets/img/bg.jpg);
+  background-image: url("../../assets/login_bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+.login-box .login_logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .login-container {
@@ -263,16 +257,15 @@ export default {
   border-radius: 5px;
   -moz-border-radius: 5px;
   background-clip: padding-box;
-  width: 350px;
+  width: 300px;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 80%;
   margin-left: -200px;
   margin-top: -200px;
-  padding: 35px 35px 15px;
+  padding: 20px 20px 15px;
   background: white;
-  border: 1px solid #eaeaea;
-  box-shadow: 0 0 12px #cac6c6;
-  opacity: 0.9;
+  /* border: 1px solid #eaeaea; */
+  box-shadow: 0 0 3px #cac6c6;
 }
 </style>

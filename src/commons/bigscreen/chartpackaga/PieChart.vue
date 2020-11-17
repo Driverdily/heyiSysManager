@@ -60,7 +60,7 @@ export default {
             name: "访问来源",
             type: "pie",
             radius: ["25%", 100],
-            center: ["65%", "40%"],
+            center: ["65%", "37%"],
             roseType: "radius",
       
 
@@ -87,6 +87,7 @@ export default {
               { value: 230, name: "其他" },
             ],
             itemStyle: {
+       
               emphasis: {
                 shadowBlur: 6,
                 shadowOffsetX: 1,

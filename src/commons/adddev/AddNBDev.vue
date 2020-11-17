@@ -203,7 +203,7 @@ export default {
 
 <style >
 .dialog-add-NB-menu {
-  height: 750px;
+  height: 735px;
   width: 1100px;
   margin-top: 90px !important;
 }
@@ -216,7 +216,7 @@ export default {
   margin-right: 1px !important;
 }
 
-.table-img {
+.dialog-add-NB-menu .table-img {
   min-width: 24px;
   width: 24px;
   height: 24px;
@@ -227,16 +227,17 @@ export default {
   font-size: 32px;
 }
 
-.box-card {
+.dialog-add-NB-menu .box-card {
   margin: 25px 10px 20px;
   border: 0.5px solid lightgray;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
   padding: 5px;
-  background: #f0eff5;
+  /* background: #f0eff5; */
+  background: aliceblue;
 }
 
-.box-card .box-title {
+.dialog-add-NB-menu .box-card .box-title {
   position: relative;
   width: auto;
   top: -19px;

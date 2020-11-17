@@ -47,7 +47,6 @@
       </span>
       <div class="clearfix"></div>
     </div>
-
     <bottom-nav class="bottom" v-if="isFolder"></bottom-nav>
   </div>
 </template>
@@ -109,7 +108,7 @@ export default {
   .toggle-tree-link {
     float: left;
     margin-left: 30px;
-    margin-top: 7px;
+    margin-top: 9px;
     font-size: 13px;
   }
   .toggle-tree-btn {

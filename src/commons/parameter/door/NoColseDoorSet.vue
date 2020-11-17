@@ -1,5 +1,10 @@
 <template>
-  <div>
+  <div style="height: 600px; position: relative">
+    <el-row class="dev-set-list-item bg-gray">
+      <el-col :span="24">
+        <span class="fa-1x m-l-10 txt-bold">开关门列表</span>
+      </el-col>
+    </el-row>
     <!-- 列表 -->
     <el-row>
       <el-col :span="24">
@@ -27,6 +32,11 @@
     </el-row>
     <!-- 设置 -->
     <div class="layout-bottom">
+      <el-row class="dev-set-list-item bg-gray">
+        <el-col :span="24">
+          <span class="fa-1x m-l-10 txt-bold">联动设置</span>
+        </el-col>
+      </el-row>
       <!-- 使用情况 -->
       <el-row class="dev-set-list-item">
         <el-col :span="3" style="align-items: center">
@@ -133,7 +143,7 @@
             type="infor"
             size="mini"
             style="width: 22%; float: right"
-            >{{ $t("enter") }}</el-button
+            >{{ $t("add") }}</el-button
           >
         </el-col>
       </el-row>
@@ -223,5 +233,11 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss"  >
+div.layout-bottom {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
 </style>

@@ -61,7 +61,7 @@
         <el-table
           :data="alarmRecordData"
           stripe
-          style="width: 100%; overflow: scroll; height: 90%"
+          style="width: 100%; overflow-y: scroll; height: 90%"
           size="mini"
           border
         >
@@ -173,19 +173,22 @@ export default {
           label: this.$t("customize"),
         },
       ],
+      alarmRecordData: [],
     };
   },
 };
 </script>
 
-<style scoped>
-.main_fragment_alarmrecord .left-nav {
-  border-right: 1px solid #ccc;
-  height: 99%;
-  text-align: left;
+<style lang="scss" scoped>
+.main_fragment_alarmrecord {
+  .left-nav {
+    border-right: 1px solid #ccc;
+    height: 100%;
+    text-align: left;
+    font-size: 14px;
+  }
+  .right-nav {
+    // margin-top: 3px;
+  }
 }
-.main_fragment_alarmrecord .right-nav{
-  margin-top: 3px;
-}
-
 </style>

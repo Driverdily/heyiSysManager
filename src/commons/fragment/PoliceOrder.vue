@@ -75,11 +75,11 @@
 
       <el-col :span="21" class="right-nav">
         <el-table
-          :data="alarmRecordData"
+          :data="PoliceRecordData"
           stripe
-          style="width: 100%; overflow: scroll; height: 90%"
+          style="width: 100%; overflow-y: scroll; height: 90%"
           size="mini"
-          border
+          border  
         >
           <el-table-column prop="serial"></el-table-column>
 
@@ -196,18 +196,21 @@ export default {
           label: this.$t("Police_station"),
         },
       ],
+      PoliceRecordData:[],
     };
   },
 };
 </script>
 
-<style scoped>
-.main_fragment_policeorder .left-nav {
-  border-right: 1px solid gray;
+<style lang="scss" scoped>
+.main_fragment_policeorder {
+.left-nav {
+  border-right: 1px solid #ccc;
   height: 100%;
   text-align: left;
+  font-size: 14px;
 }
-.main_fragment_policeorder .right-nav{
-  margin-top: 3px;
-}
+ .right-nav{
+  // margin-top: 3px;
+}}
 </style>

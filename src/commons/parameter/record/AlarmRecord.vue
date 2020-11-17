@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-row>
-      <el-col class="table-wrapper">
+      <el-col class="table-wrapper" >
         <el-table
           :data="
             tableData.slice(
@@ -246,6 +246,7 @@ export default {
 <style scoped>
 .table-wrapper {
   height: 90%;
+margin-top: 1px;
 }
 
 .alarm-pagination {

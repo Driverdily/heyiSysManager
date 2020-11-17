@@ -292,20 +292,22 @@ export default {
 
 <style >
 .dialog-addAlarm-menu {
-  height: 750px;
+  height: 735px;
   width: 1100px;
   margin-top: 90px !important;
+  padding: 0px;
 }
 
 .dialog-addAlarm-menu .el-dialog__body {
   padding: 1px 0px !important;
+  margin: 0;
 }
 
 .el-tabs--left .el-tabs__header.is-left {
   margin-right: 1px !important;
 }
 
-.table-img {
+.dialog-addAlarm-menu .table-img {
   min-width: 24px;
   width: 24px;
   height: 24px;
@@ -316,16 +318,17 @@ export default {
   font-size: 32px;
 }
 
-.box-card {
+.dialog-addAlarm-menu .box-card {
   margin: 30px 10px 20px;
   border: 0.5px solid lightgray;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
   padding: 5px;
-  background: #f0eff5;
+  /* background: #f0eff5; */
+  background: aliceblue;
 }
 
-.box-card .box-title {
+.dialog-addAlarm-menu .box-card .box-title {
   position: relative;
   width: auto;
   top: -19px;

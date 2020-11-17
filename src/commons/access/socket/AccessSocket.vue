@@ -216,7 +216,7 @@
           </el-row>
           <!-- 提交 -->
           <el-row class="dev-set-list-item">
-            <el-col :span="24" class="align-center">
+            <el-col :span="24" class="align-right">
               <el-button type="infor" style="padding: 10px 80px" size="mini">{{
                 $t("save")
               }}</el-button>
@@ -224,6 +224,7 @@
           </el-row>
         </div>
       </el-col>
+
     </el-row>
   </div>
 </template>
@@ -300,11 +301,11 @@ export default {
 
 .box-card {
   margin: 20px 10px 20px;
-  border: 0.5px solid lightgray;
+  border: 0.5px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
   padding: 10px;
-  background: #f0eff5;
+  background: aliceblue;
 }
 
 .box-card .box-title {
@@ -315,6 +316,7 @@ export default {
   background-color: white;
   padding: 5px;
   border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 .el-checkbox {

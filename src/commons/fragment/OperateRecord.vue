@@ -37,9 +37,9 @@
 
       <el-col :span="21" class="right-nav">
         <el-table
-          :data="operateRecordData"
+          :data="OperateRecordData"
           stripe
-          style="width: 100%; overflow: scroll; height: 90%"
+          style="width: 100%; overflow-y: scroll; height: 95%"
           size="mini"
           border
         >
@@ -96,15 +96,25 @@
 </template>
 
 <script>
+export default {
+  data() {
+    return {
+      OperateRecordData: [],
+    };
+  },
+};
 </script>
 
-<style scoped>
-.main_fragment_operaterecord .left-nav {
-  border-right: 1px solid #ccc;
-  height: 100%;
-  text-align: left;
-}
-.main_fragment_operaterecord .right-nav{
-  margin-top: 3px;
+<style lang="scss" scoped>
+.main_fragment_operaterecord {
+  .left-nav {
+    border-right: 1px solid #ccc;
+    height: 100%;
+    text-align: left;
+    font-size: 14px;
+  }
+  .right-nav {
+    // margin-top: 3px;
+  }
 }
 </style>

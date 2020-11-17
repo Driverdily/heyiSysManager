@@ -2,7 +2,7 @@
   <el-dialog
     :visible.sync="visible"
     customClass="dialog-alarm-devset-menu"
-    title="设备名称(待)"
+    title="报警设备名称(待)"
     :close-on-press-escape="false"
     :close-on-click-modal="false"
     append-to-body
@@ -173,7 +173,7 @@ export default {
 
 <style>
 .dialog-alarm-devset-menu {
-  width: 900px;
+  width: 850px;
   border-radius: 5px;
 }
 
@@ -181,7 +181,7 @@ export default {
   margin-right: 1px !important;
 }
 .tab-alarm-set {
-  height: 700px;
+  height: 650px;
   border-top: 1px solid #ccc;
 }
 .tab-alarm-set .tab-alarm-set-content {

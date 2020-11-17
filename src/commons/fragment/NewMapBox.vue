@@ -27,9 +27,7 @@
               v-show="!isleftFolder"
             ></el-button>
           </span>
-
           <div v-if="!isleftFolder" class="cover-bg dn"></div>
-
           <!-- 内容 -->
           <div v-show="isleftFolder" class="user-content">
             <!-- 条件搜索框 -->
@@ -59,6 +57,7 @@
               :filter-node-method="filterNode"
               :expand-on-click-node="false"
               ref="tree"
+              style="margin-top:10px;background:rgb(233, 231, 231);"
             >
               <span class="custom-tree-node" slot-scope="{ node }">
                 <!-- <i class="{data.icon}"></i> -->
@@ -127,17 +126,17 @@
               prefix-icon="el-icon-search"
             ></el-input>
 
-            <!-- <div>
-              <div  class="device-list" v-for="device in deviceList" :key="device.id">
+            <div class="device-list">
+              <div v-for="device in deviceList" :key="device.id">
                 <device-list-item :item="device"></device-list-item>
               </div>
-            </div> -->
+            </div>
 
-            <ul class="device-list">
+            <!-- <ul class="device-list">
               <li v-for="device in deviceList" :key="device.id">
                 <device-list-item :item="device"></device-list-item>
               </li>
-            </ul>
+            </ul> -->
           </div>
         </div>
 
@@ -304,12 +303,11 @@ export default {
     handleCommand(command) {
       switch (command) {
         case "0":
-         this.setAddAlarmVisible = true;
+          this.setAddAlarmVisible = true;
           console.log("添加报警主机", this.informationVisible);
-
           break;
         case "1":
-         this.setAddNbVisible = true;
+          this.setAddNbVisible = true;
           console.log("添加NB设备", this.devDeleteVisible);
           break;
         case "2":
@@ -376,7 +374,7 @@ export default {
   position: relative;
   float: left;
   width: 299px;
-  background-color: #fff;
+  background-color: rgb(233, 231, 231);
   height: 99.9%;
   overflow: hidden;
 }

@@ -6,6 +6,41 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "6049338",
+      "name": "about",
+      "font_class": "about",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    },
+    {
+      "icon_id": "11982695",
+      "name": "notification, bell, ring",
+      "font_class": "notificationbellring",
+      "unicode": "e9d2",
+      "unicode_decimal": 59858
+    },
+    {
+      "icon_id": "16399020",
+      "name": "语言",
+      "font_class": "yuyan",
+      "unicode": "e85f",
+      "unicode_decimal": 59487
+    },
+    {
+      "icon_id": "3248598",
+      "name": "中文",
+      "font_class": "zhongwen",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "6239035",
+      "name": "英语",
+      "font_class": "yingyu",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
       "icon_id": "5327117",
       "name": "地球",
       "font_class": "diqiu",

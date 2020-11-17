@@ -25,10 +25,22 @@
         <bm-info-window :show="map.show" style="padding: 8px">
           <span style="font-weight: bold">518C-0355</span><br />
           <hr />
-          <span>设备编号:<span style="color: green">00080355</span> </span>
+          <span style="font-size: 15px;"
+            >设备编号:<span style="color: green">00080355</span>
+          </span>
           <br />
-          <span>在线状态:<span style="color: red">离线</span></span>
-          <table style="text-align: center; width: auto; height: auto">
+          <span style="font-size: 15px;"
+            >在线状态:<span style="color: red">离线</span></span
+          >
+
+          <table
+            style="
+              text-align: center;
+              width: auto;
+              height: auto;
+              background: white;
+            "
+          >
             <tr>
               <td @click="showAlarmSetDialog">离家布防</td>
               <td @click="showAddAlarmDevDialog">在家布防</td>
@@ -41,8 +53,8 @@
             </tr>
             <tr>
               <td @click="showInformationDialog">设备信息</td>
-              <td>暂无</td>
-              <td>暂无</td>
+              <!-- <td>暂无</td>
+              <td>暂无</td> -->
             </tr>
           </table>
         </bm-info-window>
@@ -257,8 +269,8 @@ export default {
 
 <style scoped>
 .main-map-view {
-  height: 99%;
-  width: 99.8%;
+  height: 100%;
+  width: 100%;
 }
 table {
   border-collapse: collapse;
@@ -267,9 +279,11 @@ table {
 table,
 td {
   border: 3px solid white;
-  background-color: sandybrown;
-  padding: 3px 1rem;
-  color: white;
+  background-color: rgb(248, 164, 91);
+  padding: 4px 20px;
+  color: rgb(255, 253, 253);
+  font-size: 14px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 td:hover {
@@ -281,7 +295,7 @@ td:active {
   color: darkred;
 }
 td a {
-  color: white;
+  color: rgb(253, 250, 250);
   text-decoration: none;
 }
 td a:hover {

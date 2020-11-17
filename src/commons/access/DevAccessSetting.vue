@@ -19,7 +19,7 @@
         <span slot="label"> {{ $t("socketes") }}</span>
         <access-socket class="tab-aceess-content"></access-socket>
       </el-tab-pane>
-      <!-- 智能遥控器 -->
+      <!-- 智能遥控器-- -->
       <el-tab-pane>
         <span slot="label"> {{ $t("controles") }}</span>
         <access-control class="tab-aceess-content"></access-control>
@@ -80,8 +80,9 @@ export default {
 
 <style>
 .dialog-access-menu {
-  width: 850px;
+  width: 800px;
 }
+
 
 .dialog-access-menu .el-tabs__item {
   height: 32px;
@@ -102,7 +103,7 @@ export default {
   margin-right: 1px !important;
 }
 .tab-aceess-content {
-  height: 600px;
+  height: 580px;
   border-radius: 5px;
   padding: 1px;
   border: 1px solid #ccc;

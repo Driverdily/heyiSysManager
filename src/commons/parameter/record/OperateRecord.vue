@@ -245,6 +245,7 @@ export default {
 <style scoped>
 .table-wrapper {
   height: 90%;
+  margin-top: 1px;
 }
 
 .alarm-pagination {

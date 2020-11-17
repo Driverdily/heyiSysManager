@@ -121,20 +121,21 @@ export default {
 
 <style>
 .dialog-nb-devset-menu {
-  width: 800px;
+  width: 850px;
 }
 .tab-nb-set {
-  height: 700px;
+  height: 650px;
   border-top: 1px solid #ccc;
 }
 .tab-nb-set .tab-nb-set-content {
   border: 1px solid #ccc;
   margin: 5px;
   border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
 }
 
 .dialog-nb-devset-menu .el-tabs--border-card > .el-tabs__content {
-  padding: 0px;
+  padding: 1px;
 }
 .dialog-nb-devset-menu .el-dialog__body {
   padding: 0 !important;

@@ -98,8 +98,8 @@ body {
   font-size: 14px;
 }
 .el-dialog__header {
-  background: #f8f8f8;
-  padding: 10px;
+  background: #f3f1f1;
+  padding: 8px 10px;
 }
 .el-dialog__headerbtn {
   top: 12px;
