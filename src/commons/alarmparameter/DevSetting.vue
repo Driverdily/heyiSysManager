@@ -115,8 +115,8 @@
           <!-- 恢复出厂 -->
           <span slot="label"
             ><i class="iconfont icon-huifuchuchang" style="color: #006600"></i
-            >&nbsp; {{ $t("restore_factory") }}
-          </span>
+            >&nbsp; {{ $t("restore_factory") }}</span
+          >
           <dev-reset class="tab-alarm-set-content"></dev-reset>
         </el-tab-pane>
       </el-tabs>

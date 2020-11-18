@@ -13,6 +13,7 @@
     "echarts-gl": "^1.1.1",
     "element-ui": "^2.3.4",
     "node-sass": "^4.14.1",
+    "particles.js": "^2.0.0",
     "react-scale-box": "^1.0.2",
     "sass-loader": "^7.3.1",
     "vue": "^2.5.16",

@@ -113,12 +113,12 @@
 
       <el-col :span="14">
         <span>{{ $t("ac") }}</span>
-      </el-col>
+      </el-col>                                                                               
       <el-col :span="8" class="align-right">
         <span class="txt-blue">交流电</span>
       </el-col>
     </el-row>
-    <!-- 设备电池 -->
+    <!-- 设备电池-- -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
         <img

@@ -5,7 +5,7 @@
         <el-table
           ref="singleTable"
           :data="ZoneList"
-          style="width: 100%; overflow-y: scroll"
+          style="width: 100%; overflow-y: scroll;max-height:580px;"
           size="mini"
           highlight-current-row
           @current-change="handleCurrentChange"
@@ -26,7 +26,7 @@
           <el-table-column prop="label" :label="$t('zones')"></el-table-column>
         </el-table>
       </el-col>
-      <el-col :span="16" style="">
+      <el-col :span="16">
         <!-- 对码状态 -->
         <el-row class="dev-set-list-item">
           <el-col :span="2" style="align-items: center">
@@ -42,6 +42,7 @@
             <span class="txt-blue">对码状态</span>
           </el-col>
         </el-row>
+
         <!-- 防区名称 -->
         <el-row class="dev-set-list-item">
           <el-col :span="2" style="align-items: center">
@@ -62,6 +63,7 @@
             }}</el-button>
           </el-col>
         </el-row>
+
         <!-- 防区类型 -->
         <el-row class="dev-set-list-item">
           <el-col :span="2" style="align-items: center">
@@ -91,6 +93,7 @@
             </el-select>
           </el-col>
         </el-row>
+
         <!-- 允许在家布防 -->
         <el-row class="dev-set-list-item">
           <el-col :span="2" style="align-items: center">
@@ -109,6 +112,7 @@
             ></el-switch>
           </el-col>
         </el-row>
+
         <!-- 防区防误报 -->
         <el-row class="dev-set-list-item">
           <el-col :span="2" style="align-items: center">
@@ -127,6 +131,7 @@
             ></el-switch>
           </el-col>
         </el-row>
+
         <!-- 防区锁定 -->
         <el-row class="dev-set-list-item">
           <el-col :span="2" style="align-items: center">
@@ -151,6 +156,7 @@
             </el-select>
           </el-col>
         </el-row>
+
         <!-- 防区触发类型 -->
         <el-row class="dev-set-list-item">
           <el-col :span="2" style="align-items: center">
@@ -180,6 +186,7 @@
             </el-select>
           </el-col>
         </el-row>
+
         <!-- LED广告屏 -->
         <el-row class="dev-set-list-item">
           <el-col :span="2" style="align-items: center">
@@ -200,6 +207,7 @@
             }}</el-button>
           </el-col>
         </el-row>
+
         <!-- 语音内容 -->
         <el-row class="dev-set-list-item">
           <el-col :span="2" style="align-items: center">
@@ -220,6 +228,7 @@
             }}</el-button>
           </el-col>
         </el-row>
+
         <!-- 对码 -->
         <el-row class="dev-set-list-item">
           <el-col :span="24" class="align-center">
@@ -299,7 +308,64 @@ export default {
           value: "14",
           label: "防区15",
         },
+        {
+          value: "1",
+          label: "防区1",
+        },
+        {
+          value: "2",
+          label: "防区2",
+        },
+        {
+          value: "3",
+          label: "防区3",
+        },
+        {
+          value: "4",
+          label: "防区4",
+        },
+        {
+          value: "5",
+          label: "防区5",
+        },
+        {
+          value: "6",
+          label: "防区6",
+        },
+        {
+          value: "7",
+          label: "防区7",
+        },
+        {
+          value: "8",
+          label: "防区8",
+        },
+        {
+          value: "9",
+          label: "防区9",
+        },
+        {
+          value: "10",
+          label: "防区10",
+        },
+        {
+          value: "11",
+          label: "防区11",
+        },
+        {
+          value: "12",
+          label: "防区12",
+        },
+        {
+          value: "13",
+          label: "防区13",
+        },
+        {
+          value: "14",
+          label: "防区15",
+        },
       ],
+
       ZoneTypeList: [
         {
           value: "0",
@@ -374,6 +440,7 @@ export default {
           label: this.$t("zone_voice_prompt"),
         },
       ],
+
       ZoneTriggerTypeList: [
         {
           value: "0",

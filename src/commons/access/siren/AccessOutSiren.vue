@@ -5,7 +5,7 @@
         <el-table
           ref="singleOutsirenTable"
           :data="OutSirenList"
-          style="width: 100%; overflow-y: scroll"
+          style="width: 100%; overflow-y: scroll;max-height:580px;"
           size="mini"
           highlight-current-row
           @current-change="handleCurrentChange"

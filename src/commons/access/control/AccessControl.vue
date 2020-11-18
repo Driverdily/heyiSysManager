@@ -5,7 +5,7 @@
         <el-table
           ref="singleTable"
           :data="ControlList"
-          style="width: 100%; overflow-y: scroll"
+          style="width: 100%; overflow-y: scroll; max-height: 580px"
           size="mini"
           highlight-current-row
           @current-change="handleCurrentChange"
@@ -35,7 +35,6 @@
               <img
                 v-show="scope.row.Switch"
                 src="../../../assets/img/access/checkmark_66.png"
-                alt=""
                 class="table-img"
               />
             </template>
@@ -45,17 +44,26 @@
 
       <el-col :span="16">
         <div style="height: 100%; text-align: center; margin-top: 300px">
-          <el-button type="infor" style="padding: 10px 95px;margin-top:10px;" size="mini">{{
-            $t("enrolling")
-          }}</el-button>
+          <el-button
+            type="infor"
+            style="padding: 10px 95px; margin-top: 10px"
+            size="mini"
+            >{{ $t("enrolling") }}</el-button
+          >
           <br />
-          <el-button type="infor" style="padding: 10px 80px;margin-top:10px;" size="mini">{{
-            $t("re_code")
-          }}</el-button>
+          <el-button
+            type="infor"
+            style="padding: 10px 80px; margin-top: 10px"
+            size="mini"
+            >{{ $t("re_code") }}</el-button
+          >
           <br />
-          <el-button type="infor" style="padding: 10px 80px;margin-top:10px;" size="mini">{{
-            $t("delete_code")
-          }}</el-button>
+          <el-button
+            type="infor"
+            style="padding: 10px 80px; margin-top: 10px"
+            size="mini"
+            >{{ $t("delete_code") }}</el-button
+          >
         </div>
       </el-col>
     </el-row>

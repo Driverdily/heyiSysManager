@@ -142,13 +142,16 @@
         </el-form-item>
       </el-form>
     </el-dialog>
+    <!-- <particlesJS /> -->
   </div>
 </template>
 <script>
 import vueCanvasNest from "vue-canvas-nest";
+import particlesJS from "../../commons/utils/ParticlesJS";
 export default {
   components: {
     vueCanvasNest,
+    particlesJS,
   },
   data() {
     return {
@@ -260,12 +263,12 @@ export default {
   width: 300px;
   position: absolute;
   top: 50%;
-  left: 80%;
+  left: 81%;
   margin-left: -200px;
   margin-top: -200px;
   padding: 20px 20px 15px;
   background: white;
-  /* border: 1px solid #eaeaea; */
+  border: 1px solid #eaeaea;
   box-shadow: 0 0 3px #cac6c6;
 }
 </style>

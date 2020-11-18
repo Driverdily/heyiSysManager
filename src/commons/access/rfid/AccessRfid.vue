@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-row>
-      <el-col :span="8" style="height: 100%; overflow-y: scroll">
+      <el-col :span="8" style="height: 100%; overflow-y: scroll;max-height:580px;">
         <el-table
           ref="singleTable"
           :data="RfidList"

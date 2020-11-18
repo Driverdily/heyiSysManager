@@ -44,7 +44,7 @@
           <!-- <div class="box-card" style="height: 100px;">
 						<span class="box-title">{{$t('other_param')}}</span>
 					</div> -->
-          <!-- 联系人信息-- -->
+          <!-- 联系人信息--鲱鱼 鳕鱼 -->
           <div class="box-card">
             <span class="box-title">{{ $t("contect_person_info") }}</span>
 

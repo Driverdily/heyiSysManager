@@ -1,11 +1,13 @@
 <template>
-  <div style="overflow-y: scroll; max-height: 690px">
+  <div style="overflow-y: scroll; max-height: 630px">
+
     <!-- 网络参数设置 -->
     <el-row class="dev-set-list-item bg-gray">
       <el-col :span="24">
         <span class="fa-1x m-l-10 txt-bold">{{ $t("net_set") }}</span></el-col
       >
     </el-row>
+
     <!-- 开关 -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -21,6 +23,7 @@
         <el-switch v-model="net_switch" active-color="#13ce66"></el-switch>
       </el-col>
     </el-row>
+
     <!-- 网络通道 -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -38,6 +41,7 @@
         <el-radio v-model="NetAisle_Radio" label="3">GPRS</el-radio>
       </el-col>
     </el-row>
+
     <!-- 连接类型 -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -54,6 +58,7 @@
         <el-radio v-model="LinkType_Radio" label="2">UDP</el-radio>
       </el-col>
     </el-row>
+
     <!-- 连接路径 -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -70,6 +75,7 @@
         <el-radio v-model="LinkPath_Raio" label="2">DNS</el-radio>
       </el-col>
     </el-row>
+
     <!-- 域名 -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -90,6 +96,7 @@
         }}</el-button>
       </el-col>
     </el-row>
+
     <!-- 端口 -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -110,8 +117,8 @@
         }}</el-button>
       </el-col>
     </el-row>
-    <!-- 协议设置 -->
 
+    <!-- 协议设置 -->
     <el-row class="dev-set-list-item bg-gray">
       <el-col :span="24">
         <span class="fa-1x m-l-10 txt-bold">{{
@@ -135,6 +142,7 @@
         <span class="txt-blue">ADM-CID</span>
       </el-col>
     </el-row>
+
     <!-- 用户账号 -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -154,6 +162,7 @@
         }}</el-button>
       </el-col>
     </el-row>
+
     <!-- 用户前缀 -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -177,6 +186,7 @@
         }}</el-button>
       </el-col>
     </el-row>
+
     <!-- 接收方号码 -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -199,8 +209,8 @@
         }}</el-button>
       </el-col>
     </el-row>
-    <!-- aes 128位加密 -->
 
+    <!-- aes 128位加密 -->
     <el-row class="dev-set-list-item bg-gray">
       <el-col :span="24">
         <span class="fa-1x m-l-10 txt-bold">{{
@@ -224,6 +234,7 @@
         <el-switch v-model="aes_switch" active-color="#13ce66"></el-switch>
       </el-col>
     </el-row>
+    
     <!-- AES 128位加密 -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -295,6 +306,7 @@
         <el-switch v-model="timing_switch" active-color="#13ce66"></el-switch>
       </el-col>
     </el-row>
+    
     <!-- 监测间隔 -->
     <el-row class="dev-set-list-item-mini">
       <el-col :span="2" style="align-items: center">
@@ -313,7 +325,8 @@
         <el-input size="mini"></el-input>
       </el-col>
     </el-row>
-    <!-- 监测报告定时测试 -->
+    
+    <!-- 监测报告定时测试- -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
         <img
@@ -340,6 +353,7 @@
         }}</span></el-col
       >
     </el-row>
+    
     <!-- 重传次数 -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -364,6 +378,7 @@
         </el-select>
       </el-col>
     </el-row>
+    
     <!-- 重传时间 -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -388,12 +403,14 @@
         </el-select>
       </el-col>
     </el-row>
+    
     <!-- CRC16 -->
     <el-row class="dev-set-list-item bg-gray">
       <el-col :span="24">
         <span class="fa-1x m-l-10 txt-bold">CRC 16</span></el-col
       >
     </el-row>
+
     <!-- CRC16开关 -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -431,6 +448,7 @@ export default {
   },
 };
 </script>
+
 
 <style>
 </style>
