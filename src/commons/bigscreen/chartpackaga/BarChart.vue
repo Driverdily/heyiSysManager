@@ -72,7 +72,8 @@ export default {
                 }, {
                   offset: 1,
                   color: '#7052f4'
-                }], false)
+                }], false),
+                 barBorderRadius: [18, 18, 0 ,0]
               }
             },
           },
@@ -87,7 +88,8 @@ export default {
                 }, {
                   offset: 1,
                   color: '#6f81da'
-                }], false)
+                }], false),
+                 barBorderRadius: [18, 18, 0 ,0],
               }
             },
           },
@@ -102,12 +104,25 @@ export default {
                 }, {
                   offset: 1,
                   color: '#43ce5b'
-                }], false)
+                }], false),
+                 barBorderRadius: [18, 18, 0 ,0]
               }
             },
           },
           {
             type:'bar',
+             itemStyle:{
+              normal:{
+                color: new this.$echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                  offset: 0,
+                  color: '#f84242'
+                }, {
+                  offset: 1,
+                  color: '#f70707'
+                }], false),
+                 barBorderRadius: [18, 18, 0 ,0]
+              }
+            },
           }
 
 

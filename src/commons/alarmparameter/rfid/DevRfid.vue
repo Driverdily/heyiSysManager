@@ -1,5 +1,6 @@
 <template>
 	<div>
+		
 		<!-- rfid通知号码 -->
 		<el-row class="dev-set-list-item">
 			<el-col :span="2" style="align-items: center;">
@@ -14,8 +15,8 @@
 			<el-col :span="3" class=" align-right">
 				<el-button type="infor" style="margin-left: 5px;" size="mini">{{$t('change')}}</el-button>
 			</el-col>
-
 		</el-row>
+
 		<!-- rfid  -->
 		<el-row class="dev-set-list-item">
 			<el-col :span="2" style="align-items: center;">

@@ -20,13 +20,16 @@ export default {
       this.chartInit();
     },
     chartInit() {
-      let myChart = this.$echarts.init(document.getElementById("pieChart"),'light');
+      let myChart = this.$echarts.init(
+        document.getElementById("pieChart"),
+        "light"
+      );
       let options = {
         title: {
           //   text: '饼图程序调用高亮示例',
           x: "center",
           textStyle: {
-            color: "#ffffff",
+            color: "#fff",
           },
         },
         tooltip: {
@@ -45,7 +48,7 @@ export default {
             "其他",
           ],
           textStyle: {
-            color: "#ffffff",
+            color: "#fff",
           },
         },
         label: {
@@ -54,15 +57,14 @@ export default {
             formatter: "{b} \n{d}%",
           },
         },
-        calculable : true,
+        calculable: true,
         series: [
           {
             name: "访问来源",
             type: "pie",
-            radius: ["25%", 100],
+            radius: ["25%", 90],
             center: ["65%", "37%"],
             roseType: "radius",
-      
 
             label: {
               normal: {
@@ -87,12 +89,26 @@ export default {
               { value: 230, name: "其他" },
             ],
             itemStyle: {
-       
               emphasis: {
                 shadowBlur: 6,
                 shadowOffsetX: 1,
-                shadowColor: "rgba(0, 0, 0, 0.5)",
+                shadowColor: "rgba(255, 255, 255, 0.6)",
               },
+              normal: {
+                color: function (params) {
+                  //自定义颜色
+                  var colorList = [
+                    "#00A9FD",
+                    "#3FFFEA",
+                    "#FE701A",
+                    "#FFA11B",
+                    "#00E435",
+                    "#FAED00",
+                  ];
+                  return colorList[params.dataIndex];
+                },
+              },
+            
             },
           },
         ],

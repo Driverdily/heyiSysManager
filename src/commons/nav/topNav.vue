@@ -158,6 +158,7 @@ export default {
         this.$i18n.locale = "en";
         localStorage.setItem("locale", "en");
       }
+      
     },
     showAboutVersion() {
       this.isAboutDialogShow = true;
@@ -173,7 +174,6 @@ export default {
   left: 0;
   display: flex;
   justify-content: space-between;
-  min-width: 1240px;
   height: 72px;
   padding: 0 15px;
   /* background-color: #3060ff; */

@@ -11,7 +11,7 @@
     <div>
       <el-tabs tab-position="left" type="border-card" class="tab-alarm-set">
         <el-tab-pane>
-          <!-- 设备信息 -->
+          <!-- 设备信息-- -->
           <span slot="label"
             ><i class="iconfont icon-adjust" style="color: red"></i>&nbsp;
             {{ $t("dev_information") }}</span
@@ -72,8 +72,8 @@
           <!-- RFID设置 -->
           <span slot="label"
             ><i class="iconfont icon-RFID" style="color: deepskyblue"> </i
-            >&nbsp; {{ $t("rfid_set") }}</span
-          >
+            >&nbsp; {{ $t("rfid_set") }}
+          </span>
           <dev-rfid class="tab-alarm-set-content"></dev-rfid>
         </el-tab-pane>
         <el-tab-pane>
@@ -137,6 +137,7 @@ import DevFirmware from "./firmware/DevFirmware.vue";
 import DevSiaip from "./siaip/DevSiaip.vue";
 import DevReset from "./reset/ResetFactory.vue";
 import DevOther from "./other/DevOther.vue";
+
 export default {
   components: {
     DevInformations,

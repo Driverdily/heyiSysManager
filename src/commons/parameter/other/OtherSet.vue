@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <!-- 设备信息 -->
     <el-row class="dev-set-list-item bg-gray">
       <el-col :span="24" class=" ">
@@ -73,6 +74,7 @@
         <span class="txt-blue">设备的IMEI号</span>
       </el-col>
     </el-row>
+
     <!-- 用户信息 -->
     <el-row class="dev-set-list-item bg-gray">
       <el-col :span="24" class=" ">
@@ -162,6 +164,7 @@
         ></el-input>
       </el-col>
     </el-row>
+    
     <!-- 维保人 -->
     <el-row class="dev-set-list-item bg-gray">
       <el-col :span="24">

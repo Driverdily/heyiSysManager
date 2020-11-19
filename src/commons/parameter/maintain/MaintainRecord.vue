@@ -37,6 +37,7 @@
           <span class="fa-1x m-l-10 txt-bold">提交申报</span>
         </el-col>
       </el-row>
+
       <!-- 时间 -->
       <el-row class="dev-set-list-item" >
         <el-col :span="3" style="align-items: center">
@@ -60,6 +61,7 @@
           </el-date-picker>
         </el-col>
       </el-row>
+
       <!-- 故障描述 -->
       <el-row class="dev-set-list-item">
         <el-col :span="3" style="align-items: center">
@@ -82,6 +84,7 @@
           </el-input>
         </el-col>
       </el-row>
+      
       <!-- 提交 -->
       <el-row class="dev-set-list-item">
         <el-col :span="24">

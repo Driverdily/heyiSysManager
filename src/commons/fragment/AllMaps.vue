@@ -14,7 +14,7 @@
         </el-tree>
       </el-col>
       <el-col :span="21" class="right-main">
-        <main-map style="height:99.8%;"></main-map>
+        <main-map style="height:99.9%;"></main-map>
       </el-col>
     </el-row>
   </el-container>

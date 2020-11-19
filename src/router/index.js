@@ -32,7 +32,6 @@ let routes = [{
 	{
 		path: '/main',
 		component: MainPager,
-		name: 'main',
 		children: [{
 				path: '',
 				component: newMapBox
@@ -69,9 +68,9 @@ let routes = [{
 		}]
 	},
 	{
-		path:"/bigscreentwo",
-		component:bigScreenTwo,
-		name:'bigscreentwo'
+		path: "/bigscreentwo",
+		component: bigScreenTwo,
+		name: 'bigscreentwo'
 	}
 
 

@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import NavBar from "../bigscreen/Navbar";
-import BigMain from "../bigscreen/BigMain";
+import NavBar from "../bigscreen/Navbar.vue";
+import BigMain from "../bigscreen/BigMain.vue";
 
 export default {
   components: {
@@ -17,8 +17,6 @@ export default {
   data() {
     return {};
   },
-  methods: {},
-  mounted: {},
 };
 </script>
 
@@ -37,6 +35,4 @@ export default {
   -o-background-size: cover;
   background-position: center 0;
 }
-
-
 </style>

@@ -97,6 +97,38 @@ export default {
           link_phone: "12312312312",
           link_address: "地球1",
         },
+        {
+          report_time: "2020-10-10",
+          alarm_time: "2020-11-11",
+          group_name: "第一组",
+          dev_name: "设备一",
+          dev_number: "00070012",
+          alarm_code: "1231231231",
+          alarm_content: "撤防",
+          partition_number: "21312",
+          zone_number: "1",
+          zone_information: "开门",
+          alarm_sort: "主机",
+          link_person: "张三",
+          link_phone: "12312312312",
+          link_address: "地球1",
+        },
+        {
+          report_time: "2020-10-10",
+          alarm_time: "2020-11-11",
+          group_name: "第一组",
+          dev_name: "设备一",
+          dev_number: "00070012",
+          alarm_code: "1231231231",
+          alarm_content: "撤防",
+          partition_number: "21312",
+          zone_number: "1",
+          zone_information: "开门",
+          alarm_sort: "主机",
+          link_person: "张三",
+          link_phone: "12312312312",
+          link_address: "地球1",
+        },
       ],
     };
   },
@@ -111,8 +143,8 @@ export default {
 </script>
 
 <style scoped>
-.main_bottom_record{
-border-top: 1px solid #ccc;
+.main_bottom_record {
+  border-top: 1px solid #ccc;
 }
 
 .bottom-menu {

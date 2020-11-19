@@ -17,7 +17,7 @@
       <el-col :span="2" class="align-right">
         <el-button
           type="infor"
-          style="margin-left: 5px"
+          style="margin-left: 5px;"
           size="mini"
           icon="el-icon-check"
         ></el-button>

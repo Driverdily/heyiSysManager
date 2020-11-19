@@ -1,11 +1,10 @@
 <template>
 	<div>
+	
 		<!-- 当前固件版本 -->
 		<el-row class="dev-set-list-item">
 			<el-col :span="2" style="align-items: center;">
-
 				<img src="../../../assets/img/seticon/firmware_66_gray.png" class="dev-set-list-img">
-
 			</el-col>
 
 			<el-col :span="14">
@@ -16,6 +15,7 @@
 				<span class="txt-blue">设备当前固件版本</span>
 			</el-col>
 		</el-row>
+
 		<!-- 可升级版本 -->
 		<el-row class="dev-set-list-item">
 			<el-col :span="2" style="align-items: center;">

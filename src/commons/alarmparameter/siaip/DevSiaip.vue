@@ -143,7 +143,7 @@
       </el-col>
     </el-row>
 
-    <!-- 用户账号 -->
+    <!-- 用户账号-- -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
         <img
@@ -326,7 +326,7 @@
       </el-col>
     </el-row>
     
-    <!-- 监测报告定时测试- -->
+    <!-- 监测报告定时测试--->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
         <img
@@ -371,8 +371,7 @@
           keep-alive
           size="mini"
           :placeholder="$t('select')"
-          style="width: 90%"
-        >
+          style="width: 90%">
           <el-option v-for="i in 10" :key="i" :label="i" :value="i">
           </el-option>
         </el-select>
@@ -396,8 +395,7 @@
           keep-alive
           size="mini"
           :placeholder="$t('select')"
-          style="width: 90%"
-        >
+          style="width: 90%;">
           <el-option v-for="i in (5, 60)" :key="i" :label="i" :value="i">
           </el-option>
         </el-select>
@@ -441,9 +439,9 @@ export default {
       NetAisle_Radio: 1, //网络通道
       LinkType_Radio: 1, //连接类型
       LinkPath_Raio: 1, //连接路径
-      Prefix_Radio: 1,
-      retransmission_times_value: "2",
-      retransmission_interval_value: "8",
+      Prefix_Radio: 1, //加密进制选择
+      retransmission_times_value: "2", //重传次数
+      retransmission_interval_value: "8",//重传时间
     };
   },
 };

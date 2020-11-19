@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "167470",
+      "name": "unlink",
+      "font_class": "unlink",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "490811",
+      "name": "wifi",
+      "font_class": "wifi",
+      "unicode": "eda9",
+      "unicode_decimal": 60841
+    },
+    {
+      "icon_id": "703023",
+      "name": "lan",
+      "font_class": "lan",
+      "unicode": "e909",
+      "unicode_decimal": 59657
+    },
+    {
+      "icon_id": "5747656",
+      "name": "share",
+      "font_class": "share",
+      "unicode": "e72b",
+      "unicode_decimal": 59179
+    },
+    {
       "icon_id": "6049338",
       "name": "about",
       "font_class": "about",

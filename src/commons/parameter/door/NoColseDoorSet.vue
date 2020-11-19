@@ -5,6 +5,7 @@
         <span class="fa-1x m-l-10 txt-bold">开关门列表</span>
       </el-col>
     </el-row>
+    
     <!-- 列表 -->
     <el-row>
       <el-col :span="24">
@@ -30,6 +31,7 @@
         </el-table>
       </el-col>
     </el-row>
+
     <!-- 设置 -->
     <div class="layout-bottom">
       <el-row class="dev-set-list-item bg-gray">
@@ -37,6 +39,7 @@
           <span class="fa-1x m-l-10 txt-bold">联动设置</span>
         </el-col>
       </el-row>
+
       <!-- 使用情况 -->
       <el-row class="dev-set-list-item">
         <el-col :span="3" style="align-items: center">
@@ -54,6 +57,7 @@
           <el-radio v-model="radio" label="2">关</el-radio>
         </el-col>
       </el-row>
+
       <!-- 时间 -->
       <el-row class="dev-set-list-item">
         <el-col :span="3" style="align-items: center">
@@ -109,6 +113,7 @@
           </el-select>
         </el-col>
       </el-row>
+
       <!-- 星期 -->
       <el-row class="dev-set-list-item">
         <el-col
@@ -124,6 +129,7 @@
           </el-checkbox-group>
         </el-col>
       </el-row>
+
       <!-- 确认 -->
       <el-row class="dev-set-list-item">
         <el-col :span="24">

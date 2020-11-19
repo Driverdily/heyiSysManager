@@ -5,6 +5,7 @@
         <span class="fa-1x m-l-10 txt-bold">接警号码列表</span>
       </el-col>
     </el-row>
+
     <!-- 号码列表 -->
     <el-row>
       <el-col :span="24">
@@ -71,6 +72,7 @@
           <el-input size="mini" placeholder="请输入电话号码"></el-input>
         </el-col>
       </el-row>
+
       <!-- 可拨打电话 可发送短信 check框 -->
       <el-row class="dev-set-list-item" style="padding: 10px 5px">
         <el-col :offset="14" :span="10" class="align-right">
@@ -91,6 +93,7 @@
         </el-col>
         <div class="clearfix"></div>
       </el-row>
+
       <!-- 文字描述 -->
       <el-row style="padding: 4px; font-size: 12px">
         <el-col :offset="1" :span="7">
@@ -108,6 +111,7 @@
           <span style="font-weight: 450; color: red">{{text_phone_times}}</span>
         </el-col>
       </el-row>
+
       <!-- 运营商限制 -->
       <el-row style="padding: 4px; margin-top: 6px; font-size: 14px">
         <el-col :offset="1" :span="21">
@@ -119,6 +123,7 @@
           <span>{{ $t("tips_one") }}</span>
         </el-col>
       </el-row>
+      
       <!-- 运营商限制 -->
       <el-row style="padding: 4px; font-size: 12px">
         <el-col :offset="2" :span="20">

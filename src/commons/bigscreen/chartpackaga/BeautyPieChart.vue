@@ -19,23 +19,23 @@ export default {
     getData() {
       var scaleData = [
         {
-          name: "SGW01",
+          name: "SGW01-SD",
           value: 20,
         },
         {
-          name: "W7",
+          name: "W7-SDF",
           value: 15,
         },
         {
-          name: "518D",
+          name: "518D-4321",
           value: 8,
         },
         {
-          name: "W20",
+          name: "W20-1203",
           value: 12,
         },
         {
-          name: "AC01",
+          name: "AC01-231",
           value: 15,
         },
         {

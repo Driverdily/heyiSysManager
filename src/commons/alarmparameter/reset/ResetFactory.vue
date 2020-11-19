@@ -1,11 +1,13 @@
 <template>
 <div>
+
 	<!-- 提示 -->
 	<el-row class="dev-set-list-item  bg-gray">
 		<el-col :span="24" >
 			<span class="fa-1x m-l-10 txt-bold ">{{$t('tips')}}</span>
 		</el-col>
 	</el-row>
+	
 	<!-- 温度 -->
 	<el-row class="dev-set-list-item">
 		<el-col :span="2" style="align-items: center;">

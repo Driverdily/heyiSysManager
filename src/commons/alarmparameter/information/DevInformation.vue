@@ -1,5 +1,6 @@
 <template>
   <div>
+   
     <!-- 设备属性 -->
     <el-row class="dev-set-list-item bg-gray">
       <el-col :span="24">
@@ -7,7 +8,7 @@
       </el-col>
     </el-row>
 
-    <!-- 设备名称 -->
+    <!-- 设备名称-- -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
         <img
@@ -32,7 +33,7 @@
       </el-col>
     </el-row>
 
-    <!-- 序列号 -->
+    <!-- 序列号-- -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
         <img
@@ -48,6 +49,7 @@
         <span class="txt-blue">设备的序列号</span>
       </el-col>
     </el-row>
+    
     <!-- 硬件版本 -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -64,7 +66,8 @@
         <span class="txt-blue">设备硬件版本</span>
       </el-col>
     </el-row>
-    <!-- 固件版本 -->
+
+    <!-- 固件版本- -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
         <img
@@ -80,7 +83,8 @@
         <span class="txt-blue">设备固件版本</span>
       </el-col>
     </el-row>
-    <!-- CCID -->
+   
+    <!-- CCID- -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
         <img
@@ -96,12 +100,14 @@
         <span class="txt-blue">设备CCID</span>
       </el-col>
     </el-row>
+   
     <!-- 状态信息 -->
     <el-row class="dev-set-list-item bg-gray">
       <el-col :span="24">
         <span class="fa-1x m-l-10 txt-bold">{{ $t("dev_status") }}</span>
       </el-col>
     </el-row>
+   
     <!-- 交流电 -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -118,6 +124,7 @@
         <span class="txt-blue">交流电</span>
       </el-col>
     </el-row>
+    
     <!-- 设备电池-- -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -134,6 +141,7 @@
         <span class="txt-blue">设备电池</span>
       </el-col>
     </el-row>
+   
     <!-- 电池电压 -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -150,6 +158,7 @@
         <span class="txt-blue">电池电压</span>
       </el-col>
     </el-row>
+   
     <!-- GSM信号 -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
@@ -166,7 +175,8 @@
         <span class="txt-blue">GSM信号</span>
       </el-col>
     </el-row>
-    <!-- 温度 -->
+  
+    <!-- 温度- -->
     <el-row class="dev-set-list-item">
       <el-col :span="2" style="align-items: center">
         <img
@@ -191,5 +201,6 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+
 </style>

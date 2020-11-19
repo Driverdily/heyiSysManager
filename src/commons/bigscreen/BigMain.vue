@@ -1,6 +1,7 @@
 <template>
   <div class="data-show-container clearfix">
     <el-row style="height: 100%">
+  
       <el-col :lg="6" :xl="6" class="left-container">
         <div class="chartComponent pieThreeChart">
           <span class="top-left border-span"></span>
@@ -25,6 +26,7 @@
           <bar-chart></bar-chart>
         </div>
       </el-col>
+    
       <el-col :lg="16" :xl="12" class="middle-container">
         <div class="chartComponent dateBox">
           <span class="top-left border-span"></span>
@@ -38,9 +40,10 @@
           <span class="top-right border-span"></span>
           <span class="bottom-left border-span"></span>
           <span class="bottom-right border-span"></span>
-          <worldmap-two></worldmap-two>
+          <world-map></world-map>
         </div>
       </el-col>
+
       <el-col :lg="6" :xl="6" class="right-container">
         <div class="chartComponent pieChart">
           <span class="top-left border-span"></span>
@@ -64,25 +67,26 @@
           <table-data-two></table-data-two>
         </div>
       </el-col>
+
     </el-row>
   </div>
 </template>
 
 <script>
-import LineChart from "./chartpackaga/LineChart";
-import LinesChart from "./chartpackaga/LinesChart";
-import BarChart from "./chartpackaga/BarChart";
-import PieThreeChart from "./chartpackaga/PieThreeChart";
+import LineChart from "./chartpackaga/LineChart.vue";
+import LinesChart from "./chartpackaga/LinesChart.vue";
+import BarChart from "./chartpackaga/BarChart.vue";
+import PieThreeChart from "./chartpackaga/PieThreeChart.vue";
 
-import PieChart from "./chartpackaga/PieChart";
-import BeautyChart from "./chartpackaga/BeautyPieChart";
-import TableDataTwo from "./chartpackaga/TableDataTwo";
+import PieChart from "./chartpackaga/PieChart.vue";
+import BeautyChart from "./chartpackaga/BeautyPieChart.vue";
+import TableDataTwo from "./chartpackaga/TableDataTwo.vue";
 
-import ChinaMap from "./chartpackaga/ChinaMap";
-import TableData from "./chartpackaga/TableData";
-import WorldMap from "./chartpackaga/WorldMap";
-import WorldmapTwo from "./chartpackaga/WorldMapTwo";
-import DateBox from "./chartpackaga/DateBox";
+import ChinaMap from "./chartpackaga/ChinaMap.vue";
+import TableData from "./chartpackaga/TableData.vue";
+import WorldMap from "./chartpackaga/WorldMap.vue";
+import WorldmapTwo from "./chartpackaga/WorldMapTwo.vue";
+import DateBox from "./chartpackaga/DateBox.vue";
 
 export default {
   name: "dataIndex",
@@ -117,7 +121,7 @@ export default {
     // border: 1px solid rgba(26, 10, 10, 0.15);
     // box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.1),
     //   0 0 5px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 7px #4788fb;
+    box-shadow: 0px 0px 7px #01F1F5;
 
     .border-span {
       display: block;
@@ -130,28 +134,28 @@ export default {
     .top-left {
       top: -4px;
       left: -4px;
-      border-top: 3px solid #54dcf2;
-      border-left: 3px solid #54dcf2;
+      border-top: 3px solid #01F1F5;
+      border-left: 3px solid #01F1F5;
     }
     span.top-right {
       top: -4px;
       right: -4px;
-      border-top: 3px solid #54dcf2;
-      border-right: 3px solid #54dcf2;
+      border-top: 3px solid #01F1F5;
+      border-right: 3px solid #01F1F5;
     }
 
     span.bottom-left {
       bottom: -4px;
       left: -4px;
-      border-bottom: 3px solid #54dcf2;
-      border-left: 3px solid #54dcf2;
+      border-bottom: 3px solid #01F1F5;
+      border-left: 3px solid #01F1F5;
     }
 
     span.bottom-right {
       bottom: -4px;
       right: -4px;
-      border-bottom: 3px solid #54dcf2;
-      border-right: 3px solid #54dcf2;
+      border-bottom: 3px solid #01F1F5;
+      border-right: 3px solid #01F1F5;
     }
   }
 }

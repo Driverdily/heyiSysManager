@@ -2,95 +2,59 @@
   <div>
     <el-header>{{ title }}</el-header>
     <div class="visual_conTop">
+    
       <div class="visual_conTop_box visual_conTop1">
         <div>
           <h3>接警数(起)</h3>
-          <p>67</p>
+          <p>54</p>
           <div class="conTop_smil">
-            <a class="sz"
-              >日环比:<span>
-                &nbsp;
-                <img src="../../../assets/img/iconup.png" height="16" />
-                +3%</span
-              >
-            </a>
-            <a class="xd"
-              >周环比:<span>
-                &nbsp;
-                <img src="../../../assets/img/icondown.png" height="16" />
-                -3%</span
-              ></a
-            >
+
+            <a class="sz">日环比:<span>&nbsp;<img src="../../../assets/img/iconup.png" height="16" />+3%</span></a>
+
+            <a class="xd">周环比:<span> &nbsp;<img src="../../../assets/img/icondown.png" height="16" />-3%</span></a>
+
           </div>
         </div>
       </div>
+     
       <div class="visual_conTop_box visual_conTop1">
         <div>
           <h3>处警数(起)</h3>
-          <p>14</p>
+          <p>32</p>
           <div class="conTop_smil">
-            <a class="sz"
-              >日环比:<span>
-                &nbsp;
-                <img src="../../../assets/img/iconup.png" height="16" />
-                +3%</span
-              >
-            </a>
-            <a class="xd"
-              >周环比:<span>
-                &nbsp;
-                <img src="../../../assets/img/icondown.png" height="16" />
-                -3%</span
-              ></a
-            >
+            <a class="sz">日环比:<span>&nbsp;<img src="../../../assets/img/iconup.png" height="16" />+3%</span> </a>
+            <a class="xd" >周环比:<span>&nbsp;<img src="../../../assets/img/icondown.png" height="16" />-3%</span></a>
           </div>
         </div>
       </div>
+    
       <div class="visual_conTop_box visual_conTop1">
         <div>
           <h3>有效警情(起)</h3>
-          <p>99</p>
+          <p>23</p>
           <div class="conTop_smil">
-            <a class="sz"
-              >日环比:<span>
-                &nbsp;
-                <img src="../../../assets/img/iconup.png" height="16" />
-                +3%</span
-              >
-            </a>
-            <a class="xd"
-              >周环比:<span>
-                &nbsp;
-                <img src="../../../assets/img/icondown.png" height="16" />
-                -3%</span
-              ></a
-            >
+
+            <a class="sz">日环比:<span>&nbsp;<img src="../../../assets/img/iconup.png" height="16" /> +3%</span></a>
+
+            <a class="xd">周环比:<span> &nbsp;<img src="../../../assets/img/icondown.png" height="16" />-3%</span></a>
+
           </div>
         </div>
       </div>
+    
       <div class="visual_conTop_box visual_conTop1">
         <div>
           <h3>无效警情(起)</h3>
-          <p>71</p>
+          <p>12</p>
           <div class="conTop_smil">
-            <a class="xd"
-              >日环比:<span>
-                &nbsp;
-                <img src="../../../assets/img/icondown.png" height="16" />
-                -3%</span
-              ></a
-            >
-            <a class="sz"
-              >周环比:<span>
-                &nbsp;
-                <img src="../../../assets/img/iconup.png" height="16" />
-                +8%</span
-              >
-            </a>
+            <a class="xd" >日环比:<span> &nbsp; <img src="../../../assets/img/icondown.png" height="16" /> -3% </span></a>
+            <a class="sz">周环比:<span> &nbsp; <img src="../../../assets/img/iconup.png" height="16" /> +8% </span></a>
           </div>
         </div>
       </div>
+    
       <div class="clearfix"></div>
+    
     </div>
   </div>
 </template>
@@ -163,11 +127,10 @@ export default {
     width: 22%;
     // height: 100%;
     float: left;
-  }
-  .visual_conTop1 > div {
+   > div {
     // background: url(../../assets/img/ksh40.png) no-repeat;
     background: url("../../../assets/img/ksh40.png") no-repeat;
     background-size: 100% 100%;
-  }
+  }}
 }
 </style>

@@ -39,6 +39,7 @@
               prefix-icon="el-icon-search"
             >
             </el-input>
+            
             <!-- <el-tree
               class="filter-tree"
               :data="data"
@@ -57,7 +58,7 @@
               :filter-node-method="filterNode"
               :expand-on-click-node="false"
               ref="tree"
-              style="margin-top:10px;background:rgb(233, 231, 231);"
+              style="margin-top: 10px; background: rgb(233, 231, 231)"
             >
               <span class="custom-tree-node" slot-scope="{ node }">
                 <!-- <i class="{data.icon}"></i> -->
@@ -89,13 +90,13 @@
             </el-tree>
           </div>
         </div>
-        <!-- 设备菜单栏 -->
+        <!-- 设备菜单栏-中午-威廉·哈姆雷 -->
         <div
           class="device-container b1-ccc"
           :style="{ width: scrollerRightWidth }"
         >
           <div v-show="isRightFolder" class="tab-navbar">
-            <b id="account" title="">第3个分组</b>
+            <b id="account" title="">子菜单-小标题</b>
             <div class="clearfix"></div>
           </div>
           <span class="pack-up-btn">
@@ -127,9 +128,12 @@
             ></el-input>
 
             <div class="device-list">
-              <div v-for="device in deviceList" :key="device.id">
-                <device-list-item :item="device"></device-list-item>
-              </div>
+              <device-list-item
+                v-for="device in deviceList"
+                :listItem="device"
+                class="list-item"
+                :key="device.id"
+              ></device-list-item>
             </div>
 
             <!-- <ul class="device-list">
@@ -145,7 +149,7 @@
 
       <!-- 地图 -->
       <div class="map-content">
-        <main-map style="height: 99.8%"></main-map>
+        <main-map style="height: 100%"></main-map>
       </div>
       <div class="clearfix"></div>
     </div>
@@ -163,7 +167,7 @@
 </template>
 
 <script>
-import MainMap from "../maps/MainMaps";
+import MainMap from "../maps/MainMaps.vue";
 import DeviceListItem from "../utils/DeviceListItem.vue";
 import AddAlarm from "../adddev/AddAlarmDev.vue";
 import AddNbDev from "../adddev/AddNBDev.vue";
@@ -238,28 +242,43 @@ export default {
       setAddNbVisible: false,
 
       data: JSON.parse(JSON.stringify(data)),
-      data: JSON.parse(JSON.stringify(data)),
+      // data: JSON.parse(JSON.stringify(data)),
 
       deviceList: [
         {
           id: 0,
-          label: "ceshi",
+          label: "W5-sd131231",
+          imgPath: require("../../assets/img/device/w5_true.png"),
+          armStatus: 0,
+          linkStatus: 0,
         },
         {
           id: 1,
-          label: "ceshi",
+          label: "SGW01-SSS-213",
+          imgPath: require("../../assets/img/device/gsm_dev_list_icon_sgw01.png"),
+          armStatus: 2,
+          linkStatus: 1,
         },
         {
           id: 2,
-          label: "ceshi",
+          label: "W7-SDDS-231",
+          imgPath: require("../../assets/img/device/w7_true.png"),
+          armStatus: 2,
+          linkStatus: 2,
         },
         {
           id: 3,
-          label: "ceshi",
+          label: "518D-SID-123",
+          imgPath: require("../../assets/img/device/gsm_518d_true.png"),
+          armStatus: 1,
+          linkStatus: 1,
         },
         {
           id: 4,
-          label: "ceshi",
+          label: "W20-122-2131",
+          imgPath: require("../../assets/img/device/w20_true.png"),
+          armStatus: 0,
+          linkStatus: 0,
         },
       ],
 
@@ -275,7 +294,7 @@ export default {
     },
   },
 
-  methods: {
+  methods: {  //水蜗牛  刺豚  
     filterNode(value, data) {
       if (!value) return true;
       return data.label.indexOf(value) !== -1;
@@ -323,12 +342,15 @@ export default {
     },
   },
   computed: {
+    
     scrollerWidth: function () {
-      return this.isleftFolder ? 240 + "px" : 40 + "px";
+      return this.isleftFolder ? 235 + "px" : 40 + "px";
     },
+    
     scrollerRightWidth: function () {
       return this.isRightFolder ? 299 + "px" : 40 + "px";
     },
+
   },
 };
 </script>
@@ -341,7 +363,7 @@ export default {
 }
 .map-left {
   background: white;
-  transition: all 0.7s;
+  transition: all 1s;
   height: 100%;
   overflow: hidden;
 }
@@ -415,7 +437,6 @@ export default {
 .tab-navbar b {
   float: left;
   max-width: 200px;
-  /* white-space: nowrap; */
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
@@ -457,8 +478,10 @@ b {
   margin-top: 10px;
   border-radius: 5px;
   display: block;
-  max-height: 575px;
+  max-height: 570px;
+  overflow-y: scroll;
 }
+
 .custom-tree-node {
   flex: 1;
   display: flex;

@@ -26,6 +26,8 @@ module.exports = {
 	'transfer_dev':'转让设备',
 	'second':'秒',
 	'add':'添加',
+	'arm_home':'在家布防',
+	'arm_away':'离家布防',
 
 	// 登录页面
 	'username': '用户名',

@@ -234,7 +234,6 @@ export default {
       }, 2000);
     },
   },
-  created: {},
 };
 </script>
 
@@ -250,7 +249,7 @@ export default {
   background-size: 100% 100%;
 }
 .login-box .login_logo {
-  width: 120px;
+  width: 110px;
   height: auto;
   margin-bottom: 20px;
 }
@@ -262,8 +261,8 @@ export default {
   background-clip: padding-box;
   width: 300px;
   position: absolute;
-  top: 50%;
-  left: 81%;
+  top: 47%;
+  left: 80%;
   margin-left: -200px;
   margin-top: -200px;
   padding: 20px 20px 15px;
