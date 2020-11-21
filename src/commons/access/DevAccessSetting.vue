@@ -66,11 +66,8 @@ export default {
       default: false,
     },
   },
-  data() {
-    return {};
-  },
+
   methods: {
-    // 关闭
     handleClose() {
       this.$emit("update:visible", false);
     },
@@ -82,7 +79,6 @@ export default {
 .dialog-access-menu {
   width: 800px;
 }
-
 
 .dialog-access-menu .el-tabs__item {
   height: 32px;

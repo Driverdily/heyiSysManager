@@ -8,6 +8,7 @@
 <script>
 import "echarts/map/js/world.js";
 var uploadedDataURL = require("../../../tools/flights.json");
+import * as THREE from "three";
 
 export default {
   name: "chinaMapChart",
@@ -31,8 +32,7 @@ export default {
       let myChart = this.$echarts.init(
         document.getElementById("worldMapChart")
       );
-      let symbolImg = require("../../../assets/img/earth_color.jpg"); //或者import引入在拼接也行
-      let imggray = require("../../../assets/img/earth_gray.jpg");
+
 
       let data = uploadedDataURL;
 
@@ -88,9 +88,9 @@ export default {
             effect: {
               show: true,
               trailWidth: 1,
-              trailOpacity: 0.5,
+              trailOpacity: 0.4,
               trailLength: 0.2,
-              constantSpeed: 5,
+              constantSpeed: 3,
             },
             blendMode: "lighter",
             lineStyle: {

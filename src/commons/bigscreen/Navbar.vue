@@ -62,7 +62,7 @@ export default {
 </script>
 
 <style  lang="scss" scoped>
- .top_header {
+.top_header {
   color: #ffffff;
   text-align: center;
   margin-top: 10px;

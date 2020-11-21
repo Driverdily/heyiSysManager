@@ -80,10 +80,11 @@ export default {
             name: scaleData[i].name,
             itemStyle: {
               normal: {
-                borderWidth: 2,
+                
+                borderWidth: 3,
                 // shadowBlur: 150,
                 borderColor: color[i],
-                // shadowColor: color[i],
+                shadowColor: color[i],
               },
             },
           },

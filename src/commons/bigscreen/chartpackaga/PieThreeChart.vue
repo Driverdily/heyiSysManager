@@ -69,7 +69,7 @@ export default {
                 name: "正常",
                 itemStyle: {
                   normal: {
-                    color: "#20dbfd",
+                    color: "#06e0fa",
                   },
                 },
               },
@@ -78,7 +78,7 @@ export default {
                 name: "离线",
                 itemStyle: {
                   normal: {
-                    color: "#F3D8F6",
+                    color: "#ffcdcd",
                   },
                 },
               },
@@ -88,7 +88,7 @@ export default {
                 name: "报警",
                 itemStyle: {
                   normal: {
-                    color: "#fe3e12",
+                    color: "#fc0000",
                   },
                 },
               },

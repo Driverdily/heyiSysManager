@@ -14,7 +14,6 @@ import operateRecord from '../commons/fragment/OperateRecord.vue';
 import policeOrder from '../commons/fragment/PoliceOrder.vue';
 import bigScreen from '../commons/fragment/BigScreenView.vue';
 import bigMain from '../commons/bigscreen/BigMain.vue';
-import bigScreenTwo from "../commons/fragment/BigScreenViewTwo.vue";
 
 Vue.use(VueRouter)
 
@@ -61,17 +60,12 @@ let routes = [{
 	{
 		path: '/bigscreen',
 		component: bigScreen,
-		name: 'bigscreen',
 		children: [{
 			path: 'dataIndex',
 			component: bigMain
 		}]
 	},
-	{
-		path: "/bigscreentwo",
-		component: bigScreenTwo,
-		name: 'bigscreentwo'
-	}
+
 
 
 

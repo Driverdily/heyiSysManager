@@ -16,6 +16,7 @@
     "particles.js": "^2.0.0",
     "react-scale-box": "^1.0.2",
     "sass-loader": "^7.3.1",
+    "three": "^0.122.0",
     "vue": "^2.5.16",
     "vue-baidu-map": "^0.21.22",
     "vue-canvas-nest": "^2.0.0",

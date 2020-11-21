@@ -20,10 +20,7 @@ export default {
       this.chartInit();
     },
     chartInit() {
-      let myChart = this.$echarts.init(
-        document.getElementById("pieChart"),
-        "light"
-      );
+      let myChart = this.$echarts.init(document.getElementById("pieChart"),"light");
       let options = {
         title: {
           //   text: '饼图程序调用高亮示例',
@@ -48,7 +45,7 @@ export default {
             "其他",
           ],
           textStyle: {
-            color: "#fff",
+            color: "#ffffff",
           },
         },
         label: {
@@ -62,10 +59,9 @@ export default {
           {
             name: "访问来源",
             type: "pie",
-            radius: ["25%", 90],
+            radius: ["25%", 95],
             center: ["65%", "37%"],
             roseType: "radius",
-
             label: {
               normal: {
                 show: false,
@@ -75,7 +71,7 @@ export default {
               emphasis: {
                 show: false,
                 textStyle: {
-                  fontSize: "13",
+                  fontSize: "12",
                   fontWeight: "normal",
                 },
               },
@@ -90,7 +86,7 @@ export default {
             ],
             itemStyle: {
               emphasis: {
-                shadowBlur: 6,
+                shadowBlur: 4,
                 shadowOffsetX: 1,
                 shadowColor: "rgba(255, 255, 255, 0.6)",
               },
@@ -98,17 +94,16 @@ export default {
                 color: function (params) {
                   //自定义颜色
                   var colorList = [
-                    "#00A9FD",
+                    "#0658fe",
                     "#3FFFEA",
                     "#FE701A",
-                    "#FFA11B",
+                    "#fe2b1b",
                     "#00E435",
                     "#FAED00",
                   ];
                   return colorList[params.dataIndex];
                 },
               },
-            
             },
           },
         ],
@@ -162,7 +157,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 #pieChart {
-  width: 100%;
+  width: 99%;
   height: 235px;
 }
 </style>
