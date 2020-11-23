@@ -90,7 +90,7 @@
             </el-tree>
           </div>
         </div>
-        <!-- 设备菜单栏-中午-威廉·哈姆雷 -->
+        <!-- 设备菜单栏 -->
         <div
           class="device-container b1-ccc"
           :style="{ width: scrollerRightWidth }"
@@ -279,7 +279,7 @@ export default {
           imgPath: require("../../assets/img/device/w20_true.png"),
           armStatus: 0,
           linkStatus: 0,
-        },
+        }
       ],
 
       defaultProps: {

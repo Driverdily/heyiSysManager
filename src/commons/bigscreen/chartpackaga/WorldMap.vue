@@ -30,9 +30,11 @@ export default {
         document.getElementById("worldMapChart")
       );
 
-      var symbolImg = require("../../../assets/img/earth_color.jpg");
+      var loader = new THREE.TextureLoader();
+      loader.setCrossOrigin("Anonymous");
 
-      var imggray = require("../../../assets/img/device/earth_gray.jpg");
+      var symbolImg =loader.require("../../../assets/img/earth_color.jpg");
+      var imggray =loader.require("../../../assets/img/device/earth_gray.jpg");
 
       let data = uploadedDataURL;
 

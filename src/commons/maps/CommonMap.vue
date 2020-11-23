@@ -4,14 +4,12 @@
 		<bm-navigation anchor="BMAP_ANCHOR_TOP_LEFT"></bm-navigation>
 		<!--定位-->
 		<bm-geolocation anchor="BMAP_ANCHOR_BOTTOM_RIGHT" :showAddressBar="true" :autoLocation="true"></bm-geolocation>
-	
-	
+		
 		<!--点-->
 		<bm-marker :position="map.center" :dragging="map.dragging" animation="BMAP_ANIMATION_DROP">
 		</bm-marker>
-		
+	
 	</baidu-map>
-
 </template>
 
 <script>

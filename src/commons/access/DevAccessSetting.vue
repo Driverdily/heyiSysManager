@@ -9,7 +9,7 @@
     :before-close="handleClose"
   >
     <el-tabs tab-position="top" type="border-card" style="margin-top: 1px">
-      <!-- 配件 -->
+      <!-- 配件- -->
       <el-tab-pane>
         <span slot="label"> {{ $t("accesses") }}</span>
         <access-zone class="tab-aceess-content"></access-zone>
@@ -66,7 +66,6 @@ export default {
       default: false,
     },
   },
-
   methods: {
     handleClose() {
       this.$emit("update:visible", false);

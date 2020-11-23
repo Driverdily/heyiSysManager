@@ -74,7 +74,7 @@
               </el-col>
             </el-row>
           </div>
-          <!-- 联系人信息-- -->
+          <!-- 联系人信息 -->
           <div class="box-card">
             <span class="box-title">{{ $t("contect_person_info") }}</span>
             <!-- 联系人1 -->
@@ -92,7 +92,7 @@
                 ></el-input>
               </el-col>
             </el-row>
-            <!-- 联系人2 -->
+            <!-- 联系人2-- -->
             <el-row class="dev-set-list-item-no">
               <el-col :span="11">
                 <el-input
@@ -107,7 +107,7 @@
                 ></el-input>
               </el-col>
             </el-row>
-            <!-- 地址-- -->
+            <!-- 地址 -->
             <el-row class="dev-set-list-item-no">
               <el-col :span="24">
                 <el-input
@@ -189,7 +189,7 @@
               </el-col>
             </el-row>
           </div>
-          <!-- 保存信息-- -->
+          <!-- 保存信息- -->
           <div class="box-card">
             <span class="box-title">{{ $t("operate") }}</span>
             <el-row class="dev-set-list-item-no">

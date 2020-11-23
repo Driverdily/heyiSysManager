@@ -44,7 +44,7 @@
               v-model="relay_type_value"
               keep-alive
               size="mini"
-              :placeholder="$t('commons.select')"
+              :placeholder="$t('select')"
               style="width: 90%"
             >
               <el-option
@@ -87,7 +87,7 @@
             </el-select>
           </el-col>
         </el-row>
-        <!-- 输出类型 -->
+        <!-- 输出类型-金星眼球贝  -->
         <el-row class="dev-set-list-item">
           <el-col :span="2" style="align-items: center">
             <img
@@ -103,7 +103,7 @@
               v-model="output_type_value"
               keep-alive
               size="mini"
-              :placeholder="$t('commons.select')"
+              :placeholder="$t('select')"
               style="width: 90%"
               :disabled="this.relay_type_value == 1"
             >
@@ -133,7 +133,7 @@
               v-model="output_time_value"
               keep-alive
               size="mini"
-              :placeholder="$t('commons.select')"
+              :placeholder="$t('select')"
               style="width: 90%"
             >
               <el-option v-for="i in 99" :key="i" :label="i" :value="i">
@@ -157,7 +157,7 @@
               v-model="zone_mode_value"
               keep-alive
               size="mini"
-              :placeholder="$t('commons.select')"
+              :placeholder="$t('select')"
               style="width: 90%"
               :disabled="this.relay_type_value == 0"
             >

@@ -55,7 +55,7 @@
                 <el-input class="w-90" size="mini"></el-input>
               </el-col>
             </el-row>
-            <!-- 位置名称 -->
+            <!-- 位置名称-节肢动物-软体动物-匹夫无罪怀璧其罪=绿海龟 -->
             <el-row class="dev-set-list-item-no">
               <el-col :span="6">
                 <span>{{ $t("location_name") }}</span>
@@ -84,7 +84,7 @@
               </el-col>
             </el-row>
           </div>
-          <!-- 联系人信息-- -->
+          <!-- 联系人信息   -->
           <div class="box-card">
             <span class="box-title">{{ $t("contect_person_info") }}</span>
             <!-- 联系人1 -->
@@ -117,7 +117,7 @@
                 ></el-input>
               </el-col>
             </el-row>
-            <!-- 地址-- -->
+            <!-- 地址 -->
             <el-row class="dev-set-list-item-no">
               <el-col :span="24">
                 <el-input
@@ -156,7 +156,7 @@
               <el-col :span="12">
                 <el-button
                   type="infor"
-                  style="padding: 10px 50px"
+                  style="padding: 10px 50px;"
                   size="mini"
                   >{{ $t("cancel") }}</el-button
                 >
