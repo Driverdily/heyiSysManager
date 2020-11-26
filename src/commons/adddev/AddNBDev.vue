@@ -156,7 +156,7 @@
               <el-col :span="12">
                 <el-button
                   type="infor"
-                  style="padding: 10px 50px;"
+                  style="padding: 10px 50px"
                   size="mini"
                   >{{ $t("cancel") }}</el-button
                 >

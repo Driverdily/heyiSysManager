@@ -39,7 +39,7 @@
               prefix-icon="el-icon-search"
             >
             </el-input>
-            
+
             <!-- <el-tree
               class="filter-tree"
               :data="data"
@@ -186,7 +186,7 @@ export default {
     const data = [
       {
         id: 1,
-        label: "一级 一",
+        label: "一级 1",
         icon: "el-icon-school",
         children: [
           {
@@ -207,7 +207,7 @@ export default {
       },
       {
         id: 2,
-        label: "一级 二",
+        label: "一级 2",
         children: [
           {
             id: 5,
@@ -221,7 +221,7 @@ export default {
       },
       {
         id: 3,
-        label: "一级 三",
+        label: "一级 3",
         children: [
           {
             id: 7,
@@ -279,7 +279,7 @@ export default {
           imgPath: require("../../assets/img/device/w20_true.png"),
           armStatus: 0,
           linkStatus: 0,
-        }
+        },
       ],
 
       defaultProps: {
@@ -294,7 +294,8 @@ export default {
     },
   },
 
-  methods: {  //水蜗牛  刺豚  
+  methods: {
+    //水蜗牛  刺豚  卡耐基家族
     filterNode(value, data) {
       if (!value) return true;
       return data.label.indexOf(value) !== -1;
@@ -342,15 +343,12 @@ export default {
     },
   },
   computed: {
-    
     scrollerWidth: function () {
-      return this.isleftFolder ? 235 + "px" : 40 + "px";
+      return this.isleftFolder ? 230 + "px" : 40 + "px";
     },
-    
     scrollerRightWidth: function () {
       return this.isRightFolder ? 299 + "px" : 40 + "px";
     },
-
   },
 };
 </script>

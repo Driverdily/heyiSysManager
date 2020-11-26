@@ -77,7 +77,7 @@
           <!-- 联系人信息 -->
           <div class="box-card">
             <span class="box-title">{{ $t("contect_person_info") }}</span>
-            <!-- 联系人1 -->
+            <!-- 联系人1-温暖 -->
             <el-row class="dev-set-list-item-no">
               <el-col :span="11">
                 <el-input
@@ -92,7 +92,7 @@
                 ></el-input>
               </el-col>
             </el-row>
-            <!-- 联系人2-- -->
+            <!-- 联系人2--时间 -->
             <el-row class="dev-set-list-item-no">
               <el-col :span="11">
                 <el-input

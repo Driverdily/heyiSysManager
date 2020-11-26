@@ -33,6 +33,16 @@
           </span>
           <dev-alarm class="tab-alarm-set-content"></dev-alarm>
         </el-tab-pane>
+       <el-tab-pane>
+         <!-- 报警号码 -->
+         <span slot="label">
+           <i class="iconfont icon-dianhua" style="color: #12ff22"></i>&nbsp;
+            {{ $t("alarm_number") }}
+         </span>
+         <alarm-phone class="tab-alarm-set-content"></alarm-phone>
+       </el-tab-pane>
+
+
         <el-tab-pane>
           <!-- 密码设置 -->
           <span slot="label"
@@ -137,6 +147,7 @@ import DevFirmware from "./firmware/DevFirmware.vue";
 import DevSiaip from "./siaip/DevSiaip.vue";
 import DevReset from "./reset/ResetFactory.vue";
 import DevOther from "./other/DevOther.vue";
+import AlarmPhone from './alarm/AlarmPhone.vue';
 
 export default {
   components: {
@@ -152,6 +163,7 @@ export default {
     DevSiaip,
     DevReset,
     DevOther,
+    AlarmPhone,
   },
   props: {
     visible: {

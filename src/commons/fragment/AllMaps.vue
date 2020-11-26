@@ -3,7 +3,7 @@
 
     <el-row style="height: 100%; width: 100%">
       <el-col :span="3" class="left-nav">
-        <el-input placeholder="输入关键字" v-model="filterText"> </el-input>
+        <el-input placeholder="输入关键字-" v-model="filterText"> </el-input>
 
         <el-tree
           class="filter-tree"
@@ -21,11 +21,12 @@
 </template>
 
 <script>
-import MainMap from "../maps/MainMaps";
+import MainMap from "../maps/MainMaps.vue";
 
 export default {
   components: {
     MainMap,
+
   },
   data() {
     return {

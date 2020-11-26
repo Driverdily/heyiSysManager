@@ -295,6 +295,14 @@ module.exports = {
 	'open_intercom_6': '开启对讲(接警号码6)',
 	'open_intercom_7': '开启对讲(接警号码7)',
 	'open_intercom_8': '开启对讲(接警号码8)',
+	'phone_set':'号码设置',
+	'force_arm':'强制布防',
+	'center_number':'中心账号',
+	'sos_light_switch':'一键紧急报警灯开关',
+	'sms_push':'一键紧急报警短信及语音信息',
+	'phone_line_check':'电话线检测',
+	'ring_times':'振铃次数',
+	'message_phoneset_smswarn':'未关门短信提醒',
 
 	// 密码设置
 	'program_pwd': '编程密码',

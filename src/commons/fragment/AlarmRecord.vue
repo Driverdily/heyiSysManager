@@ -6,7 +6,6 @@
         <el-input class="m-t-5 w-90" size="mini"></el-input> <br />
         <div class="m-t-10">{{ $t("dev_name") }}</div>
         <el-input class="m-t-5 w-90" size="mini"></el-input> <br />
-
         <div class="m-t-10">{{ $t("alarm_content") }}</div>
         <el-select
           v-model="alarm_content_value"
@@ -24,7 +23,6 @@
           >
           </el-option>
         </el-select>
-
         <el-date-picker
           v-model="startTime"
           type="datetime"
@@ -35,7 +33,6 @@
           class="m-t-20"
         >
         </el-date-picker>
-
         <el-date-picker
           v-model="endTime"
           type="datetime"
@@ -46,9 +43,7 @@
           class="m-t-5"
         >
         </el-date-picker>
-
         <br /><br />
-
         <el-button
           type="infor"
           size="mini"
@@ -56,7 +51,6 @@
           style="width: 90%"
         ></el-button>
       </el-col>
-
       <el-col :span="21" class="right-nav">
         <el-table
           :data="alarmRecordData"
@@ -66,7 +60,6 @@
           border
         >
           <el-table-column prop="serial"></el-table-column>
-
           <el-table-column
             prop="report_time"
             :label="$t('report_time')"
@@ -87,7 +80,6 @@
             prop="dev_name"
             :label="$t('dev_name')"
           ></el-table-column>
-
           <el-table-column
             prop="alarm_content"
             :label="$t('alarm_content')"
@@ -104,7 +96,6 @@
             prop="zone_information"
             :label="$t('zone_information')"
           ></el-table-column>
-
           <el-table-column
             prop="alarm_sort"
             :label="$t('alarm_sort')"
@@ -113,27 +104,22 @@
             prop="alarm_source"
             :label="$t('alarm_source')"
           ></el-table-column>
-
           <el-table-column
             prop="deal_status"
             :label="$t('deal_status')"
           ></el-table-column>
-
           <el-table-column
             prop="deal_time"
             :label="$t('deal_time')"
           ></el-table-column>
-
           <el-table-column
             prop="deal_ps"
             :label="$t('deal_ps')"
           ></el-table-column>
-
           <el-table-column
             prop="operate_person"
             :label="$t('operate_person')"
           ></el-table-column>
-
           <el-table-column
             prop="link_person"
             :label="$t('link_person')"
@@ -187,8 +173,6 @@ export default {
     text-align: left;
     font-size: 14px;
   }
-  .right-nav {
-    // margin-top: 3px;
-  }
+
 }
 </style>
